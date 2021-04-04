@@ -1,3 +1,4 @@
+/* common/content ------------------------------------------------------ */
 .entry-content h1,
 .block-editor-block-list__layout h1 {
   color: inherit;
@@ -68,6 +69,7 @@
   border-radius: 1rem;
   overflow-x: scroll; }
 
+/* editor/base---------------------------------------------------------- */
 .body.article {
   color: #565956;
   background-color: #f5f3f2; }
