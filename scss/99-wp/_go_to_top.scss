@@ -18,22 +18,20 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-#go-to-top {
-	.go-to-top-button {
-		width: 56px;
-		height: 56px;
-		background-color: $color-green-dark;
-		border-radius: 50%;
+.go-to-top-button {
+	width: 56px;
+	height: 56px;
+	background-color: $color-green-dark;
+	border-radius: 50%;
 
-    span{
-      color: $color-white;
-    }
+	span {
+		color: $color-white;
+	}
 
-		&:hover {
-			span {
-				transform: rotate(360deg);
-				transition: 0.25s;
-			}
+	&:hover {
+		span {
+			transform: rotate(360deg);
+			transition: 0.25s;
 		}
 	}
 }

@@ -18,8 +18,21 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-#header {
+#header-container {
 	background-color: $color-gray-dark;
+	box-shadow: $shadow-2xl;
+
+	.tagline {
+		color: $color-white;
+	}
+
+	.site-name-text {
+		color: $color-white;
+	}
+
+	.hlt-top-menu,.hlt-center-logo {
+		background-color: $color-gray-dark;
+	}
 }
 
 /************************************************************************/

@@ -18,11 +18,15 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-.wp-block-table tbody {
-  border: solid $color-gray-dark 1px;
+.wp-block-table  {
+  tbody{
+    border: 1px solid $color-black;
+  }
 }
+
 .wp-block-table tbody tr:nth-child(odd) {
-  background-color: $color-green-light;
+  color:$color-black;
+  background-color: rgba($color-black , 0.2);
 }
 .wp-block-table tbody tr:nth-child(even) {
   background-color: $color-white;

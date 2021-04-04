@@ -76,31 +76,27 @@ blockquote {
 /************************************************************************/
 /*  END OF FILE                                       									*/
 /************************************************************************/
-#comment-area .reply a {
-  border: none;
-  color: #f5f3f2;
-  background-color: #222928; }
-
-#comment-reply-btn {
-  color: #f5f3f2;
-  background-color: #222928;
-  border-radius: 4px;
-  border: none; }
-
 #comment,
 #author,
 #email,
 #url {
-  border: none;
+  background-color: transparent;
+  border-width: 0 0 2px 0;
+  border-radius: 0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
   border-bottom: 2px solid #222928;
-  border-radius: 0; }
-  #comment:focus,
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s; }
+  #comment:focus, #comment:hover,
   #author:focus,
+  #author:hover,
   #email:focus,
-  #url:focus {
+  #email:hover,
+  #url:focus,
+  #url:hover {
     background-color: rgba(180, 200, 180, 0.5);
-    -webkit-transition: all 0.25s;
-    transition: all 0.25s; }
+    outline: none; }
 
 /************************************************************************/
 /*  END OF FILE                                       									*/
@@ -130,24 +126,18 @@ blockquote {
   background-color: #222928; }
   #footer .site-name-text {
     color: #f5f3f2; }
-  #footer #navi-footer a {
-    color: #f5f3f2;
-    background-color: #222928; }
-    #footer #navi-footer a:hover {
-      background-color: #f5f3f2;
-      color: #222928; }
 
 /************************************************************************/
 /*  END OF FILE                                       									*/
 /************************************************************************/
-#go-to-top .go-to-top-button {
+.go-to-top-button {
   width: 56px;
   height: 56px;
   background-color: rgba(80, 111, 52, 0.7);
   border-radius: 50%; }
-  #go-to-top .go-to-top-button span {
+  .go-to-top-button span {
     color: #f5f3f2; }
-  #go-to-top .go-to-top-button:hover span {
+  .go-to-top-button:hover span {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
     -webkit-transition: 0.25s;
@@ -164,17 +154,14 @@ blockquote {
     color: #f5f3f2; }
   #header-container .site-name-text {
     color: #f5f3f2; }
-  #header-container #header {
-    background-color: #222928; }
   #header-container .hlt-top-menu, #header-container .hlt-center-logo {
     background-color: #222928; }
-    #header-container .hlt-top-menu #navi, #header-container .hlt-center-logo #navi {
-      background-color: #222928; }
-      #header-container .hlt-top-menu #navi a:hover, #header-container .hlt-center-logo #navi a:hover {
-        background-color: rgba(80, 111, 52, 0.7); }
-      #header-container .hlt-top-menu #navi .sub-menu, #header-container .hlt-center-logo #navi .sub-menu {
-        background-color: #222928;
-        color: #f5f3f2; }
+
+/************************************************************************/
+/*  END OF FILE                                       									*/
+/************************************************************************/
+#header {
+  background-color: #222928; }
 
 /************************************************************************/
 /*  END OF FILE                                       									*/
@@ -443,6 +430,24 @@ body .mobile-menu-buttons {
 /************************************************************************/
 /*  END OF FILE                                       									*/
 /************************************************************************/
+#navi-footer a {
+  color: #f5f3f2;
+  background-color: #222928; }
+  #navi-footer a:hover {
+    background-color: #f5f3f2;
+    color: #222928; }
+
+/************************************************************************/
+/*  END OF FILE                                       									*/
+/************************************************************************/
+#navi {
+  background-color: #222928; }
+  #navi a:hover {
+    background-color: rgba(80, 111, 52, 0.7); }
+  #navi .sub-menu {
+    background-color: #222928;
+    color: #f5f3f2; }
+
 #navi a {
   position: relative;
   color: #f5f3f2; }
@@ -1096,11 +1101,16 @@ pre {
 /************************************************************************/
 /*  END OF FILE                                       									*/
 /************************************************************************/
-#submit {
+#submit, #comment-reply-btn {
   color: #f5f3f2;
   background-color: #222928;
-  border-radius: 4px;
-  border: none; }
+  border-radius: 1rem;
+  border: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s; }
+  #submit:hover, #submit:focus, #comment-reply-btn:hover, #comment-reply-btn:focus {
+    background-color: rgba(80, 111, 52, 0.7);
+    outline: none; }
 
 /************************************************************************/
 /*  END OF FILE                                       									*/
@@ -1144,10 +1154,11 @@ pre {
 /*  END OF FILE                                       									*/
 /************************************************************************/
 .wp-block-table tbody {
-  border: solid #222928 1px; }
+  border: 1px solid #565956; }
 
 .wp-block-table tbody tr:nth-child(odd) {
-  background-color: #b4c8b4; }
+  color: #565956;
+  background-color: rgba(86, 89, 86, 0.2); }
 
 .wp-block-table tbody tr:nth-child(even) {
   background-color: #f5f3f2; }

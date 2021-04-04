@@ -18,11 +18,18 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-#submit {
-  color: $color-white;
-  background-color: $color-gray-dark;
-  border-radius: 4px;
-  border: none;
+#submit,#comment-reply-btn {
+	color: $color-white;
+	background-color: $color-gray-dark;
+	border-radius: $rounded-2xl;
+	border: none;
+	transition: all 0.25s;
+
+	&:hover,
+	&:focus {
+		background-color: $color-green-dark;
+		outline: none;
+	}
 }
 
 /************************************************************************/
