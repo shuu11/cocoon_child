@@ -6,6 +6,9 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
+@import "./01-variable/**";
+
+@import "./98-editor/**";
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -18,36 +21,6 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-.entry-header {
-	h1 {
-		position: relative;
-		padding: 1em 1.5em;
-		margin-top: 0;
-		margin-bottom: 15px;
-
-		&:before,
-		&:after {
-			content: "";
-			position: absolute;
-			width: 30px;
-			height: 30px;
-		}
-
-		&:before {
-			border-left: 2px solid $color-black;
-			border-top: 2px solid $color-black;
-			top: 0;
-			left: 0;
-		}
-
-		&:after {
-			border-right: 2px solid $color-black;
-			border-bottom: 2px solid $color-black;
-			bottom: 0;
-			right: 0;
-		}
-	}
-}
 
 /************************************************************************/
 /*  END OF FILE                                       									*/

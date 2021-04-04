@@ -23,16 +23,23 @@
 	width: 100%;
 	padding: 0;
 	border-color: $color-gray-dark;
-	border-radius: 4px;
+	border-radius: $rounded-2xl;
 
 	.toc-title {
 		padding: 0;
-		background-color: $color-gray-dark;
 		color: $color-white;
+		background-color: $color-gray-dark;
+		border-top-left-radius: $rounded-2xl;
+		border-top-right-radius: $rounded-2xl;
+		transition: all 0.25s;
 
 		&::after {
 			color: $color-white;
 			text-decoration: none;
+		}
+
+		&:hover {
+			background-color: $color-green-dark;
 		}
 	}
 

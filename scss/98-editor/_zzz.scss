@@ -18,7 +18,18 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-.entry-content {
+.body.article {
+	color: $color-black;
+	background-color: $color-white;
+}
+
+.editor-post-title__block {
+	.editor-post-title__input {
+		color: inherit;
+	}
+}
+
+.block-editor-block-list__layout {
 	h1 {
 		color: inherit;
 		background-color: transparent;
@@ -31,6 +42,7 @@
 	}
 
 	h3 {
+    color: inherit;
 		border-color: $color-green-dark;
 	}
 
@@ -63,6 +75,29 @@
 	h5,
 	h6 {
 		border-bottom: 2px dotted $color-green-midium;
+	}
+
+	blockquote {
+		color: inherit;
+		background-color: rgba($color-black, 0.2);
+		border: none;
+		border-radius: $rounded-2xl;
+
+		&:before,
+		&:after {
+			color: inherit;
+		}
+
+		cite {
+			color: inherit;
+		}
+	}
+
+	pre {
+		color: inherit;
+		background-color: rgba($color-black, 0.2);
+		border-radius: $rounded-2xl;
+		overflow-x: scroll;
 	}
 }
 

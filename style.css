@@ -143,6 +143,10 @@ blockquote {
 /************************************************************************/
 /*  END OF FILE                                       									*/
 /************************************************************************/
+.entry-content h1 {
+  color: inherit;
+  background-color: transparent; }
+
 .entry-content h2 {
   color: #f5f3f2;
   background-color: rgba(80, 111, 52, 0.7);
@@ -183,22 +187,22 @@ blockquote {
 /************************************************************************/
 /*  END OF FILE                                       									*/
 /************************************************************************/
-.entry-header h1.entry-title, .entry-header h1.archive-title {
+.entry-header h1 {
   position: relative;
   padding: 1em 1.5em;
   margin-top: 0;
   margin-bottom: 15px; }
-  .entry-header h1.entry-title:before, .entry-header h1.entry-title:after, .entry-header h1.archive-title:before, .entry-header h1.archive-title:after {
+  .entry-header h1:before, .entry-header h1:after {
     content: "";
     position: absolute;
     width: 30px;
     height: 30px; }
-  .entry-header h1.entry-title:before, .entry-header h1.archive-title:before {
+  .entry-header h1:before {
     border-left: 2px solid #565956;
     border-top: 2px solid #565956;
     top: 0;
     left: 0; }
-  .entry-header h1.entry-title:after, .entry-header h1.archive-title:after {
+  .entry-header h1:after {
     border-right: 2px solid #565956;
     border-bottom: 2px solid #565956;
     bottom: 0;
@@ -225,10 +229,10 @@ blockquote {
   .go-to-top-button span {
     color: #f5f3f2; }
   .go-to-top-button:hover span {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-    -webkit-transition: 0.25s;
-    transition: 0.25s; }
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s; }
 
 /************************************************************************/
 /*  END OF FILE                                       									*/
@@ -715,14 +719,20 @@ pre {
   width: 100%;
   padding: 0;
   border-color: #222928;
-  border-radius: 4px; }
+  border-radius: 1rem; }
   .toc .toc-title {
     padding: 0;
+    color: #f5f3f2;
     background-color: #222928;
-    color: #f5f3f2; }
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s; }
     .toc .toc-title::after {
       color: #f5f3f2;
       text-decoration: none; }
+    .toc .toc-title:hover {
+      background-color: rgba(80, 111, 52, 0.7); }
   .toc .toc-content {
     padding: 1em;
     -webkit-transition: all 0.2s;

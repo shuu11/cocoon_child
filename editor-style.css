@@ -1,1 +1,74 @@
-/*ビジュアルエディターのスタイルを書く*/
+/************************************************************************/
+/*  END OF FILE                                       									*/
+/************************************************************************/
+.body.article {
+  color: #565956;
+  background-color: #f5f3f2; }
+
+.editor-post-title__block .editor-post-title__input {
+  color: inherit; }
+
+.block-editor-block-list__layout h1 {
+  color: inherit;
+  background-color: transparent; }
+
+.block-editor-block-list__layout h2 {
+  color: #f5f3f2;
+  background-color: rgba(80, 111, 52, 0.7);
+  border-radius: 1rem; }
+
+.block-editor-block-list__layout h3 {
+  color: inherit;
+  border-color: rgba(80, 111, 52, 0.7); }
+
+.block-editor-block-list__layout h4 {
+  position: relative;
+  background-color: transparent;
+  padding-right: 4px;
+  padding-left: 2em;
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(80, 111, 52, 0.5)), color-stop(70%, transparent));
+  background-image: -webkit-linear-gradient(left, rgba(80, 111, 52, 0.5) 0%, transparent 70%);
+  background-image: linear-gradient(to right, rgba(80, 111, 52, 0.5) 0%, transparent 70%);
+  background-repeat: no-repeat;
+  background-size: 100% 5%;
+  background-position: bottom; }
+  .block-editor-block-list__layout h4:before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 47%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0.3em;
+    width: 21px;
+    height: 21px;
+    background-color: rgba(80, 111, 52, 0.5);
+    border-radius: 50%; }
+
+.block-editor-block-list__layout h5,
+.block-editor-block-list__layout h6 {
+  border-bottom: 2px dotted rgba(80, 111, 52, 0.5); }
+
+.block-editor-block-list__layout blockquote {
+  color: inherit;
+  background-color: rgba(86, 89, 86, 0.2);
+  border: none;
+  border-radius: 1rem; }
+  .block-editor-block-list__layout blockquote:before, .block-editor-block-list__layout blockquote:after {
+    color: inherit; }
+  .block-editor-block-list__layout blockquote cite {
+    color: inherit; }
+
+.block-editor-block-list__layout pre {
+  color: inherit;
+  background-color: rgba(86, 89, 86, 0.2);
+  border-radius: 1rem;
+  overflow-x: scroll; }
+
+/************************************************************************/
+/*  END OF FILE                                       									*/
+/************************************************************************/
+/************************************************************************/
+/*  END OF FILE                                       									*/
+/************************************************************************/

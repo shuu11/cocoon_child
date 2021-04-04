@@ -15,7 +15,7 @@ const loadPlugins = require("gulp-load-plugins");
 const $ = loadPlugins(); //  postcss,purgecss,imagemin,plumber,sass,sass-glob,connect-php,notify,rename,clean-css,uglify,changed,diff-build
 
 //  watch
-const watchSrc = ["./**", "!./style.css"];
+const watchSrc = ["./**", "!./*.css"];
 
 //  build
 const build = {
