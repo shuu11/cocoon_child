@@ -23,6 +23,7 @@
 	background-color: $color-main;
 	border-radius: $rounded-2xl;
 	box-shadow: $shadow-2xl;
+	opacity: 0.9;
 
 	h3 {
 		position: relative;
@@ -49,10 +50,7 @@
 			border-radius: 50%;
 		}
 	}
-}
 
-#sidebar,
-#slide-in-sidebar {
 	.widget_recent_entries,
 	.widget_categories,
 	.widget_archive,
@@ -93,6 +91,12 @@
 			}
 		}
 	}
+}
+
+#slide-in-sidebar{
+	background-color: transparent;
+	opacity: 0.9;
+
 }
 
 /************************************************************************/
