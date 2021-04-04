@@ -30,7 +30,10 @@
 		}
 	}
 
-	.prev-post,.next-post {
+	.prev-post,
+	.next-post {
+		color: $color-white;
+		background-color: $color-gray-dark;
 		border-radius: $rounded-2xl;
 		transition: all 0.25s;
 
@@ -39,23 +42,26 @@
 		}
 
 		.fa {
-			color: $color-gray-dark;
+			color: $color-white;
 		}
 	}
 
-	.prev-post{
-		&:hover{
-			background: linear-gradient(to right,$color-hover, $color-white);
+	.prev-post {
+		&:hover {
+			background-color: $color-green-dark;
 		}
 	}
 
-	.next-post{
-		&:hover{
-			background: linear-gradient(to left,$color-hover, $color-white);
+	.next-post {
+		margin-top: 20px;
+
+		&:hover {
+			background-color: $color-green-dark;
 		}
 	}
 
-	.prev-post-thumb,.next-post-thumb {
+	.prev-post-thumb,
+	.next-post-thumb {
 		img {
 			border-radius: $rounded-2xl;
 		}

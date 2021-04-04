@@ -31,25 +31,39 @@
 		}
 	}
 
-  .related-entry-card-wrap {
-    margin: 0;
+	.related-entry-heading {
+		margin: 25px 0 25px 0;
+    padding: 1rem 1.5rem;
+
+		color: $color-white;
+		background-color: $color-gray-dark;
+		border-radius: $rounded-2xl;
+
+		&:before {
+			font-family: "FontAwesome";
+			content: "\f064";
+			opacity: 0.5;
+		}
+	}
+
+	.related-entry-card-wrap {
+		margin: 0;
 
 		color: $color-black;
-    background-color: transparent;
-    border-radius: $rounded-2xl;
+		background-color: transparent;
+		border-radius: $rounded-2xl;
 		transition: all 0.25s;
 
-    &:hover {
-      background-color: $color-hover;
+		&:hover {
+			background-color: $color-hover;
 			box-shadow: $shadow-2xl;
-    }
+		}
 
 		.related-entry-card-thumb img {
 			border-radius: $rounded-2xl;
 		}
-  }
+	}
 }
-
 
 /************************************************************************/
 /*  END OF FILE                                       									*/
