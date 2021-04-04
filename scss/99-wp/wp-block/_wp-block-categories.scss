@@ -19,12 +19,8 @@
 //  Sass記述
 //----------------------------------------------------------------------
 .wp-block-categories {
-  select {
-    border: solid $color-gray-dark 1px;
-    background-color: $color-body;
-  }
+	select {
+		border: solid $color-gray-dark 1px;
+		background-color: $color-body;
+	}
 }
-
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/

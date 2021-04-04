@@ -19,23 +19,19 @@
 //  Sass記述
 //----------------------------------------------------------------------
 .wp-block-quote {
-  border: solid $color-gray-dark 1px;
-  background-color: $color-body;
+	border: solid $color-gray-dark 1px;
+	background-color: $color-body;
 
-  &::before,
-  &::after {
-    color: $color-gray-dark;
-  }
+	&::before,
+	&::after {
+		color: $color-gray-dark;
+	}
 
-  cite {
-    color: $color-gray-dark;
-  }
+	cite {
+		color: $color-gray-dark;
+	}
 
-  button {
-    background-color: $color-gray-dark;
-  }
+	button {
+		background-color: $color-gray-dark;
+	}
 }
-
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/

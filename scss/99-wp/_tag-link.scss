@@ -15,21 +15,16 @@
 //  mixin記述
 //----------------------------------------------------------------------
 .tag-link {
-  color: inherit;
-  background-color: $color-white;
-  border-radius: $rounded-2xl;
-  transition: all 0.25s;
+	color: inherit;
+	background-color: $color-white;
+	border-radius: $rounded-2xl;
+	transition: all 0.25s;
 
-  &:hover {
-    background-color: $color-hover;
-  }
+	&:hover {
+		background-color: $color-hover;
+	}
 }
 
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-
-
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/

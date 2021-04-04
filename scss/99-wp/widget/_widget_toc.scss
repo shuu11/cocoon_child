@@ -19,19 +19,15 @@
 //  Sass記述
 //----------------------------------------------------------------------
 .widget_toc {
-  .toc-content {
-    li {
-      a {
-        &:hover {
-          transition: all 0.25s;
-          color: $color-gray-dark;
-          text-decoration: none;
-        }
-      }
-    }
-  }
+	.toc-content {
+		li {
+			a {
+				&:hover {
+					transition: all 0.25s;
+					color: $color-gray-dark;
+					text-decoration: none;
+				}
+			}
+		}
+	}
 }
-
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/

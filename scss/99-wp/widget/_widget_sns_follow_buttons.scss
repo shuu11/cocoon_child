@@ -19,23 +19,19 @@
 //  Sass記述
 //----------------------------------------------------------------------
 .widget_sns_follow_buttons {
-  .sns-follow {
-    .feedly-button {
-      &:hover {
-        background-color: #2bb24c;
-        opacity: 0.7;
-      }
-    }
+	.sns-follow {
+		.feedly-button {
+			&:hover {
+				background-color: #2bb24c;
+				opacity: 0.7;
+			}
+		}
 
-    .rss-button {
-      &:hover {
-        background-color: #f26522;
-        opacity: 0.7;
-      }
-    }
-  }
+		.rss-button {
+			&:hover {
+				background-color: #f26522;
+				opacity: 0.7;
+			}
+		}
+	}
 }
-
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/

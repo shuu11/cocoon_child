@@ -19,93 +19,89 @@
 //  Sass記述
 //----------------------------------------------------------------------
 .widget_author_box {
-  .author-box {
-    border-color: $color-gray-dark;
+	.author-box {
+		border-color: $color-gray-dark;
 
-    .author-widget-name {
-      color: $color-gray-dark;
-      font-weight: bold;
-    }
+		.author-widget-name {
+			color: $color-gray-dark;
+			font-weight: bold;
+		}
 
-    .follow-button {
-      border: none;
-      color: $color-white;
-    }
+		.follow-button {
+			border: none;
+			color: $color-white;
+		}
 
-    .website-button {
-      background-color: #002561;
-    }
+		.website-button {
+			background-color: #002561;
+		}
 
-    .twitter-button {
-      background-color: #1da1f2;
-    }
+		.twitter-button {
+			background-color: #1da1f2;
+		}
 
-    .facebook-button {
-      background-color: #3b5998;
-    }
+		.facebook-button {
+			background-color: #3b5998;
+		}
 
-    .hatebu-button {
-      background-color: #2c6ebd;
-    }
+		.hatebu-button {
+			background-color: #2c6ebd;
+		}
 
-    .instagram-button {
-      background-color: #405de6;
-    }
+		.instagram-button {
+			background-color: #405de6;
+		}
 
-    .youtube-button {
-      background-color: #cd201f;
-    }
+		.youtube-button {
+			background-color: #cd201f;
+		}
 
-    .linkedin-button {
-      background-color: #0077b5;
-    }
+		.linkedin-button {
+			background-color: #0077b5;
+		}
 
-    .note-button {
-      background-color: #41c9b4;
-    }
+		.note-button {
+			background-color: #41c9b4;
+		}
 
-    .flickr-button {
-      background-color: #111111;
-    }
+		.flickr-button {
+			background-color: #111111;
+		}
 
-    .pinterest-button {
-      background-color: #bd081c;
-    }
+		.pinterest-button {
+			background-color: #bd081c;
+		}
 
-    .line-button {
-      background-color: #00c300;
-    }
+		.line-button {
+			background-color: #00c300;
+		}
 
-    .slack-button {
-      background-color: #e01563;
-    }
+		.slack-button {
+			background-color: #e01563;
+		}
 
-    .amazon-button {
-      background-color: #ff9900;
-    }
+		.amazon-button {
+			background-color: #ff9900;
+		}
 
-    .rakuten-room-button {
-      background-color: #c61e79;
-    }
+		.rakuten-room-button {
+			background-color: #c61e79;
+		}
 
-    .github-button {
-      background-color: #4078c0;
-    }
+		.github-button {
+			background-color: #4078c0;
+		}
 
-    .codepen-button {
-      background-color: $color-black;
-    }
+		.codepen-button {
+			background-color: $color-black;
+		}
 
-    .feedly-button {
-      background-color: #2bb24c;
-    }
+		.feedly-button {
+			background-color: #2bb24c;
+		}
 
-    .rss-button {
-      background-color: #f26522;
-    }
-  }
+		.rss-button {
+			background-color: #f26522;
+		}
+	}
 }
-
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/

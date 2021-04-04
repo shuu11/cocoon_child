@@ -19,7 +19,8 @@
 //  Sass記述
 //----------------------------------------------------------------------
 .entry-content,                                   //  main
-.block-editor-block-list__layout {                //  editor
+.block-editor-block-list__layout {
+	//  editor
 	h1 {
 		color: inherit;
 		background-color: transparent;
@@ -90,7 +91,3 @@
 		overflow-x: scroll;
 	}
 }
-
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/

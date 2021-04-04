@@ -19,20 +19,16 @@
 //  Sass記述
 //----------------------------------------------------------------------
 .widget_cta_box {
-  .cta-box {
-    border: solid $color-gray-dark 1px;
-    background-color: $color-white;
-  }
+	.cta-box {
+		border: solid $color-gray-dark 1px;
+		background-color: $color-white;
+	}
 
-  .cta-heading {
-    color: $color-gray-dark;
-  }
+	.cta-heading {
+		color: $color-gray-dark;
+	}
 
-  .cta-content {
-    color: $color-black;
-  }
+	.cta-content {
+		color: $color-black;
+	}
 }
-
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/

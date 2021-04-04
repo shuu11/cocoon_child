@@ -19,24 +19,20 @@
 //  Sass記述
 //----------------------------------------------------------------------
 .widget_recent_comments {
-  .recent-comments {
-    .recent-comment-content {
-      border: solid $color-gray-dark 1px;
+	.recent-comments {
+		.recent-comment-content {
+			border: solid $color-gray-dark 1px;
 
-      &::before,
-      &::after {
-        border-bottom-color: $color-gray-dark;
-      }
-    }
+			&::before,
+			&::after {
+				border-bottom-color: $color-gray-dark;
+			}
+		}
 
-    a {
-      &:hover {
-        background-color: $color-white;
-      }
-    }
-  }
+		a {
+			&:hover {
+				background-color: $color-white;
+			}
+		}
+	}
 }
-
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/

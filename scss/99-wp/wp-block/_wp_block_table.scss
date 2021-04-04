@@ -27,17 +27,12 @@
 			background-color: rgba($color-black, 0.2);
 		}
 
-    tr:nth-child(even) {
-      background-color: $color-white;
-    }
+		tr:nth-child(even) {
+			background-color: $color-white;
+		}
 
-    tr td {
-      border: none;
-    }
+		tr td {
+			border: none;
+		}
 	}
 }
-
-
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/

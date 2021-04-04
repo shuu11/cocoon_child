@@ -19,36 +19,32 @@
 //  Sass記述
 //----------------------------------------------------------------------
 .widget_popular_entries {
-  .popular-entry-card-link {
-    &::after {
-      border-top: solid $color-gray-dark 2px;
-      border-right: solid $color-gray-dark 2px;
-    }
-  }
+	.popular-entry-card-link {
+		&::after {
+			border-top: solid $color-gray-dark 2px;
+			border-right: solid $color-gray-dark 2px;
+		}
+	}
 
-  .border-partition {
-    a {
-      margin: 0;
-      border-radius: 0;
-      border-bottom: solid $color-gray-dark 1px;
+	.border-partition {
+		a {
+			margin: 0;
+			border-radius: 0;
+			border-bottom: solid $color-gray-dark 1px;
 
-      &:first-of-type {
-        border-top: solid $color-gray-dark 1px;
-      }
-    }
-  }
+			&:first-of-type {
+				border-top: solid $color-gray-dark 1px;
+			}
+		}
+	}
 
-  .border-square {
-    a {
-      border: solid $color-gray-dark 1px;
+	.border-square {
+		a {
+			border: solid $color-gray-dark 1px;
 
-      &:hover {
-        background-color: transparent;
-      }
-    }
-  }
+			&:hover {
+				background-color: transparent;
+			}
+		}
+	}
 }
-
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/

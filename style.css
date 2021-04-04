@@ -8,9 +8,6 @@ Author URI:
 Template:   cocoon-master
 Version:    1.1.2
 */
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 html:focus-within {
   scroll-behavior: smooth; }
 
@@ -21,40 +18,6 @@ body {
   background-repeat: repeat;
   background-size: auto auto; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
-.dbg1 {
-  color: black;
-  background: rgba(255, 99, 71, 0.5);
-  outline: 0.5px solid rgba(0, 0, 0, 0.5); }
-
-.dbg2 {
-  color: black;
-  background: rgba(135, 206, 235, 0.5);
-  outline: 0.5px solid rgba(0, 0, 0, 0.5); }
-
-.dbg3 {
-  color: black;
-  background: rgba(144, 238, 144, 0.5);
-  outline: 0.5px solid rgba(0, 0, 0, 0.5); }
-
-.dbg4 {
-  color: black;
-  background: rgba(210, 180, 140, 0.5);
-  outline: 0.5px solid rgba(0, 0, 0, 0.5); }
-
-.dbg5 {
-  color: black;
-  background: rgba(255, 182, 193, 0.5);
-  outline: 0.5px solid rgba(0, 0, 0, 0.5); }
-
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .entry-content h1,
 .block-editor-block-list__layout h1 {
   color: inherit;
@@ -125,17 +88,11 @@ body {
   border-radius: 1rem;
   overflow-x: scroll; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 #breadcrumb {
   color: inherit; }
   #breadcrumb a {
     color: inherit; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .cat-label {
   top: 0;
   left: 0;
@@ -144,9 +101,6 @@ body {
   border: none;
   border-radius: 1rem; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .cat-link {
   background-color: #565956;
   border-radius: 1rem;
@@ -156,9 +110,6 @@ body {
     color: #f5f3f2;
     opacity: 0.7; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 #comment,
 #author,
 #email,
@@ -181,9 +132,6 @@ body {
     background-color: rgba(180, 200, 180, 0.5);
     outline: none; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 #container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -194,15 +142,9 @@ body {
   flex-direction: column;
   min-height: 100vh; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 #content {
   margin-bottom: 20px; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .entry-header h1 {
   position: relative;
   padding: 1em 1.5em;
@@ -225,9 +167,6 @@ body {
     bottom: 0;
     right: 0; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 #footer {
   margin-top: auto;
   color: #f5f3f2;
@@ -235,9 +174,6 @@ body {
   #footer .site-name-text {
     color: #f5f3f2; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .go-to-top-button {
   width: 56px;
   height: 56px;
@@ -251,9 +187,6 @@ body {
     -webkit-transition: all 0.25s;
     transition: all 0.25s; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 #header-container {
   background-color: #222928;
   -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
@@ -262,18 +195,13 @@ body {
     color: #f5f3f2; }
   #header-container .site-name-text {
     color: #f5f3f2; }
-  #header-container .hlt-top-menu, #header-container .hlt-center-logo {
+  #header-container .hlt-top-menu,
+  #header-container .hlt-center-logo {
     background-color: #222928; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 #header {
   background-color: #222928; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 #list.ecb-entry-border {
   margin-bottom: 1em; }
   #list.ecb-entry-border a {
@@ -298,9 +226,6 @@ body {
 #list .entry-card-thumb img {
   border-radius: 1rem; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 #main {
   background-color: #f5f3f2;
   border-radius: 1rem;
@@ -308,9 +233,6 @@ body {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   opacity: 0.9; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .mobile-menu-buttons {
   background-color: #222928; }
   .mobile-menu-buttons .menu-button:hover {
@@ -335,9 +257,6 @@ body {
   .mobile-menu-buttons .search-menu-button .search-submit {
     color: #222928; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 #navi-footer a {
   color: #f5f3f2;
   background-color: #222928; }
@@ -345,9 +264,6 @@ body {
     background-color: #f5f3f2;
     color: #222928; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 #navi {
   background-color: #222928; }
   #navi a {
@@ -384,9 +300,6 @@ body {
     #navi .fa-angle-down:hover {
       color: #f5f3f2; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 #pager-post-navi.post-navi-border a {
   border-top: solid #222928 1px;
   border-bottom: solid #222928 1px; }
@@ -421,9 +334,6 @@ body {
 #pager-post-navi .next-post-thumb img {
   border-radius: 1rem; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .pagination-previous-link,
 .pagination-next-link {
   color: #f5f3f2;
@@ -460,9 +370,6 @@ body {
     -webkit-transition: all 0.25s;
     transition: all 0.25s; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .post-password-form input[type="password"] {
   border-radius: 0;
   border: none;
@@ -484,9 +391,6 @@ body {
   border-radius: 4px;
   color: #f5f3f2; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 #related-entries.recb-entry-border a {
   border: none;
   border-top: solid #222928 1px;
@@ -519,9 +423,6 @@ body {
   #related-entries .related-entry-card-wrap .related-entry-card-thumb img {
     border-radius: 1rem; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 #search-menu-content .search-edit {
   background-color: transparent;
   border-width: 0 0 2px 0;
@@ -543,9 +444,6 @@ body {
   #search-menu-content .search-submit:hover {
     color: #222928; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 #sidebar,
 #sidebar-menu-content {
   color: inherit;
@@ -696,23 +594,20 @@ body {
   background-color: transparent;
   opacity: 0.9; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
-#submit, #comment-reply-btn {
+#submit,
+#comment-reply-btn {
   color: #f5f3f2;
   background-color: #222928;
   border-radius: 1rem;
   border: none;
   -webkit-transition: all 0.25s;
   transition: all 0.25s; }
-  #submit:hover, #submit:focus, #comment-reply-btn:hover, #comment-reply-btn:focus {
+  #submit:hover, #submit:focus,
+  #comment-reply-btn:hover,
+  #comment-reply-btn:focus {
     background-color: rgba(80, 111, 52, 0.7);
     outline: none; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .tag-link {
   color: inherit;
   background-color: #f5f3f2;
@@ -722,9 +617,6 @@ body {
   .tag-link:hover {
     background-color: rgba(180, 200, 180, 0.5); }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .toc {
   margin: 0;
   width: 100%;
@@ -759,9 +651,6 @@ body {
           .toc .toc-content .toc-list li a:focus {
             outline: none; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .widget_author_box .author-box {
   border-color: #222928; }
   .widget_author_box .author-box .author-widget-name {
@@ -807,9 +696,6 @@ body {
   .widget_author_box .author-box .rss-button {
     background-color: #f26522; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .widget_calendar #wp-calendar caption {
   color: #f5f3f2;
   border-color: rgba(80, 111, 52, 0.7);
@@ -836,9 +722,6 @@ body {
 .widget_calendar #wp-calendar tfoot {
   display: none; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .widget_cta_box .cta-box {
   border: solid #222928 1px;
   background-color: #f5f3f2; }
@@ -849,29 +732,17 @@ body {
 .widget_cta_box .cta-content {
   color: #565956; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .widget_item_ranking .border-element {
   border-radius: 4px;
   border: solid #222928 1px; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .widget_media_gallery img {
   border: none; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .widget_media_image .wp-caption {
   border: none;
   background-color: transparent; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .widget_navi_entries .navi-entry-card-link::after {
   border-top: solid #222928 2px;
   border-right: solid #222928 2px; }
@@ -889,9 +760,6 @@ body {
 .widget_navi_entries .card-large-image a:hover {
   background-color: transparent; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .widget_new_entries .new-entry-card-link::after {
   border-top: solid #222928 2px;
   border-right: solid #222928 2px; }
@@ -909,9 +777,6 @@ body {
 .widget_new_entries .card-large-image a:hover {
   background-color: transparent; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .widget_popular_entries .popular-entry-card-link::after {
   border-top: solid #222928 2px;
   border-right: solid #222928 2px; }
@@ -928,9 +793,6 @@ body {
   .widget_popular_entries .border-square a:hover {
     background-color: transparent; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .widget_recent_comments .recent-comments .recent-comment-content {
   border: solid #222928 1px; }
   .widget_recent_comments .recent-comments .recent-comment-content::before, .widget_recent_comments .recent-comments .recent-comment-content::after {
@@ -939,9 +801,6 @@ body {
 .widget_recent_comments .recent-comments a:hover {
   background-color: #f5f3f2; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .widget_related_entries .widget-related-entry-card-link::after {
   border-top: solid #222928 2px;
   border-right: solid #222928 2px; }
@@ -958,9 +817,6 @@ body {
   .widget_related_entries .border-square a:hover {
     background-color: transparent; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .widget_search .search-edit {
   background-color: transparent;
   border-width: 0 0 2px 0;
@@ -982,9 +838,6 @@ body {
   .widget_search .search-submit:hover {
     color: #222928; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .widget_sns_follow_buttons .sns-follow .feedly-button:hover {
   background-color: #2bb24c;
   opacity: 0.7; }
@@ -993,24 +846,15 @@ body {
   background-color: #f26522;
   opacity: 0.7; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .widget_tag_cloud .fa-tag {
   color: #222928; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .widget_toc .toc-content li a:hover {
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
   color: #222928;
   text-decoration: none; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .widget-title .rss-widget-icon {
   display: none; }
 
@@ -1020,9 +864,6 @@ body {
   .widget-title .rsswidget:hover {
     background-color: #222928; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .wp-block-table tbody {
   border: 1px solid #565956; }
   .wp-block-table tbody tr:nth-child(odd) {
@@ -1033,16 +874,10 @@ body {
   .wp-block-table tbody tr td {
     border: none; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .wp-block-archives select {
   border: solid #222928 1px;
   background-color: #2b3231; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .wp-block-calendar #wp-calendar caption {
   color: #f5f3f2;
   border-color: rgba(80, 111, 52, 0.7);
@@ -1071,16 +906,10 @@ body {
 .wp-block-calendar #wp-calendar tfoot {
   display: none; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .wp-block-categories select {
   border: solid #222928 1px;
   background-color: #2b3231; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .wp-block-quote {
   border: solid #222928 1px;
   background-color: #2b3231; }
@@ -1091,9 +920,6 @@ body {
   .wp-block-quote button {
     background-color: #222928; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .wp-block-search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1121,9 +947,6 @@ body {
     border-top-right-radius: 4px;
     border-top-left-radius: 4px; }
 
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
 .wp-block-tag-cloud a {
   text-decoration: none;
   border-radius: 4px;
@@ -1134,10 +957,3 @@ body {
     transition: all 0.25s; }
   .wp-block-tag-cloud a .fa-tag {
     color: #222928; }
-
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
-/************************************************************************/
-/*  END OF FILE                                       									*/
-/************************************************************************/
