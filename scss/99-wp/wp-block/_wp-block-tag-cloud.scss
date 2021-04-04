@@ -18,16 +18,21 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-#navi-footer {
-	a {
-		color: $color-white;
-		background-color: $color-gray-dark;
+.wp-block-tag-cloud {
+  a {
+    text-decoration: none;
+    border-radius: 4px;
+    color: $color-black;
 
-		&:hover {
-			background-color: $color-white;
-			color: $color-gray-dark;
-		}
-	}
+    &:hover {
+      background-color: $color-hover;
+      transition: all 0.25s;
+    }
+
+    .fa-tag {
+      color: $color-gray-dark;
+    }
+  }
 }
 
 /************************************************************************/

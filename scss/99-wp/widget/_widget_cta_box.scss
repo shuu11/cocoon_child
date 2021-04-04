@@ -18,16 +18,19 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-#navi-footer {
-	a {
-		color: $color-white;
-		background-color: $color-gray-dark;
+.widget_cta_box {
+  .cta-box {
+    border: solid $color-gray-dark 1px;
+    background-color: $color-white;
+  }
 
-		&:hover {
-			background-color: $color-white;
-			color: $color-gray-dark;
-		}
-	}
+  .cta-heading {
+    color: $color-gray-dark;
+  }
+
+  .cta-content {
+    color: $color-black;
+  }
 }
 
 /************************************************************************/

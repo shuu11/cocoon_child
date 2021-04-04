@@ -18,16 +18,19 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-#navi-footer {
-	a {
-		color: $color-white;
-		background-color: $color-gray-dark;
+.widget-title {
+  .rss-widget-icon {
+    display: none;
+  }
 
-		&:hover {
-			background-color: $color-white;
-			color: $color-gray-dark;
-		}
-	}
+  .rsswidget {
+    color: $color-white;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $color-gray-dark;
+    }
+  }
 }
 
 /************************************************************************/

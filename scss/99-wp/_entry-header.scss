@@ -18,14 +18,36 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-#navi-footer {
-	a {
-		color: $color-white;
-		background-color: $color-gray-dark;
+.entry-header {
+	h1 {
+		&.entry-title,
+		&.archive-title {
+			position: relative;
+			padding: 1em 1.5em;
+			margin-top: 0;
+			margin-bottom: 15px;
 
-		&:hover {
-			background-color: $color-white;
-			color: $color-gray-dark;
+			&:before,
+			&:after {
+				content: "";
+				position: absolute;
+				width: 30px;
+				height: 30px;
+			}
+
+			&:before {
+				border-left: 2px solid $color-black;
+				border-top: 2px solid $color-black;
+				top: 0;
+				left: 0;
+			}
+
+			&:after {
+				border-right: 2px solid $color-black;
+				border-bottom: 2px solid $color-black;
+				bottom: 0;
+				right: 0;
+			}
 		}
 	}
 }

@@ -18,15 +18,10 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-#navi-footer {
-	a {
-		color: $color-white;
-		background-color: $color-gray-dark;
-
-		&:hover {
-			background-color: $color-white;
-			color: $color-gray-dark;
-		}
+.widget_item_ranking {
+	.border-element {
+		border-radius: 4px;
+		border: solid $color-gray-dark 1px;
 	}
 }
 

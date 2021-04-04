@@ -18,16 +18,11 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-#navi-footer {
-	a {
-		color: $color-white;
-		background-color: $color-gray-dark;
-
-		&:hover {
-			background-color: $color-white;
-			color: $color-gray-dark;
-		}
-	}
+.wp-block-categories {
+  select {
+    border: solid $color-gray-dark 1px;
+    background-color: $color-body;
+  }
 }
 
 /************************************************************************/

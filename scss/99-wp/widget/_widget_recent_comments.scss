@@ -18,16 +18,23 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-#navi-footer {
-	a {
-		color: $color-white;
-		background-color: $color-gray-dark;
+.widget_recent_comments {
+  .recent-comments {
+    .recent-comment-content {
+      border: solid $color-gray-dark 1px;
 
-		&:hover {
-			background-color: $color-white;
-			color: $color-gray-dark;
-		}
-	}
+      &::before,
+      &::after {
+        border-bottom-color: $color-gray-dark;
+      }
+    }
+
+    a {
+      &:hover {
+        background-color: $color-white;
+      }
+    }
+  }
 }
 
 /************************************************************************/

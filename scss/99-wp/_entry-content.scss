@@ -18,16 +18,47 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-#navi-footer {
-	a {
-		color: $color-white;
-		background-color: $color-gray-dark;
+.entry-content {
+  h2 {
+    color: $color-white;
+    background-color: $color-green-dark;
+    border-radius: $rounded-2xl;
+  }
 
-		&:hover {
-			background-color: $color-white;
-			color: $color-gray-dark;
-		}
-	}
+  h3 {
+    border-color: $color-green-dark;
+  }
+
+  h4 {
+    position: relative;
+    background-color: transparent;
+    padding-right: 4px;
+    padding-left: 2em;
+    border: none;
+
+    background-image: linear-gradient(to right, $color-green-midium 0%, transparent 70%);
+    background-repeat: no-repeat;
+    background-size: 100% 5%;
+    background-position: bottom;
+
+    &:before {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 47%;
+      transform: translateY(-50%);
+      left: 0.3em;
+      width: 21px;
+      height: 21px;
+      background-color: $color-green-midium;
+      border-radius: 50%;
+    }
+  }
+
+  h5,
+  h6 {
+    border-bottom: 2px dotted $color-green-midium;
+  }
 }
 
 /************************************************************************/

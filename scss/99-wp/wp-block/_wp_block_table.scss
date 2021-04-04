@@ -18,17 +18,25 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-#navi-footer {
-	a {
-		color: $color-white;
-		background-color: $color-gray-dark;
+.wp-block-table {
+	tbody {
+		border: 1px solid $color-black;
 
-		&:hover {
-			background-color: $color-white;
-			color: $color-gray-dark;
+		tr:nth-child(odd) {
+			color: $color-black;
+			background-color: rgba($color-black, 0.2);
 		}
+
+    tr:nth-child(even) {
+      background-color: $color-white;
+    }
+
+    tr td {
+      border: none;
+    }
 	}
 }
+
 
 /************************************************************************/
 /*  END OF FILE                                       									*/

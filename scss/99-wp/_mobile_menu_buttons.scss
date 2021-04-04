@@ -18,51 +18,49 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-body {
-	.mobile-menu-buttons {
-		background-color: $color-gray-dark;
+.mobile-menu-buttons {
+	background-color: $color-gray-dark;
 
-		.menu-button {
-			&:hover {
-				background-color: $color-gray-dark;
-			}
-
-			.menu-button-in {
-				color: $color-white;
-			}
+	.menu-button {
+		&:hover {
+			background-color: $color-gray-dark;
 		}
 
-		.navi-menu-button {
-			.navi-menu-content {
-				background-color: $color-white;
-
-				a {
-					color: $color-gray-dark;
-					margin: 0.5em 0 0.5em 0;
-					border-bottom: solid $color-gray-dark 1px;
-
-					&:hover {
-						background-color: $color-white;
-					}
-				}
-
-				.fa {
-					color: $color-gray-dark;
-				}
-			}
+		.menu-button-in {
+			color: $color-white;
 		}
+	}
 
-		.search-menu-button {
-			.search-edit {
-				border-width: 0 0 2px 0;
-				border-radius: 4px;
-				border-bottom: 2px solid $color-gray-dark;
-				background-color: $color-body;
+	.navi-menu-button {
+		.navi-menu-content {
+			background-color: $color-white;
+
+			a {
+				color: $color-gray-dark;
+				margin: 0.5em 0 0.5em 0;
+				border-bottom: solid $color-gray-dark 1px;
+
+				&:hover {
+					background-color: $color-white;
+				}
 			}
 
-			.search-submit {
+			.fa {
 				color: $color-gray-dark;
 			}
+		}
+	}
+
+	.search-menu-button {
+		.search-edit {
+			border-width: 0 0 2px 0;
+			border-radius: 4px;
+			border-bottom: 2px solid $color-gray-dark;
+			background-color: $color-body;
+		}
+
+		.search-submit {
+			color: $color-gray-dark;
 		}
 	}
 }

@@ -18,16 +18,22 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-#navi-footer {
-	a {
-		color: $color-white;
-		background-color: $color-gray-dark;
+.widget_sns_follow_buttons {
+  .sns-follow {
+    .feedly-button {
+      &:hover {
+        background-color: #2bb24c;
+        opacity: 0.7;
+      }
+    }
 
-		&:hover {
-			background-color: $color-white;
-			color: $color-gray-dark;
-		}
-	}
+    .rss-button {
+      &:hover {
+        background-color: #f26522;
+        opacity: 0.7;
+      }
+    }
+  }
 }
 
 /************************************************************************/

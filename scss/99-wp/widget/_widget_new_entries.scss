@@ -18,14 +18,37 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-#navi-footer {
-	a {
-		color: $color-white;
-		background-color: $color-gray-dark;
+.widget_new_entries {
+	.new-entry-card-link {
+		&::after {
+			border-top: solid $color-gray-dark 2px;
+			border-right: solid $color-gray-dark 2px;
+		}
+	}
 
-		&:hover {
-			background-color: $color-white;
-			color: $color-gray-dark;
+	.border-partition {
+		a {
+			margin: 0;
+			border-radius: 0;
+			border-bottom: solid $color-gray-dark 1px;
+
+			&:first-of-type {
+				border-top: solid $color-gray-dark 1px;
+			}
+		}
+	}
+
+	.border-square {
+		a {
+			border: solid $color-gray-dark 1px;
+		}
+	}
+
+	.card-large-image {
+		a {
+			&:hover {
+				background-color: transparent;
+			}
 		}
 	}
 }

@@ -18,14 +18,44 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-#navi-footer {
+.pagination-previous-link,
+.pagination-next-link {
+	color: $color-white;
+	background-color: $color-gray-dark;
+	border: none;
+	border-radius: $rounded-2xl;
+
+	&:hover {
+		color: $color-white;
+		background-color: $color-green-dark;
+		transition: all 0.25s;
+	}
+}
+
+.pagination {
+	.page-numbers {
+		color: $color-white;
+		border: none;
+		border-radius: 4px;
+		background-color: $color-gray-dark;
+		transition: all 0.25s;
+	}
+
+	.dots,
+	.current {
+		opacity: 0.7;
+	}
+
 	a {
 		color: $color-white;
+		border: none;
+		border-radius: 4px;
 		background-color: $color-gray-dark;
 
 		&:hover {
-			background-color: $color-white;
-			color: $color-gray-dark;
+			color: $color-white;
+			background-color: $color-green-dark;
+			transition: all 0.25s;
 		}
 	}
 }

@@ -14,21 +14,21 @@
 //----------------------------------------------------------------------
 //  mixin記述
 //----------------------------------------------------------------------
+.tag-link {
+  color: $color-black;
+  background-color: $color-white;
+  border-radius: $rounded-2xl;
+  transition: all 0.25s;
+
+  &:hover {
+    background-color: $color-hover;
+  }
+}
 
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-#navi-footer {
-	a {
-		color: $color-white;
-		background-color: $color-gray-dark;
 
-		&:hover {
-			background-color: $color-white;
-			color: $color-gray-dark;
-		}
-	}
-}
 
 /************************************************************************/
 /*  END OF FILE                                       									*/
