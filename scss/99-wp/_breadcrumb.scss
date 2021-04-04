@@ -19,12 +19,10 @@
 //  Sass記述
 //----------------------------------------------------------------------
 #breadcrumb {
-	span {
-		color: $color-gray-dark;
-	}
+	color: inherit;
 
 	a {
-		color: $color-gray-dark;
+		color: inherit;
 	}
 }
 

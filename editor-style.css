@@ -1,26 +1,23 @@
 /************************************************************************/
 /*  END OF FILE                                       									*/
 /************************************************************************/
-.body.article {
-  color: #565956;
-  background-color: #f5f3f2; }
-
-.editor-post-title__block .editor-post-title__input {
-  color: inherit; }
-
+.entry-content h1,
 .block-editor-block-list__layout h1 {
   color: inherit;
   background-color: transparent; }
 
+.entry-content h2,
 .block-editor-block-list__layout h2 {
   color: #f5f3f2;
   background-color: rgba(80, 111, 52, 0.7);
   border-radius: 1rem; }
 
+.entry-content h3,
 .block-editor-block-list__layout h3 {
   color: inherit;
   border-color: rgba(80, 111, 52, 0.7); }
 
+.entry-content h4,
 .block-editor-block-list__layout h4 {
   position: relative;
   background-color: transparent;
@@ -33,6 +30,7 @@
   background-repeat: no-repeat;
   background-size: 100% 5%;
   background-position: bottom; }
+  .entry-content h4:before,
   .block-editor-block-list__layout h4:before {
     position: absolute;
     content: "";
@@ -46,25 +44,42 @@
     background-color: rgba(80, 111, 52, 0.5);
     border-radius: 50%; }
 
+.entry-content h5,
+.entry-content h6,
 .block-editor-block-list__layout h5,
 .block-editor-block-list__layout h6 {
   border-bottom: 2px dotted rgba(80, 111, 52, 0.5); }
 
+.entry-content blockquote,
 .block-editor-block-list__layout blockquote {
   color: inherit;
   background-color: rgba(86, 89, 86, 0.2);
   border: none;
   border-radius: 1rem; }
-  .block-editor-block-list__layout blockquote:before, .block-editor-block-list__layout blockquote:after {
+  .entry-content blockquote:before, .entry-content blockquote:after,
+  .block-editor-block-list__layout blockquote:before,
+  .block-editor-block-list__layout blockquote:after {
     color: inherit; }
+  .entry-content blockquote cite,
   .block-editor-block-list__layout blockquote cite {
     color: inherit; }
 
+.entry-content pre,
 .block-editor-block-list__layout pre {
   color: inherit;
   background-color: rgba(86, 89, 86, 0.2);
   border-radius: 1rem;
   overflow-x: scroll; }
+
+/************************************************************************/
+/*  END OF FILE                                       									*/
+/************************************************************************/
+.body.article {
+  color: #565956;
+  background-color: #f5f3f2; }
+
+.editor-post-title__block .editor-post-title__input {
+  color: inherit; }
 
 /************************************************************************/
 /*  END OF FILE                                       									*/

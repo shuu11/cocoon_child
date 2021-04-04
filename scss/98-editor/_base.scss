@@ -18,12 +18,16 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-// @font-face {
-// 	font-family: "mplus-1m";
-// 	src: url("../../font/mplus-1m-bold.ttf") format("truetype"),
-// 		url("../../font/mplus-1m-regular.ttf") format("truetype");
-// 	font-display: swap;
-// }
+.body.article {
+	color: $color-black;
+	background-color: $color-white;
+}
+
+.editor-post-title__block {
+	.editor-post-title__input {
+		color: inherit;
+	}
+}
 
 /************************************************************************/
 /*  END OF FILE                                       									*/

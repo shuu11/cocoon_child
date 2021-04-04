@@ -15,7 +15,7 @@
 //  mixin記述
 //----------------------------------------------------------------------
 .tag-link {
-  color: $color-black;
+  color: inherit;
   background-color: $color-white;
   border-radius: $rounded-2xl;
   transition: all 0.25s;

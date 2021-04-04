@@ -42,14 +42,14 @@
 		&:before {
 			font-family: "FontAwesome";
 			content: "\f064";
-			opacity: 0.5;
+			opacity: 0.8;
 		}
 	}
 
 	.related-entry-card-wrap {
 		margin: 0;
 
-		color: $color-black;
+		color: inherit;
 		background-color: transparent;
 		border-radius: $rounded-2xl;
 		transition: all 0.25s;
