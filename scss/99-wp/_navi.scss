@@ -19,10 +19,10 @@
 //  Sass記述
 //----------------------------------------------------------------------
 /* navi ---------------------------------------------------------------- */
-#navi {
+#navi,#navi-footer {
 	background-color: $color-gray-dark;
 
-	.navi-in {
+	.navi-in,.navi-footer-in {
 		a {
 			position: relative;
 			color: $color-white;
