@@ -21,11 +21,30 @@
 /* widget/widget_author_box -------------------------------------------- */
 .widget_author_box {
 	.author-box {
-		border-color: $color-gray-dark;
+		border: none;
 
-		.author-widget-name {
-			color: $color-gray-dark;
-			font-weight: bold;
+		.author-thumb {
+			margin: 0px auto;
+			width: auto;
+		}
+
+		.author-name {
+			a {
+				display: block;
+				color: inherit;
+				font-weight: bold;
+				border-radius: $rounded-2xl;
+				box-shadow: $shadow-2xl;
+				transition: all 0.25s;
+
+				&:hover {
+					background-color: $color-hover;
+				}
+			}
+		}
+
+		.author-description{
+			margin-top: 20px;
 		}
 
 		.follow-button {

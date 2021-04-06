@@ -18,30 +18,8 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-/* editor/base---------------------------------------------------------- */
-.body.article {
-	padding-bottom: 100px;
-	color: $color-black;
-	background-color: $color-white;
-}
-
-.editor-post-title__block {
-	.editor-post-title__input {
-		color: inherit;
-
-		&::placeholder {
-			color: inherit;
-			opacity: 0.5;
-		}
-	}
-}
-
-.block-editor-block-list__block.is-selected {
-	color: inherit;
-	background-color: rgba($color-body, 0.1);
-}
-
-.block-editor-default-block-appender__content {
-	color: inherit !important;
-	opacity: 0.5;
+/* appeal -------------------------------------------------------------- */
+.appeal {
+	background-position: center center;
+	background-size: cover;
 }

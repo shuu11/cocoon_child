@@ -71,8 +71,32 @@
 
 /* editor/base---------------------------------------------------------- */
 .body.article {
+  padding-bottom: 100px;
   color: #565956;
   background-color: #f5f3f2; }
 
 .editor-post-title__block .editor-post-title__input {
   color: inherit; }
+  .editor-post-title__block .editor-post-title__input::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.5; }
+  .editor-post-title__block .editor-post-title__input::-moz-placeholder {
+    color: inherit;
+    opacity: 0.5; }
+  .editor-post-title__block .editor-post-title__input:-ms-input-placeholder {
+    color: inherit;
+    opacity: 0.5; }
+  .editor-post-title__block .editor-post-title__input::-ms-input-placeholder {
+    color: inherit;
+    opacity: 0.5; }
+  .editor-post-title__block .editor-post-title__input::placeholder {
+    color: inherit;
+    opacity: 0.5; }
+
+.block-editor-block-list__block.is-selected {
+  color: inherit;
+  background-color: rgba(43, 50, 49, 0.1); }
+
+.block-editor-default-block-appender__content {
+  color: inherit !important;
+  opacity: 0.5; }
