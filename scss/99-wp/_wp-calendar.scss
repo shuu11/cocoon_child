@@ -18,21 +18,38 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-/* widget/widget_sns_follow_buttons ------------------------------------ */
-.widget_sns_follow_buttons {
-	.sns-follow {
-		.feedly-button {
-			&:hover {
-				background-color: #2bb24c;
-				opacity: 0.7;
-			}
-		}
+/* widget/widget_calendar ---------------------------------------------- */
+#wp-calendar {
+	caption {
+		color: $color-white;
+		border-color: $color-green-dark;
+		background-color: $color-gray-dark;
+	}
 
-		.rss-button {
-			&:hover {
-				background-color: #f26522;
-				opacity: 0.7;
+	thead {
+		tr {
+			th {
+				color: $color-white;
+				border-color: $color-green-dark;
+				background-color: $color-gray-dark;
 			}
 		}
+	}
+
+	tbody {
+		tr {
+			td {
+				color: inherit;
+				border-color: $color-green-dark;
+
+				a {
+					transition: all 0.25s;
+				}
+			}
+		}
+	}
+
+	tfoot {
+		display: none;
 	}
 }

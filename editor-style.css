@@ -64,10 +64,11 @@
 
 .entry-content pre,
 .block-editor-block-list__layout pre {
-  color: inherit;
-  background-color: rgba(86, 89, 86, 0.2);
   border-radius: 1rem;
   overflow-x: scroll; }
+  .entry-content pre code,
+  .block-editor-block-list__layout pre code {
+    white-space: pre; }
 
 /* editor/base---------------------------------------------------------- */
 .body.article {

@@ -86,9 +86,11 @@
 	}
 
 	pre {
-		color: inherit;
-		background-color: rgba($color-black, 0.2);
 		border-radius: $rounded-2xl;
 		overflow-x: scroll;
+
+		code {
+			white-space: pre;
+		}
 	}
 }

@@ -22,4 +22,11 @@
 .appeal {
 	background-position: center center;
 	background-size: cover;
+
+	div.appeal-in {
+		min-height: 30vw;
+		@media screen and (max-width: 834px) {
+			min-height: 30vw;
+		}
+	}
 }

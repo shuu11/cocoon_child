@@ -18,49 +18,15 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-/* widget/widget_calendar ---------------------------------------------- */
-.widget_calendar {
-	#wp-calendar {
-		caption {
-			color: $color-white;
-			border-color: $color-green-dark;
-			background-color: $color-gray-dark;
-		}
+/* wp-block/wp-block-buttons ------------------------------------------- */
+.wp-block-buttons {
+	.wp-block-button {
+		&__link {
+			transition: all 0.25s;
 
-		thead {
-			tr {
-				th {
-					color: $color-white;
-					border-color: $color-green-dark;
-					background-color: $color-gray-dark;
-				}
+			&:hover {
+				opacity: 0.5;
 			}
-		}
-
-		tbody {
-			tr {
-				td {
-					color: $color-black;
-					border-color: $color-green-dark;
-					background-color: $color-gray-light;
-
-					a {
-						border-radius: 0;
-						background-color: $color-gray-light;
-						color: $color-black;
-					}
-
-					&#today,
-					&#today a {
-						background-color: $color-gray-dark;
-						color: $color-white;
-					}
-				}
-			}
-		}
-
-		tfoot {
-			display: none;
 		}
 	}
 }

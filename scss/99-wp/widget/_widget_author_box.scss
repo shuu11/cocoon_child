@@ -43,85 +43,205 @@
 			}
 		}
 
-		.author-description{
+		.author-description {
 			margin-top: 20px;
 		}
 
-		.follow-button {
-			border: none;
-			color: $color-white;
+		.sns-follow-buttons a.follow-button {
+			font-size: 25px;
+			width: 35px;
+			height: 35px;
+			border-radius: 50%;
+			line-height: 1.5;
+			margin: 4px;
+			opacity: 0.8;
+			padding: 0;
 		}
 
-		.website-button {
-			background-color: #002561;
-		}
+		.sns-follow {
+			.follow-button {
+				border: none;
+				color: $color-white;
+			}
 
-		.twitter-button {
-			background-color: #1da1f2;
-		}
+			.website-button {
+				background-color: #002561;
+				transition: all 0.25s;
 
-		.facebook-button {
-			background-color: #3b5998;
-		}
+				&:hover {
+					opacity: 0.5;
+					background-color: #002561;
+				}
+			}
 
-		.hatebu-button {
-			background-color: #2c6ebd;
-		}
+			.twitter-button {
+				background-color: #1da1f2;
+				transition: all 0.25s;
 
-		.instagram-button {
-			background-color: #405de6;
-		}
+				&:hover {
+					opacity: 0.5;
+					background-color: #1da1f2;
+				}
+			}
 
-		.youtube-button {
-			background-color: #cd201f;
-		}
+			.facebook-button {
+				background-color: #3b5998;
+				transition: all 0.25s;
 
-		.linkedin-button {
-			background-color: #0077b5;
-		}
+				&:hover {
+					opacity: 0.5;
+					background-color: #3b5998;
+				}
+			}
 
-		.note-button {
-			background-color: #41c9b4;
-		}
+			.hatebu-button {
+				background-color: #2c6ebd;
+				transition: all 0.25s;
+				&:hover {
+					opacity: 0.5;
+					background-color: #2c6ebd;
+				}
+			}
 
-		.flickr-button {
-			background-color: #111111;
-		}
+			.instagram-button {
+				background-color: #405de6;
+				transition: all 0.25s;
 
-		.pinterest-button {
-			background-color: #bd081c;
-		}
+				&:hover {
+					opacity: 0.5;
+					background-color: #405de6;
+				}
+			}
 
-		.line-button {
-			background-color: #00c300;
-		}
+			.youtube-button {
+				background-color: #cd201f;
+				transition: all 0.25s;
 
-		.slack-button {
-			background-color: #e01563;
-		}
+				&:hover {
+					opacity: 0.5;
+					background-color: #cd201f;
+				}
+			}
 
-		.amazon-button {
-			background-color: #ff9900;
-		}
+			.linkedin-button {
+				background-color: #0077b5;
+				transition: all 0.25s;
 
-		.rakuten-room-button {
-			background-color: #c61e79;
-		}
+				&:hover {
+					opacity: 0.5;
+					background-color: #0077b5;
+				}
+			}
 
-		.github-button {
-			background-color: #4078c0;
-		}
+			.note-button {
+				background-color: #41c9b4;
+				transition: all 0.25s;
 
-		.codepen-button {
-			background-color: $color-black;
-		}
+				&:hover {
+					opacity: 0.5;
+					background-color: #41c9b4;
+				}
+			}
 
-		.feedly-button {
-			background-color: #2bb24c;
-		}
+			.flickr-button {
+				background-color: #111111;
+				transition: all 0.25s;
 
-		.rss-button {
-			background-color: #f26522;
+				&:hover {
+					opacity: 0.5;
+					background-color: #111111;
+				}
+			}
+
+			.pinterest-button {
+				background-color: #bd081c;
+				transition: all 0.25s;
+
+				&:hover {
+					opacity: 0.5;
+					background-color: #bd081c;
+				}
+			}
+
+			.line-button {
+				background-color: #00c300;
+				transition: all 0.25s;
+
+				&:hover {
+					opacity: 0.5;
+					background-color: #00c300;
+				}
+			}
+
+			.slack-button {
+				background-color: #e01563;
+				transition: all 0.25s;
+
+				&:hover {
+					opacity: 0.5;
+					background-color: #e01563;
+				}
+			}
+
+			.amazon-button {
+				background-color: #ff9900;
+				transition: all 0.25s;
+
+				&:hover {
+					opacity: 0.5;
+					background-color: #ff9900;
+				}
+			}
+
+			.rakuten-room-button {
+				background-color: #c61e79;
+				transition: all 0.25s;
+
+				&:hover {
+					opacity: 0.5;
+					background-color: #c61e79;
+				}
+			}
+
+			.github-button {
+				background-color: #4078c0;
+				transition: all 0.25s;
+
+				&:hover {
+					opacity: 0.5;
+					background-color: #4078c0;
+				}
+			}
+
+			.codepen-button {
+				background-color: $color-black;
+				transition: all 0.25s;
+
+				&:hover {
+					opacity: 0.5;
+					background-color: $color-black;
+				}
+			}
+
+			.feedly-button {
+				background-color: #2bb24c;
+				transition: all 0.25s;
+
+				&:hover {
+					opacity: 0.5;
+					background-color: #2bb24c;
+				}
+			}
+
+			.rss-button {
+				background-color: #f26522;
+				transition: all 0.25s;
+
+				&:hover {
+					opacity: 0.5;
+					background-color: #f26522;
+				}
+			}
 		}
 	}
 }
