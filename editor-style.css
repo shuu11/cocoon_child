@@ -101,3 +101,6 @@
 .block-editor-default-block-appender__content {
   color: inherit !important;
   opacity: 0.5; }
+
+.wp-block-image figcaption {
+  color: inherit; }
