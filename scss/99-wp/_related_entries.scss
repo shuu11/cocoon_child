@@ -62,6 +62,8 @@
 
 		.related-entry-card-thumb img {
 			border-radius: $rounded-2xl;
+			max-height: 85px;
+			background-size: cover;
 		}
 	}
 }

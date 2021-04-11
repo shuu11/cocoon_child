@@ -49,5 +49,7 @@
 
 	.entry-card-thumb img {
 		border-radius: $rounded-2xl;
+		background-size: cover;
+		max-height: 170px;
 	}
 }

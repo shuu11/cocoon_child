@@ -68,7 +68,8 @@
   overflow-x: scroll; }
   .entry-content pre code,
   .block-editor-block-list__layout pre code {
-    white-space: pre; }
+    white-space: pre;
+    padding-bottom: 1.5rem; }
 
 /* editor/base---------------------------------------------------------- */
 .body.article {

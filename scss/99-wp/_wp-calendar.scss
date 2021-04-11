@@ -19,7 +19,8 @@
 //  Sass記述
 //----------------------------------------------------------------------
 /* widget/widget_calendar ---------------------------------------------- */
-#wp-calendar {
+#wp-calendar,
+#slide-in-wp-calendar {
 	caption {
 		color: $color-white;
 		border-color: $color-green-dark;

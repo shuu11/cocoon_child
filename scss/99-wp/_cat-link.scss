@@ -23,5 +23,7 @@
 	img{
 		border-radius: $rounded-2xl;
 		box-shadow: $shadow-2xl;
+		max-height: 430px;
+		background-size: cover;
 	}
 }

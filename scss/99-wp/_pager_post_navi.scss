@@ -65,6 +65,8 @@
 	.next-post-thumb {
 		img {
 			border-radius: $rounded-2xl;
+			max-height: 60px;
+			background-size: cover;
 		}
 	}
 }
