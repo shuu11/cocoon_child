@@ -18,38 +18,18 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-/* list ---------------------------------------------------------------- */
-#list,#list-wrap {
-	&.ecb-entry-border {
-		margin-bottom: 1em;
+/* list-more-button ---------------------------------------------------- */
+.list-more-button {
+	color: $color-white;
+	background-color: $color-gray-dark;
+	border-radius: $rounded-2xl;
 
-		a {
-			border-top: solid 1px $color-gray-dark;
-			margin-bottom: 0;
-			border-radius: 0;
-
-			&:nth-last-child(1) {
-				border-bottom: solid 1px $color-gray-dark;
-			}
-		}
-	}
-
-	.entry-card-wrap {
-		border: none;
-		color: inherit;
-		border-radius: $rounded-2xl;
-		margin-bottom: 1em;
+	&:hover {
 		transition: all 0.25s;
 
-		&:hover {
-			background-color: $color-hover;
-			box-shadow: $shadow-2xl;
-		}
-	}
+		color: $color-white;
+		background-color: $color-green-dark;
 
-	.entry-card-thumb img {
-		border-radius: $rounded-2xl;
-		background-size: cover;
-		max-height: 170px;
+		box-shadow: $shadow-2xl;
 	}
 }

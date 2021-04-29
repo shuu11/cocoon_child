@@ -18,23 +18,9 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-/* list ---------------------------------------------------------------- */
-#list,#list-wrap {
-	&.ecb-entry-border {
-		margin-bottom: 1em;
-
-		a {
-			border-top: solid 1px $color-gray-dark;
-			margin-bottom: 0;
-			border-radius: 0;
-
-			&:nth-last-child(1) {
-				border-bottom: solid 1px $color-gray-dark;
-			}
-		}
-	}
-
-	.entry-card-wrap {
+/* widget/widget-entry-cards ------------------------------------------- */
+.widget-entry-cards {
+	.a-wrap {
 		border: none;
 		color: inherit;
 		border-radius: $rounded-2xl;
@@ -46,10 +32,10 @@
 			box-shadow: $shadow-2xl;
 		}
 	}
+}
 
-	.entry-card-thumb img {
-		border-radius: $rounded-2xl;
-		background-size: cover;
-		max-height: 170px;
-	}
+.widget-entry-card-thumb img{
+	border-radius: $rounded-2xl;
+	background-size: cover;
+	max-height: 170px;
 }
