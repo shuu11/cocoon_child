@@ -235,29 +235,42 @@ body {
 #header {
   background-color: #222928; }
 
+/* list-more-button ---------------------------------------------------- */
+.list-more-button {
+  color: #f5f3f2;
+  background-color: #222928;
+  border-radius: 1rem; }
+  .list-more-button:hover {
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    color: #f5f3f2;
+    background-color: rgba(80, 111, 52, 0.7);
+    -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
+
 /* list ---------------------------------------------------------------- */
-#list.ecb-entry-border {
+#list.ecb-entry-border, #list-wrap.ecb-entry-border {
   margin-bottom: 1em; }
-  #list.ecb-entry-border a {
+  #list.ecb-entry-border a, #list-wrap.ecb-entry-border a {
     border-top: solid 1px #222928;
     margin-bottom: 0;
     border-radius: 0; }
-    #list.ecb-entry-border a:nth-last-child(1) {
+    #list.ecb-entry-border a:nth-last-child(1), #list-wrap.ecb-entry-border a:nth-last-child(1) {
       border-bottom: solid 1px #222928; }
 
-#list .entry-card-wrap {
+#list .entry-card-wrap, #list-wrap .entry-card-wrap {
   border: none;
   color: inherit;
   border-radius: 1rem;
   margin-bottom: 1em;
   -webkit-transition: all 0.25s;
   transition: all 0.25s; }
-  #list .entry-card-wrap:hover {
+  #list .entry-card-wrap:hover, #list-wrap .entry-card-wrap:hover {
     background-color: rgba(180, 200, 180, 0.5);
     -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
 
-#list .entry-card-thumb img {
+#list .entry-card-thumb img, #list-wrap .entry-card-thumb img {
   border-radius: 1rem;
   background-size: cover;
   max-height: 170px; }
@@ -899,6 +912,24 @@ body {
 
 .widget_cta_box .cta-content {
   color: #565956; }
+
+/* widget/widget-entry-cards ------------------------------------------- */
+.widget-entry-cards .a-wrap {
+  border: none;
+  color: inherit;
+  border-radius: 1rem;
+  margin-bottom: 1em;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s; }
+  .widget-entry-cards .a-wrap:hover {
+    background-color: rgba(180, 200, 180, 0.5);
+    -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
+
+.widget-entry-card-thumb img {
+  border-radius: 1rem;
+  background-size: cover;
+  max-height: 170px; }
 
 /* widget/widget_item_ranking ------------------------------------------ */
 .widget_item_ranking .border-element {
