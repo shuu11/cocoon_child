@@ -23,6 +23,7 @@
 	color: $color-white;
 	background-color: $color-gray-dark;
 	border-radius: $rounded-2xl;
+	border:none;
 
 	&:hover {
 		transition: all 0.25s;

@@ -105,3 +105,6 @@
 
 .wp-block-image figcaption {
   color: inherit; }
+
+.wp-block-spacer {
+  background-color: rgba(86, 89, 86, 0.2); }

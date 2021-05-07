@@ -270,7 +270,8 @@ body {
 .list-more-button {
   color: #f5f3f2;
   background-color: #222928;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  border: none; }
   .list-more-button:hover {
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
