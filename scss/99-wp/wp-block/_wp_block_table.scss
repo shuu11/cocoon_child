@@ -32,8 +32,12 @@
 			background-color: $color-white;
 		}
 
-		tr td {
-			border: none;
+		th, td {
+			border: solid 1px rgba($color-black, 0.5);
+		}
+
+		td{
+			padding: 0.5em 1em;
 		}
 	}
 }

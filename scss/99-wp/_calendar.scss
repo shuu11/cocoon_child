@@ -18,7 +18,7 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-/* widget/widget_calendar ---------------------------------------------- */
+/* calendar ------------------------------------------------------------ */
 #wp-calendar,
 #slide-in-wp-calendar {
 	caption {
@@ -40,11 +40,20 @@
 	tbody {
 		tr {
 			td {
-				color: inherit;
+				color: $color-black;
 				border-color: $color-green-dark;
+				// background-color: $color-gray-light;
 
 				a {
-					transition: all 0.25s;
+					border-radius: 0;
+					// background-color: $color-gray-light;
+					color: $color-black;
+				}
+
+				&#today,
+				&#today a {
+					// background-color: $color-gray-dark;
+					color: $color-black;
 				}
 			}
 		}
