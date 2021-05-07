@@ -30,16 +30,7 @@ add_filter( 'upload_mimes', 'custom_mime_types' );
     }
     add_filter('file_is_displayable_image', 'webp_is_displayable', 10, 2);
 
-//jsにasync属性を付与（ページ読み込みスピードアップ対策）
-if (!(is_admin() )) {
-  function add_async_to_enqueue_script( $url ) {
-  if ( FALSE === strpos( $url, '.js' ) ) return $url;
-  if ( strpos( $url, 'jquery.js' ) ) return $url;       //対象外
-  if ( strpos( $url, 'jquery.min.js' ) ) return $url;
-  return "$url' async charset='UTF-8";        // async属性を付与
-}
-add_filter( 'clean_url', 'add_async_to_enqueue_script', 11, 1 );
-}
+
 
 if ( !function_exists( 'is_footer_javascript_enable' ) ):
     function is_footer_javascript_enable(){
@@ -83,4 +74,16 @@ if ( !function_exists( 'get_site_font_source_weight' ) ):
       return $font_source_weight;
     }
 endif;
-    
+
+function custom_enqueue_scripts(){
+  if(!is_admin()){ //管理画面以外
+    wp_enqueue_script('jquery');
+      remove_action('wp_head', 'wp_print_scripts');
+      remove_action('wp_head', 'wp_print_head_scripts', 9);
+      remove_action('wp_head', 'wp_enqueue_scripts', 1);
+      add_action('wp_footer', 'wp_print_scripts');
+      add_action('wp_footer', 'wp_print_head_scripts');
+      add_action('wp_footer', 'wp_enqueue_scripts');
+  }
+}
+add_action('wp_enqueue_scripts', 'custom_enqueue_scripts');
