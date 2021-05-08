@@ -32,11 +32,11 @@ add_filter( 'upload_mimes', 'custom_mime_types' );
 
 
 
-if ( !function_exists( 'is_footer_javascript_enable' ) ):
-    function is_footer_javascript_enable(){
-      return true;//get_theme_option(OP_FOOTER_JAVASCRIPT_ENABLE, 1);
-    }
-endif;
+// if ( !function_exists( 'is_footer_javascript_enable' ) ):
+//     function is_footer_javascript_enable(){
+//       return true;//get_theme_option(OP_FOOTER_JAVASCRIPT_ENABLE, 1);
+//     }
+// endif;
 
 //サイトフォントソースフォントウェイト（太さ）の取得
 if ( !function_exists( 'get_site_font_source_weight' ) ):
@@ -74,6 +74,18 @@ if ( !function_exists( 'get_site_font_source_weight' ) ):
       return $font_source_weight;
     }
 endif;
+
+function adds_footer() {
+  echo "<script async src='https://www.googletagmanager.com/gtag/js?id=G-TSB05604LS'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TSB05604LS');
+</script>
+";
+}
+add_action('wp_footer', 'adds_footer', 0);
 
 function custom_enqueue_scripts(){
   if(!is_admin()){ //管理画面以外
