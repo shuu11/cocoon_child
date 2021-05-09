@@ -30,8 +30,6 @@ add_filter( 'upload_mimes', 'custom_mime_types' );
     }
     add_filter('file_is_displayable_image', 'webp_is_displayable', 10, 2);
 
-
-
 // if ( !function_exists( 'is_footer_javascript_enable' ) ):
 //     function is_footer_javascript_enable(){
 //       return true;//get_theme_option(OP_FOOTER_JAVASCRIPT_ENABLE, 1);
