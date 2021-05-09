@@ -64,8 +64,7 @@
 	.widget_new_entries,
 	.widget_popular_entries,
 	.widget_navi_entries,
-	.widget_related_entries,
-	.widget_tag_cloud {
+	.widget_related_entries {
 		ul {
 			li {
 				border-bottom: 2px dotted $color-green-midium;
@@ -92,6 +91,22 @@
 						box-shadow: $shadow-2xl;
 						transition: all 0.25s;
 					}
+				}
+			}
+		}
+	}
+
+	.widget_tag_cloud {
+		.tagcloud {
+			a {
+				color: inherit;
+				position: relative;
+				border:1px solid rgba($color-black,0.5);
+				border-radius: $rounded-2xl;
+
+				&:hover {
+					background-color: $color-hover;
+					transition: all 0.25s;
 				}
 			}
 		}

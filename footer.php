@@ -107,7 +107,7 @@ if ( !defined( 'ABSPATH' ) ) exit; ?>
   <?php //barba.js処理
   get_template_part('tmp/footer-barba-js');?>
 
-  <script>
+<script>
     (function(window, document) {
       function adsenseLoad() {
         // GoogleAdSense読込み
@@ -146,23 +146,6 @@ if ( !defined( 'ABSPATH' ) ) exit; ?>
     })(window, document);
   </script>
 
-<script>
-var lazyloadads = false;
-window.addEventListener("scroll", function() {
-    if ((document.documentElement.scrollTop != 0 && lazyloadads === false) || (document.body.scrollTop != 0 && lazyloadads === false)) {
-
-        (function() {
-            var ad = document.createElement('script');
-            ad.type = 'text/javascript';
-            ad.async = true;
-            ad.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
-            var sc = document.getElementsByTagName('script')[0];
-            sc.parentNode.insertBefore(ad, sc);
-        })();
-        lazyloadads = true;
-    }
-}, true)
-</script>
 </body>
 
 </html>
