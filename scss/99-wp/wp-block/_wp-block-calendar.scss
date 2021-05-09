@@ -1,0 +1,79 @@
+//----------------------------------------------------------------------
+//  文字エンコーディング宣言
+//----------------------------------------------------------------------
+@charset "utf-8";
+
+//----------------------------------------------------------------------
+//  インポート宣言
+//----------------------------------------------------------------------
+
+//----------------------------------------------------------------------
+//  変数宣言
+//----------------------------------------------------------------------
+
+//----------------------------------------------------------------------
+//  mixin記述
+//----------------------------------------------------------------------
+
+//----------------------------------------------------------------------
+//  Sass記述
+//----------------------------------------------------------------------
+/* wp-block/wp-block-calendar ------------------------------------------ */
+.wp-block-calendar {
+	#wp-calendar {
+		caption {
+			color: $color-white;
+			border-color: $color-green-dark;
+			background-color: $color-gray-dark;
+		}
+
+		thead {
+			tr {
+				th {
+					color: $color-white;
+					border-color: $color-green-dark;
+					background-color: $color-gray-dark;
+				}
+			}
+		}
+
+		tbody {
+			tr {
+				td,
+				td#today {
+					color: inherit;
+					background-color: inherit;
+					border-color: $color-green-dark;
+
+					a {
+						color: $color-white;
+						background-color: $color-gray-light;
+						transition: all 0.25s;
+
+						&:hover {
+							color: $color-black;
+							background-color: $color-hover;
+						}
+					}
+				}
+
+				td#today {
+					a {
+						color: $color-white;
+						background-color: $color-green-dark;
+						transition: all 0.25s;
+
+						&:hover {
+							color: $color-black;
+							background-color: $color-hover;
+						}
+					}
+				}
+			}
+		}
+
+		tfoot {
+			display: none;
+		}
+	}
+}

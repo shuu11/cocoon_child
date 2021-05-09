@@ -75,6 +75,18 @@ add_filter( 'upload_mimes', 'custom_mime_types' );
 //     }
 // endif;
 
+function adds_footer() {
+  echo "<script async src='https://www.googletagmanager.com/gtag/js?id=G-TSB05604LS'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TSB05604LS');
+</script>
+";
+}
+add_action('wp_footer', 'adds_footer', 0);
+
 function custom_enqueue_scripts(){
   if(!is_admin()){ //管理画面以外
     wp_enqueue_script('jquery');
