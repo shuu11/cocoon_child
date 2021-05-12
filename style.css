@@ -106,6 +106,18 @@ body {
       .appeal div.appeal-in {
         min-height: 30vw; } }
 
+/* badge --------------------------------------------------------------- */
+.badge,
+.badge-red,
+.badge-pink,
+.badge-purple,
+.badge-blue,
+.badge-green,
+.badge-yellow,
+.badge-brown,
+.badge-grey {
+  font-size: 16px; }
+
 /* blogcard ------------------------------------------------------------ */
 .blogcard-type {
   margin-bottom: 60px !important; }
