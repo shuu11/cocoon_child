@@ -28,17 +28,20 @@
 	}
 
 	h2 {
+		margin-top: 100px;
 		color: $color-white;
 		background-color: $color-green-dark;
 		border-radius: $rounded-2xl;
 	}
 
 	h3 {
+		margin-top: 80px;
 		color: inherit;
 		border-color: $color-green-dark;
 	}
 
 	h4 {
+		margin-top: 50px;
 		position: relative;
 		background-color: transparent;
 		padding-right: 4px;
@@ -66,6 +69,7 @@
 
 	h5,
 	h6 {
+		margin-top: 50px;
 		border-bottom: 2px dotted $color-green-midium;
 	}
 

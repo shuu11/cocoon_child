@@ -6,17 +6,20 @@
 
 .entry-content h2,
 .block-editor-block-list__layout h2 {
+  margin-top: 100px;
   color: #f5f3f2;
   background-color: rgba(80, 111, 52, 0.7);
   border-radius: 1rem; }
 
 .entry-content h3,
 .block-editor-block-list__layout h3 {
+  margin-top: 80px;
   color: inherit;
   border-color: rgba(80, 111, 52, 0.7); }
 
 .entry-content h4,
 .block-editor-block-list__layout h4 {
+  margin-top: 50px;
   position: relative;
   background-color: transparent;
   padding-right: 4px;
@@ -46,6 +49,7 @@
 .entry-content h6,
 .block-editor-block-list__layout h5,
 .block-editor-block-list__layout h6 {
+  margin-top: 50px;
   border-bottom: 2px dotted rgba(80, 111, 52, 0.5); }
 
 .entry-content blockquote,

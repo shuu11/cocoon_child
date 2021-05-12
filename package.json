@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:tailwind": "npx tailwindcss-cli@latest build ./src/vender/tailwind/import/import.css -o ./src/vender/tailwind/css/tailwind.css",
     "pro:tailwind": "cross-env NODE_ENV=production npx tailwindcss-cli@latest build ./src/vender/tailwind/import/import.css -o ./dist/vender/tailwind/css/tailwind.css",
-    "dev": "npx gulp dev:default"
+    "dev": "npx gulp dev_default"
   },
   "keywords": [],
   "author": "",

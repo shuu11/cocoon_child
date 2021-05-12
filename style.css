@@ -27,17 +27,20 @@ body {
 
 .entry-content h2,
 .block-editor-block-list__layout h2 {
+  margin-top: 100px;
   color: #f5f3f2;
   background-color: rgba(80, 111, 52, 0.7);
   border-radius: 1rem; }
 
 .entry-content h3,
 .block-editor-block-list__layout h3 {
+  margin-top: 80px;
   color: inherit;
   border-color: rgba(80, 111, 52, 0.7); }
 
 .entry-content h4,
 .block-editor-block-list__layout h4 {
+  margin-top: 50px;
   position: relative;
   background-color: transparent;
   padding-right: 4px;
@@ -67,6 +70,7 @@ body {
 .entry-content h6,
 .block-editor-block-list__layout h5,
 .block-editor-block-list__layout h6 {
+  margin-top: 50px;
   border-bottom: 2px dotted rgba(80, 111, 52, 0.5); }
 
 .entry-content blockquote,
@@ -103,23 +107,25 @@ body {
         min-height: 30vw; } }
 
 /* blogcard ------------------------------------------------------------ */
-.blogcard-wrap {
-  border-radius: 1rem; }
-  .blogcard-wrap .blogcard {
-    color: #f5f3f2;
-    background-color: #222928;
-    border-radius: 1rem;
-    border: none;
-    -webkit-transition: all 0.25s;
-    transition: all 0.25s;
-    -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
-    .blogcard-wrap .blogcard:hover {
+.blogcard-type {
+  margin-bottom: 60px !important; }
+  .blogcard-type .blogcard-wrap {
+    border-radius: 1rem; }
+    .blogcard-type .blogcard-wrap .blogcard {
       color: #f5f3f2;
-      background-color: rgba(80, 111, 52, 0.7);
-      outline: none; }
-    .blogcard-wrap .blogcard .blogcard-thumb-image {
-      border-radius: 1rem; }
+      background-color: #222928;
+      border-radius: 1rem;
+      border: none;
+      -webkit-transition: all 0.25s;
+      transition: all 0.25s;
+      -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
+      .blogcard-type .blogcard-wrap .blogcard:hover {
+        color: #f5f3f2;
+        background-color: rgba(80, 111, 52, 0.7);
+        outline: none; }
+      .blogcard-type .blogcard-wrap .blogcard .blogcard-thumb-image {
+        border-radius: 1rem; }
 
 /* breadcrumb ---------------------------------------------------------- */
 #breadcrumb {
@@ -730,6 +736,11 @@ body {
   #comment-reply-btn:focus {
     background-color: rgba(80, 111, 52, 0.7);
     outline: none; }
+
+/* .tab-caption-box ---------------------------------------------------- */
+.tab-caption-box {
+  margin-top: 50px;
+  margin-bottom: 80px !important; }
 
 /* tag-link ------------------------------------------------------------ */
 .tag-link {

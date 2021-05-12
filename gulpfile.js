@@ -7,7 +7,7 @@
 //  変数宣言
 //----------------------------------------------------------------------
 const gulp = require("gulp");
-const { series, parallel } = require("gulp");
+const { src, dest, watch, series, parallel } = require("gulp");
 const del = require("del");
 const browserSync = require("browser-sync");
 const autoprefixer = require("autoprefixer");
@@ -18,7 +18,7 @@ const $ = loadPlugins(); //  postcss,purgecss,imagemin,plumber,sass,sass-glob,co
 const watchSrc = ["./**", "!./*.css"];
 
 //  build
-const build = {
+const buildPath = {
 	sass: {
 		src: "./scss/**/*.scss",
 		dest: `./`,
@@ -26,7 +26,7 @@ const build = {
 };
 
 //  browser-sync
-const bs = {
+const bsPath = {
 	files: "./**/*.php",
 	proxy: 10017,
 };
@@ -35,9 +35,8 @@ const bs = {
 //  task処理
 //----------------------------------------------------------------------
 //  build
-gulp.task("build", function (done) {
-	gulp
-		.src(build.sass.src)
+function build(done) {
+		src(buildPath.sass.src)
 		.pipe($.diffBuild())
 		.pipe($.plumber({ errorHandler: $.notify.onError("Error: <%= error.message %>") }))
 		.pipe($.sassGlob())
@@ -49,36 +48,37 @@ gulp.task("build", function (done) {
 				}),
 			])
 		)
-		.pipe(gulp.dest(build.sass.dest));
+		.pipe(dest(buildPath.sass.dest))
+		.pipe(browserSync.stream());
 	done();
-});
+};
 
 //  browser-sync
-gulp.task("bs", function (done) {
+function bs(done) {
 	browserSync.init({
 		notify: false,
-		files: [bs.files],
-		port: `${bs.proxy}`,
-		proxy: `localhost:${bs.proxy}`,
+		files: [bsPath.files],
+		port: `${bsPath.proxy}`,
+		proxy: `localhost:${bsPath.proxy}`,
 		open: "external",
 	});
 	done();
-});
+};
 
-gulp.task("bs-reload", function (done) {
+function bs_reload(done) {
 	browserSync.reload();
 	done();
-});
+};
 
 //----------------------------------------------------------------------
 //  watch処理
 //----------------------------------------------------------------------
 //  watch
-gulp.task("dev:watch", function (done) {
-	gulp.watch(watchSrc, gulp.series(parallel("build"), "bs-reload"));
-});
+function dev_watch(done) {
+	watch(watchSrc, series(parallel(build), bs_reload));
+};
 
 //----------------------------------------------------------------------
 //  default処理
 //----------------------------------------------------------------------
-gulp.task("dev:default", gulp.series(parallel("bs", "build"), "bs-reload", "dev:watch"));
+exports.dev_default = series(parallel(bs, build), bs_reload, dev_watch);
