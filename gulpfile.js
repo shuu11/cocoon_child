@@ -27,8 +27,8 @@ const buildPath = {
 
 //  browser-sync
 const bsPath = {
-	files: "./**/*.php",
-	proxy: 10017,
+	files: ["./**/*.scss","./**/*.php"],
+	proxy: "blog.wp",
 };
 
 //----------------------------------------------------------------------
@@ -55,30 +55,25 @@ function build(done) {
 
 //  browser-sync
 function bs(done) {
-	browserSync.init({
-		notify: false,
-		files: [bsPath.files],
-		port: `${bsPath.proxy}`,
-		proxy: `localhost:${bsPath.proxy}`,
+	browserSync({
+    files: bsPath.files,
+		proxy : bsPath.proxy,
+    notify: false,
 		open: "external",
 	});
-	done();
-};
 
-function bs_reload(done) {
-	browserSync.reload();
 	done();
-};
+}
 
 //----------------------------------------------------------------------
 //  watch処理
 //----------------------------------------------------------------------
 //  watch
-function dev_watch(done) {
-	watch(watchSrc, series(parallel(build), bs_reload));
+function watchTask(done) {
+	watch(watchSrc, series(build));
 };
 
 //----------------------------------------------------------------------
 //  default処理
 //----------------------------------------------------------------------
-exports.dev_default = series(parallel(bs, build), bs_reload, dev_watch);
+exports.bs = series(build,bs,watchTask);
