@@ -28,7 +28,6 @@ const buildPath = {
 //  browser-sync
 const bsPath = {
 	files: ["./**/*.scss","./**/*.php"],
-	port:10020,
 	proxy: 'shuu11.wp',
 };
 
@@ -58,7 +57,7 @@ function build(done) {
 function bs(done) {
 	browserSync({
     files: bsPath.files,
-		port: bsPath.port,
+		port: 80,
 		proxy : bsPath.proxy,
     notify: false,
 		open: "external",
