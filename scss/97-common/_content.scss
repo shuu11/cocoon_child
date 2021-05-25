@@ -90,8 +90,10 @@
 	}
 
 	pre {
+		max-height: 800px;
 		border-radius: $rounded-2xl;
 		overflow-x: scroll;
+		overflow-y: scroll;
 
 		code {
 			white-space: pre;

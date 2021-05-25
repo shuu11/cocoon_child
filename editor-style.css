@@ -68,8 +68,10 @@
 
 .entry-content pre,
 .block-editor-block-list__layout pre {
+  max-height: 800px;
   border-radius: 1rem;
-  overflow-x: scroll; }
+  overflow-x: scroll;
+  overflow-y: scroll; }
   .entry-content pre code,
   .block-editor-block-list__layout pre code {
     white-space: pre;
