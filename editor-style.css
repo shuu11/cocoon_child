@@ -1,3 +1,25 @@
+/* common/badge -------------------------------------------------------- */
+.badge,
+.badge-red,
+.badge-pink,
+.badge-purple,
+.badge-blue,
+.badge-green,
+.badge-yellow,
+.badge-brown,
+.badge-grey {
+  font-size: 16px; }
+  .badge[data-rich-text-format-boundary="true"],
+  .badge-red[data-rich-text-format-boundary="true"],
+  .badge-pink[data-rich-text-format-boundary="true"],
+  .badge-purple[data-rich-text-format-boundary="true"],
+  .badge-blue[data-rich-text-format-boundary="true"],
+  .badge-green[data-rich-text-format-boundary="true"],
+  .badge-yellow[data-rich-text-format-boundary="true"],
+  .badge-brown[data-rich-text-format-boundary="true"],
+  .badge-grey[data-rich-text-format-boundary="true"] {
+    color: #565956; }
+
 /* common/content ------------------------------------------------------ */
 .entry-content h1,
 .block-editor-block-list__layout h1 {
@@ -76,6 +98,24 @@
   .block-editor-block-list__layout pre code {
     white-space: pre;
     padding-bottom: 1.5rem; }
+
+/* common/table -------------------------------------------------------- */
+.wp-block-table table {
+  overflow-x: scroll;
+  white-space: pre; }
+  .wp-block-table table tbody {
+    border: 1px solid #565956; }
+    .wp-block-table table tbody tr:nth-child(odd) {
+      color: #565956;
+      background-color: rgba(86, 89, 86, 0.2); }
+    .wp-block-table table tbody tr:nth-child(even) {
+      background-color: #f5f3f2; }
+    .wp-block-table table tbody th,
+    .wp-block-table table tbody td {
+      border: solid 1px rgba(86, 89, 86, 0.5); }
+    .wp-block-table table tbody td {
+      padding: 0.5em 2em 0.5rem 1rem;
+      white-space: pre !important; }
 
 /* editor/base---------------------------------------------------------- */
 .body.article {

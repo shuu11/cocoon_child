@@ -8,11 +8,14 @@
 //----------------------------------------------------------------------
 const gulp = require("gulp");
 const { src, dest, watch, series, parallel } = require("gulp");
-const del = require("del");
-const browserSync = require("browser-sync");
-const autoprefixer = require("autoprefixer");
-const loadPlugins = require("gulp-load-plugins");
-const $ = loadPlugins(); //  postcss,purgecss,imagemin,plumber,sass,sass-glob,connect-php,notify,rename,clean-css,uglify,changed,diff-build
+
+const $ = require("gulp-load-plugins")({
+	pattern:[
+		"gulp{-,.}*",   //  postcss,purgecss,imagemin,plumber,sass,sass-glob,notify,rename,clean-css,uglify
+
+		"del","browser-sync","autoprefixer"
+	]
+});
 
 //  watch
 const watchSrc = ["./**", "!./*.css"];
@@ -28,7 +31,7 @@ const buildPath = {
 //  browser-sync
 const bsPath = {
 	files: ["./**/*.scss","./**/*.php"],
-	proxy: 'shuu11.wp',
+	proxy: 'localhost:10020',
 };
 
 //----------------------------------------------------------------------
@@ -37,25 +40,23 @@ const bsPath = {
 //  build
 function build(done) {
 		src(buildPath.sass.src)
-		.pipe($.diffBuild())
-		.pipe($.plumber({ errorHandler: $.notify.onError("Error: <%= error.message %>") }))
+		.pipe($.plumber())
 		.pipe($.sassGlob())
 		.pipe($.sass())
 		.pipe(
 			$.postcss([
-				autoprefixer({
+				$.autoprefixer({
 					cascade: false,
 				}),
 			])
 		)
 		.pipe(dest(buildPath.sass.dest))
-		.pipe(browserSync.stream());
 	done();
 };
 
 //  browser-sync
 function bs(done) {
-	browserSync({
+	$.browserSync({
     files: bsPath.files,
 		port: 80,
 		proxy : bsPath.proxy,
