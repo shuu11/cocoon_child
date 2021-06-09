@@ -6,6 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
+@use "../../00-global/global" as g;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -23,19 +24,19 @@
 	.a-wrap {
 		border: none;
 		color: inherit;
-		border-radius: $rounded-2xl;
+		border-radius: g.$rounded-2xl;
 		margin-bottom: 1em;
 		transition: all 0.25s;
 
 		&:hover {
-			background-color: $color-hover;
-			box-shadow: $shadow-2xl;
+			background-color: g.$color-hover;
+			box-shadow: g.$shadow-2xl;
 		}
 	}
 }
 
 .widget-entry-card-thumb img{
-	border-radius: $rounded-2xl;
+	border-radius: g.$rounded-2xl;
 	background-size: cover;
 	max-height: 170px;
 }

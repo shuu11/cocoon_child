@@ -6,6 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
+@use "../../00-global/global" as g;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -25,11 +26,11 @@
 	}
 
 	.rsswidget {
-		color: $color-white;
+		color: g.$color-white;
 		text-decoration: none;
 
 		&:hover {
-			background-color: $color-gray-dark;
+			background-color: g.$color-gray-dark;
 		}
 	}
 }

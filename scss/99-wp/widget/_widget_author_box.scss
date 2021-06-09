@@ -6,6 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
+@use "../../00-global/global" as g;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -33,12 +34,12 @@
 				display: block;
 				color: inherit;
 				font-weight: bold;
-				border-radius: $rounded-2xl;
-				box-shadow: $shadow-2xl;
+				border-radius: g.$rounded-2xl;
+				box-shadow: g.$shadow-2xl;
 				transition: all 0.25s;
 
 				&:hover {
-					background-color: $color-hover;
+					background-color: g.$color-hover;
 				}
 			}
 		}
@@ -61,7 +62,7 @@
 		.sns-follow {
 			.follow-button {
 				border: none;
-				color: $color-white;
+				color: g.$color-white;
 			}
 
 			.website-button {
@@ -214,12 +215,12 @@
 			}
 
 			.codepen-button {
-				background-color: $color-black;
+				background-color: g.$color-black;
 				transition: all 0.25s;
 
 				&:hover {
 					opacity: 0.5;
-					background-color: $color-black;
+					background-color: g.$color-black;
 				}
 			}
 

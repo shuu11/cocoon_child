@@ -1,0 +1,73 @@
+//----------------------------------------------------------------------
+//  文字エンコーディング宣言
+//----------------------------------------------------------------------
+@charset "utf-8";
+
+//----------------------------------------------------------------------
+//  インポート宣言
+//----------------------------------------------------------------------
+@use "../../00-global/global" as g;
+
+//----------------------------------------------------------------------
+//  変数宣言
+//----------------------------------------------------------------------
+
+//----------------------------------------------------------------------
+//  mixin記述
+//----------------------------------------------------------------------
+
+//----------------------------------------------------------------------
+//  Sass記述
+//----------------------------------------------------------------------
+/* pager-post-navi ----------------------------------------------------- */
+#pager-post-navi {
+	&.post-navi-border {
+		a {
+			border-top: solid g.$color-gray-dark 1px;
+			border-bottom: solid g.$color-gray-dark 1px;
+		}
+
+		.prev-post ~ .next-post {
+			border-top: none;
+		}
+	}
+
+	.prev-post,
+	.next-post {
+		color: g.$color-white;
+		background-color: g.$color-gray-dark;
+		border-radius: g.$rounded-2xl;
+		transition: all 0.25s;
+
+		&:hover {
+			box-shadow: g.$shadow-2xl;
+		}
+
+		.fa {
+			color: g.$color-white;
+		}
+	}
+
+	.prev-post {
+		&:hover {
+			background-color: g.$color-green-dark;
+		}
+	}
+
+	.next-post {
+		margin-top: 20px;
+
+		&:hover {
+			background-color: g.$color-green-dark;
+		}
+	}
+
+	.prev-post-thumb,
+	.next-post-thumb {
+		img {
+			border-radius: g.$rounded-2xl;
+			max-height: 60px;
+			background-size: cover;
+		}
+	}
+}

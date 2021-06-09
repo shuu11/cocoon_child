@@ -6,6 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
+@use "../../00-global/global" as g;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -22,17 +23,17 @@
 .widget_recent_comments {
 	.recent-comments {
 		.recent-comment-content {
-			border: solid $color-gray-dark 1px;
+			border: solid g.$color-gray-dark 1px;
 
 			&::before,
 			&::after {
-				border-bottom-color: $color-gray-dark;
+				border-bottom-color: g.$color-gray-dark;
 			}
 		}
 
 		a {
 			&:hover {
-				background-color: $color-white;
+				background-color: g.$color-white;
 			}
 		}
 	}

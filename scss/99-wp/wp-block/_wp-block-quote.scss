@@ -6,6 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
+@use "../../00-global/global" as g;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -20,19 +21,19 @@
 //----------------------------------------------------------------------
 /* wp-block/wp-block-quote --------------------------------------------- */
 .wp-block-quote {
-	border: solid $color-gray-dark 1px;
-	background-color: $color-body;
+	border: solid g.$color-gray-dark 1px;
+	background-color: g.$color-body;
 
 	&::before,
 	&::after {
-		color: $color-gray-dark;
+		color: g.$color-gray-dark;
 	}
 
 	cite {
-		color: $color-gray-dark;
+		color: g.$color-gray-dark;
 	}
 
 	button {
-		background-color: $color-gray-dark;
+		background-color: g.$color-gray-dark;
 	}
 }

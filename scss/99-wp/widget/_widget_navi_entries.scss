@@ -6,6 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
+@use "../../00-global/global" as g;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -22,8 +23,8 @@
 .widget_navi_entries {
 	.navi-entry-card-link {
 		&::after {
-			border-top: solid $color-gray-dark 2px;
-			border-right: solid $color-gray-dark 2px;
+			border-top: solid g.$color-gray-dark 2px;
+			border-right: solid g.$color-gray-dark 2px;
 		}
 	}
 
@@ -31,17 +32,17 @@
 		a {
 			margin: 0;
 			border-radius: 0;
-			border-bottom: solid $color-gray-dark 1px;
+			border-bottom: solid g.$color-gray-dark 1px;
 
 			&:first-of-type {
-				border-top: solid $color-gray-dark 1px;
+				border-top: solid g.$color-gray-dark 1px;
 			}
 		}
 	}
 
 	.border-square {
 		a {
-			border: solid $color-gray-dark 1px;
+			border: solid g.$color-gray-dark 1px;
 		}
 	}
 

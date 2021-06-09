@@ -10,11 +10,13 @@ const gulp = require("gulp");
 const { src, dest, watch, series, parallel } = require("gulp");
 
 const $ = require("gulp-load-plugins")({
-	pattern:[
-		"gulp{-,.}*",   //  postcss,purgecss,imagemin,plumber,sass,sass-glob,notify,rename,clean-css,uglify
+	pattern: [
+		"gulp{-,.}*", //  postcss,purgecss,plumber,sass
 
-		"del","browser-sync","autoprefixer"
-	]
+		"browser-sync",
+		"autoprefixer",
+		"fibers",
+	],
 });
 
 //  watch
@@ -30,8 +32,8 @@ const buildPath = {
 
 //  browser-sync
 const bsPath = {
-	files: ["./**/*.scss","./**/*.php"],
-	proxy: 'localhost:10020',
+	files: ["./**/*.scss", "./**/*.php"],
+	proxy: "localhost:10020",
 };
 
 //----------------------------------------------------------------------
@@ -39,10 +41,16 @@ const bsPath = {
 //----------------------------------------------------------------------
 //  build
 function build(done) {
-		src(buildPath.sass.src)
+	$.sass.compiler = require("sass");
+
+	src(buildPath.sass.src)
 		.pipe($.plumber())
-		.pipe($.sassGlob())
-		.pipe($.sass())
+		.pipe(
+			$.sass({
+				fiber: $.fibers,
+				style: "expanded",
+			})
+		)
 		.pipe(
 			$.postcss([
 				$.autoprefixer({
@@ -50,17 +58,17 @@ function build(done) {
 				}),
 			])
 		)
-		.pipe(dest(buildPath.sass.dest))
+		.pipe(dest(buildPath.sass.dest));
 	done();
-};
+}
 
 //  browser-sync
 function bs(done) {
 	$.browserSync({
-    files: bsPath.files,
+		files: bsPath.files,
 		port: 80,
-		proxy : bsPath.proxy,
-    notify: false,
+		proxy: bsPath.proxy,
+		notify: false,
 		open: "external",
 	});
 
@@ -73,9 +81,13 @@ function bs(done) {
 //  watch
 function watchTask(done) {
 	watch(watchSrc, series(build));
-};
+}
 
 //----------------------------------------------------------------------
 //  default処理
 //----------------------------------------------------------------------
-exports.default = series(build,bs,watchTask);
+exports.default = series(build, bs, watchTask);
+
+/************************************************************************/
+/*  END OF FILE                                                         */
+/************************************************************************/

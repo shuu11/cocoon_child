@@ -6,6 +6,9 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
+@use "sass:color";
+@use "../00-global/global" as g;
+
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -21,8 +24,8 @@
 /* editor/base---------------------------------------------------------- */
 .body.article {
 	padding-bottom: 100px;
-	color: $color-black;
-	background-color: $color-white;
+	color: g.$color-black;
+	background-color: g.$color-white;
 }
 
 .editor-post-title__block {
@@ -38,7 +41,7 @@
 
 .block-editor-block-list__block.is-selected {
 	color: inherit;
-	background-color: rgba($color-body, 0.1);
+	background-color: color.scale(rgba(g.$color-body, 0),$alpha:10%);
 }
 
 .block-editor-default-block-appender__content {
@@ -53,5 +56,5 @@
 }
 
 .wp-block-spacer{
-	background-color: rgba($color-black,0.2);
+	background-color: color.scale(rgba(g.$color-black,0),$alpha:20%);
 }
