@@ -7,7 +7,7 @@
 //  インポート宣言
 //----------------------------------------------------------------------
 @use "sass:color";
-@use "../../00-global/global" as g;
+@use "../../01-global/global" as g;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -32,7 +32,7 @@
 			tr {
 				&:nth-child(odd) {
 					color: g.$color-black;
-					background-color: color.scale(rgba(g.$color-black, 0),$alpha:20%);
+					background-color: color.scale(rgba(g.$color-black, 0), $alpha: 20%);
 				}
 
 				&:nth-child(even) {
@@ -42,7 +42,7 @@
 
 			th,
 			td {
-				border: solid 1px color.scale(rgba(g.$color-black, 0),$alpha:50%);
+				border: solid 1px color.scale(rgba(g.$color-black, 0), $alpha: 50%);
 			}
 
 			td {

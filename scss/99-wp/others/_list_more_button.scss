@@ -6,7 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../00-global/global" as g;
+@use "../../01-global/global" as g;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -24,7 +24,7 @@
 	color: g.$color-white;
 	background-color: g.$color-gray-dark;
 	border-radius: g.$rounded-2xl;
-	border:none;
+	border: none;
 
 	&:hover {
 		transition: all 0.25s;

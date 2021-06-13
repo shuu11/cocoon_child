@@ -6,7 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../00-global/global" as g;
+@use "../../01-global/global" as g;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -20,7 +20,8 @@
 //  Sass記述
 //----------------------------------------------------------------------
 /* list ---------------------------------------------------------------- */
-#list,#list-wrap {
+#list,
+#list-wrap {
 	&.ecb-entry-border {
 		margin-bottom: 1em;
 
@@ -38,7 +39,7 @@
 	.entry-card-wrap {
 		border: none;
 		color: inherit;
-		border-radius: g.$rounded-2xl;
+		border-radius: g.$rounded-lg;
 		margin-bottom: 1em;
 		transition: all 0.25s;
 
@@ -49,7 +50,7 @@
 	}
 
 	.entry-card-thumb img {
-		border-radius: g.$rounded-2xl;
+		border-radius: g.$rounded-lg;
 		background-size: cover;
 		max-height: 170px;
 	}

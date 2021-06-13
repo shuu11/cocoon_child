@@ -6,7 +6,6 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../01-global/global" as g;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -19,21 +18,12 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-/* go-to-top-button ---------------------------------------------------- */
-.go-to-top-button {
-	width: 56px;
-	height: 56px;
-	background-color: g.$color-green-dark;
-	border-radius: 50%;
-
-	span {
-		color: g.$color-white;
-	}
-
-	&:hover {
-		span {
-			transform: scale(1.1);
-			transition: all 0.25s;
-		}
-	}
-}
+/*
+Theme Name: Cocoon Child
+Description: shuu11のブログ
+Theme URI: https://wp-cocoon.com/
+Author: shuu11
+Author URI:
+Template:   cocoon-master
+Version:    1.1.2
+*/

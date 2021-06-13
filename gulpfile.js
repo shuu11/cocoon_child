@@ -48,7 +48,7 @@ function build(done) {
 		.pipe(
 			$.sass({
 				fiber: $.fibers,
-				style: "expanded",
+				outputStyle: "expanded",
 			})
 		)
 		.pipe(
@@ -87,6 +87,9 @@ function watchTask(done) {
 //  default処理
 //----------------------------------------------------------------------
 exports.default = series(build, bs, watchTask);
+
+exports.build = series(build,);
+
 
 /************************************************************************/
 /*  END OF FILE                                                         */

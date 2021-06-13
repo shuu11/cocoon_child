@@ -7,7 +7,7 @@
 //  インポート宣言
 //----------------------------------------------------------------------
 @use "sass:color";
-@use "../../00-global/global" as g;
+@use "../../01-global/global" as g;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -103,7 +103,7 @@
 			a {
 				color: inherit;
 				position: relative;
-				border:1px solid color.scale(rgba(g.$color-black,0),$alpha:50%);
+				border: 1px solid color.scale(rgba(g.$color-black, 0), $alpha: 50%);
 				border-radius: g.$rounded-2xl;
 
 				&:hover {

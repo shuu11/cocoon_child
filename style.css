@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /*
 Theme Name: Cocoon Child
 Description: shuu11のブログ
@@ -9,7 +8,6 @@ Author URI:
 Template:   cocoon-master
 Version:    1.1.2
 */
-
 /* base ---------------------------------------------------------------- */
 html:focus-within {
   scroll-behavior: smooth;
@@ -407,32 +405,38 @@ body {
 }
 
 /* list ---------------------------------------------------------------- */
-#list.ecb-entry-border, #list-wrap.ecb-entry-border {
+#list.ecb-entry-border,
+#list-wrap.ecb-entry-border {
   margin-bottom: 1em;
 }
-#list.ecb-entry-border a, #list-wrap.ecb-entry-border a {
+#list.ecb-entry-border a,
+#list-wrap.ecb-entry-border a {
   border-top: solid 1px #222928;
   margin-bottom: 0;
   border-radius: 0;
 }
-#list.ecb-entry-border a:nth-last-child(1), #list-wrap.ecb-entry-border a:nth-last-child(1) {
+#list.ecb-entry-border a:nth-last-child(1),
+#list-wrap.ecb-entry-border a:nth-last-child(1) {
   border-bottom: solid 1px #222928;
 }
-#list .entry-card-wrap, #list-wrap .entry-card-wrap {
+#list .entry-card-wrap,
+#list-wrap .entry-card-wrap {
   border: none;
   color: inherit;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   margin-bottom: 1em;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
-#list .entry-card-wrap:hover, #list-wrap .entry-card-wrap:hover {
+#list .entry-card-wrap:hover,
+#list-wrap .entry-card-wrap:hover {
   background-color: rgba(180, 200, 180, 0.5);
   -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
-#list .entry-card-thumb img, #list-wrap .entry-card-thumb img {
-  border-radius: 1rem;
+#list .entry-card-thumb img,
+#list-wrap .entry-card-thumb img {
+  border-radius: 0.5rem;
   background-size: cover;
   max-height: 170px;
 }
@@ -491,16 +495,23 @@ body {
 }
 
 /* navi ---------------------------------------------------------------- */
-#navi, #navi-footer {
+#navi,
+#navi-footer {
   background-color: #222928;
 }
-#navi .navi-in a, #navi .navi-footer-in a, #navi-footer .navi-in a, #navi-footer .navi-footer-in a {
+#navi .navi-in a,
+#navi .navi-footer-in a,
+#navi-footer .navi-in a,
+#navi-footer .navi-footer-in a {
   position: relative;
   color: #f5f3f2;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
-#navi .navi-in a::after, #navi .navi-footer-in a::after, #navi-footer .navi-in a::after, #navi-footer .navi-footer-in a::after {
+#navi .navi-in a::after,
+#navi .navi-footer-in a::after,
+#navi-footer .navi-in a::after,
+#navi-footer .navi-footer-in a::after {
   content: "";
   position: absolute;
   top: 0;
@@ -514,23 +525,38 @@ body {
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
-#navi .navi-in a:hover, #navi .navi-footer-in a:hover, #navi-footer .navi-in a:hover, #navi-footer .navi-footer-in a:hover {
+#navi .navi-in a:hover,
+#navi .navi-footer-in a:hover,
+#navi-footer .navi-in a:hover,
+#navi-footer .navi-footer-in a:hover {
   color: #f5f3f2;
   background-color: inherit;
 }
-#navi .navi-in a:hover::after, #navi .navi-footer-in a:hover::after, #navi-footer .navi-in a:hover::after, #navi-footer .navi-footer-in a:hover::after {
+#navi .navi-in a:hover::after,
+#navi .navi-footer-in a:hover::after,
+#navi-footer .navi-in a:hover::after,
+#navi-footer .navi-footer-in a:hover::after {
   opacity: 0.5;
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-#navi .navi-in .sub-menu, #navi .navi-footer-in .sub-menu, #navi-footer .navi-in .sub-menu, #navi-footer .navi-footer-in .sub-menu {
+#navi .navi-in .sub-menu,
+#navi .navi-footer-in .sub-menu,
+#navi-footer .navi-in .sub-menu,
+#navi-footer .navi-footer-in .sub-menu {
   background-color: #222928;
   color: #f5f3f2;
 }
-#navi .navi-in .fa-angle-down, #navi .navi-footer-in .fa-angle-down, #navi-footer .navi-in .fa-angle-down, #navi-footer .navi-footer-in .fa-angle-down {
+#navi .navi-in .fa-angle-down,
+#navi .navi-footer-in .fa-angle-down,
+#navi-footer .navi-in .fa-angle-down,
+#navi-footer .navi-footer-in .fa-angle-down {
   color: #f5f3f2;
 }
-#navi .navi-in .fa-angle-down:hover, #navi .navi-footer-in .fa-angle-down:hover, #navi-footer .navi-in .fa-angle-down:hover, #navi-footer .navi-footer-in .fa-angle-down:hover {
+#navi .navi-in .fa-angle-down:hover,
+#navi .navi-footer-in .fa-angle-down:hover,
+#navi-footer .navi-in .fa-angle-down:hover,
+#navi-footer .navi-footer-in .fa-angle-down:hover {
   color: #f5f3f2;
 }
 
@@ -1170,7 +1196,7 @@ body {
 .widget-entry-cards .a-wrap {
   border: none;
   color: inherit;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   margin-bottom: 1em;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
@@ -1182,7 +1208,7 @@ body {
 }
 
 .widget-entry-card-thumb img {
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   background-size: cover;
   max-height: 170px;
 }
@@ -1438,13 +1464,3 @@ body {
 .wp-block-tag-cloud a .fa-tag {
   color: #222928;
 }
-
-/*
-Theme Name: Cocoon Child
-Description: shuu11のブログ
-Theme URI: https://wp-cocoon.com/
-Author: shuu11
-Author URI:
-Template:   cocoon-master
-Version:    1.1.2
-*/
