@@ -59,6 +59,7 @@ function build(done) {
 			])
 		)
 		.pipe(dest(buildPath.sass.dest));
+
 	done();
 }
 

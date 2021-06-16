@@ -295,6 +295,32 @@ body {
   margin-bottom: 20px;
 }
 
+/* easyLink-box -------------------------------------------------------- */
+div.easyLink-box {
+  background-color: inherit !important;
+  border-radius: 1rem;
+}
+div.easyLink-box div.easyLink-info p.easyLink-info-name a {
+  color: inherit !important;
+  text-decoration: underline !important;
+  text-decoration-color: #565956;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+div.easyLink-box div.easyLink-info p.easyLink-info-name a:hover {
+  color: rgba(86, 89, 86, 0.8) !important;
+}
+@media screen and (max-width: 703px) {
+  div.easyLink-box div.easyLink-img p.easyLink-img-box img.easyLink-img-pht {
+    max-height: 180px !important;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+}
+div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
+  color: #f5f3f2 !important;
+}
+
 /* entry-header -------------------------------------------------------- */
 .entry-header h1 {
   position: relative;

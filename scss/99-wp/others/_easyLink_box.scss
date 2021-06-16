@@ -1,0 +1,57 @@
+//----------------------------------------------------------------------
+//  文字エンコーディング宣言
+//----------------------------------------------------------------------
+@charset "utf-8";
+
+//----------------------------------------------------------------------
+//  インポート宣言
+//----------------------------------------------------------------------
+@use "sass:color";
+@use "../../01-global/global" as g;
+
+//----------------------------------------------------------------------
+//  変数宣言
+//----------------------------------------------------------------------
+
+//----------------------------------------------------------------------
+//  mixin記述
+//----------------------------------------------------------------------
+
+//----------------------------------------------------------------------
+//  Sass記述
+//----------------------------------------------------------------------
+/* easyLink-box -------------------------------------------------------- */
+div.easyLink-box {
+	background-color: inherit !important;
+	border-radius: g.$rounded-2xl;
+
+	div.easyLink-info {
+		p.easyLink-info-name {
+			a {
+				color: inherit !important;
+				text-decoration: underline !important;
+				text-decoration-color: g.$color-black;
+				transition: all 0.25s;
+
+				&:hover {
+					color: color.scale(rgba(g.$color-black, 0), $alpha: 80%) !important;
+				}
+			}
+		}
+	}
+
+	div.easyLink-img {
+		p.easyLink-img-box {
+			img.easyLink-img-pht {
+				@media screen and (max-width: 703px) {
+					max-height: 180px !important;
+					object-fit: contain;
+				}
+			}
+		}
+	}
+
+	div.easyLink-info p.easyLink-info-btn a{
+		color: g.$color-white !important;
+	}
+}
