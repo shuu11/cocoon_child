@@ -14,7 +14,6 @@ const $ = require("gulp-load-plugins")({
 		"gulp{-,.}*", //  postcss,purgecss,plumber,sass
 
 		"browser-sync",
-		"autoprefixer",
 		"fibers",
 	],
 });
@@ -45,19 +44,11 @@ function build(done) {
 
 	src(buildPath.sass.src)
 		.pipe($.plumber())
-		.pipe(
-			$.sass({
+		.pipe($.sass({
 				fiber: $.fibers,
-				outputStyle: "expanded",
 			})
 		)
-		.pipe(
-			$.postcss([
-				$.autoprefixer({
-					cascade: false,
-				}),
-			])
-		)
+		.pipe($.autoprefixer())
 		.pipe(dest(buildPath.sass.dest));
 
 	done();

@@ -86,7 +86,7 @@ body {
   display: block;
   top: 47%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   left: 0.3em;
   width: 21px;
   height: 21px;
@@ -182,7 +182,7 @@ body {
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
   -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 .blogcard-type .blogcard-wrap .blogcard:hover {
   color: #f5f3f2;
@@ -248,7 +248,7 @@ body {
 .eye-catch img {
   border-radius: 1rem;
   -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   max-height: 430px;
   background-size: cover;
 }
@@ -285,8 +285,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-height: 100vh;
 }
 
@@ -303,7 +303,8 @@ div.easyLink-box {
 div.easyLink-box div.easyLink-info p.easyLink-info-name a {
   color: inherit !important;
   text-decoration: underline !important;
-  text-decoration-color: #565956;
+  -webkit-text-decoration-color: #565956;
+          text-decoration-color: #565956;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
@@ -314,7 +315,7 @@ div.easyLink-box div.easyLink-info p.easyLink-info-name a:hover {
   div.easyLink-box div.easyLink-img p.easyLink-img-box img.easyLink-img-pht {
     max-height: 180px !important;
     -o-object-fit: contain;
-    object-fit: contain;
+       object-fit: contain;
   }
 }
 div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
@@ -382,7 +383,7 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
 }
 .go-to-top-button:hover span {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
@@ -391,7 +392,7 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
 #header-container {
   background-color: #222928;
   -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 #header-container .tagline {
   color: #f5f3f2;
@@ -422,7 +423,7 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   color: #f5f3f2;
   background-color: rgba(80, 111, 52, 0.7);
   -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 /* list-title-in ------------------------------------------------------- */
@@ -458,7 +459,7 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
 #list-wrap .entry-card-wrap:hover {
   background-color: rgba(180, 200, 180, 0.5);
   -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 #list .entry-card-thumb img,
 #list-wrap .entry-card-thumb img {
@@ -472,7 +473,7 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   background-color: #f5f3f2;
   border-radius: 1rem;
   -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   opacity: 0.9;
 }
 
@@ -547,7 +548,7 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   opacity: 0;
   background-color: rgba(80, 111, 52, 0.7);
   -webkit-transform: scale(0, 1);
-  transform: scale(0, 1);
+          transform: scale(0, 1);
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
@@ -564,7 +565,7 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
 #navi-footer .navi-footer-in a:hover::after {
   opacity: 0.5;
   -webkit-transform: scale(1, 1);
-  transform: scale(1, 1);
+          transform: scale(1, 1);
 }
 #navi .navi-in .sub-menu,
 #navi .navi-footer-in .sub-menu,
@@ -605,7 +606,7 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
 #pager-post-navi .prev-post:hover,
 #pager-post-navi .next-post:hover {
   -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 #pager-post-navi .prev-post .fa,
 #pager-post-navi .next-post .fa {
@@ -724,7 +725,7 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
 #related-entries .related-entry-card-wrap:hover {
   background-color: rgba(180, 200, 180, 0.5);
   -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 #related-entries .related-entry-card-wrap .related-entry-card-thumb img {
   border-radius: 0.5rem;
@@ -765,7 +766,7 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   background-color: #f5f3f2;
   border-radius: 1rem;
   -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   opacity: 0.9;
 }
 #sidebar h3,
@@ -789,7 +790,7 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   display: block;
   top: 47%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   left: 0.3em;
   width: 21px;
   height: 21px;
@@ -901,7 +902,7 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
 #sidebar-menu-content .widget_related_entries ul li a:hover {
   background-color: rgba(180, 200, 180, 0.5);
   -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
@@ -1019,7 +1020,7 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   font-weight: bold;
   border-radius: 1rem;
   -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
@@ -1230,7 +1231,7 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
 .widget-entry-cards .a-wrap:hover {
   background-color: rgba(180, 200, 180, 0.5);
   -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 .widget-entry-card-thumb img {
@@ -1451,8 +1452,8 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .wp-block-search input {
   width: auto;

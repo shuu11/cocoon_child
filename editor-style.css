@@ -68,7 +68,7 @@
   display: block;
   top: 47%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   left: 0.3em;
   width: 21px;
   height: 21px;
