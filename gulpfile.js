@@ -32,7 +32,7 @@ const buildPath = {
 //  browser-sync
 const bsPath = {
 	files: ["./**/*.scss", "./**/*.php"],
-	proxy: "localhost:10020",
+	proxy: "shuu11.wp",
 };
 
 //----------------------------------------------------------------------
@@ -79,8 +79,6 @@ function watchTask(done) {
 //  default処理
 //----------------------------------------------------------------------
 exports.default = series(build, bs, watchTask);
-
-exports.build = series(build,);
 
 
 /************************************************************************/
