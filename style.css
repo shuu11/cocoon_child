@@ -153,6 +153,11 @@ body {
   white-space: pre !important;
 }
 
+/* ad-area -------------------------------------------------------------- */
+.ad-area {
+  margin-top: 80px;
+}
+
 /* appeal -------------------------------------------------------------- */
 .appeal {
   background-position: center center;

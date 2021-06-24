@@ -11,10 +11,9 @@ const { src, dest, watch, series, parallel } = require("gulp");
 
 const $ = require("gulp-load-plugins")({
 	pattern: [
-		"gulp{-,.}*", //  postcss,purgecss,plumber,sass
+		"gulp{-,.}*", //  autoprefixer,plumber,dartSass
 
 		"browser-sync",
-		"fibers",
 	],
 });
 
@@ -31,30 +30,23 @@ const buildPath = {
 
 //  browser-sync
 const bsPath = {
-	files: ["./**/*.scss", "./**/*.php"],
-	proxy: "shuu11.wp",
+	files: watchSrc,
+	proxy: "localhost:10020",
 };
 
 //----------------------------------------------------------------------
 //  task処理
 //----------------------------------------------------------------------
-//  build
 function build(done) {
-	$.sass.compiler = require("sass");
-
 	src(buildPath.sass.src)
 		.pipe($.plumber())
-		.pipe($.sass({
-				fiber: $.fibers,
-			})
-		)
+		.pipe($.dartSass())
 		.pipe($.autoprefixer())
 		.pipe(dest(buildPath.sass.dest));
 
 	done();
 }
 
-//  browser-sync
 function bs(done) {
 	$.browserSync({
 		files: bsPath.files,
