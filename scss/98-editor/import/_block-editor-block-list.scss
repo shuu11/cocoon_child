@@ -6,6 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
+@use "sass:color";
 @use "../../01-global/global" as g;
 
 //----------------------------------------------------------------------
@@ -19,20 +20,7 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-#header-container {
-	background-color: g.$color-gray-dark;
-	box-shadow: g.$shadow-2xl;
-
-	.tagline {
-		color: g.$color-white;
-	}
-
-	.site-name-text {
-		color: g.$color-white;
-	}
-
-	.hlt-top-menu,
-	.hlt-center-logo {
-		background-color: g.$color-gray-dark;
-	}
+.block-editor-block-list__block.is-selected {
+	color: inherit;
+	background-color: color.scale(rgba(g.$color-body, 0), $alpha: 10%);
 }

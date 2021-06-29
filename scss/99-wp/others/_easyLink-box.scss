@@ -6,6 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
+@use "sass:color";
 @use "../../01-global/global" as g;
 
 //----------------------------------------------------------------------
@@ -19,20 +20,37 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-#header-container {
-	background-color: g.$color-gray-dark;
-	box-shadow: g.$shadow-2xl;
+div.easyLink-box {
+	background-color: inherit !important;
+	border-radius: g.$rounded-2xl;
 
-	.tagline {
-		color: g.$color-white;
+	div.easyLink-info {
+		p.easyLink-info-name {
+			a {
+				color: inherit !important;
+				text-decoration: underline !important;
+				text-decoration-color: g.$color-black;
+				transition: all 0.25s;
+
+				&:hover {
+					color: color.scale(rgba(g.$color-black, 0), $alpha: 80%) !important;
+				}
+			}
+		}
 	}
 
-	.site-name-text {
-		color: g.$color-white;
+	div.easyLink-img {
+		p.easyLink-img-box {
+			img.easyLink-img-pht {
+				@media screen and (max-width: 703px) {
+					max-height: 180px !important;
+					object-fit: contain;
+				}
+			}
+		}
 	}
 
-	.hlt-top-menu,
-	.hlt-center-logo {
-		background-color: g.$color-gray-dark;
+	div.easyLink-info p.easyLink-info-btn a{
+		color: g.$color-white !important;
 	}
 }

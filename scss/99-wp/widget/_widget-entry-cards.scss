@@ -19,20 +19,23 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-#header-container {
-	background-color: g.$color-gray-dark;
-	box-shadow: g.$shadow-2xl;
+.widget-entry-cards {
+	.a-wrap {
+		border: none;
+		color: inherit;
+		border-radius: g.$rounded-lg;
+		margin-bottom: 1em;
+		transition: all 0.25s;
 
-	.tagline {
-		color: g.$color-white;
+		&:hover {
+			background-color: g.$color-hover;
+			box-shadow: g.$shadow-2xl;
+		}
 	}
+}
 
-	.site-name-text {
-		color: g.$color-white;
-	}
-
-	.hlt-top-menu,
-	.hlt-center-logo {
-		background-color: g.$color-gray-dark;
-	}
+.widget-entry-card-thumb img {
+	border-radius: g.$rounded-lg;
+	background-size: cover;
+	max-height: 170px;
 }

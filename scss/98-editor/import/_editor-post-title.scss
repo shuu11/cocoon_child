@@ -6,7 +6,6 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../01-global/global" as g;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -19,19 +18,13 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-/* list-more-button ---------------------------------------------------- */
-.list-more-button {
-	color: g.$color-white;
-	background-color: g.$color-gray-dark;
-	border-radius: g.$rounded-2xl;
-	border: none;
+.editor-post-title__block {
+	.editor-post-title__input {
+		color: inherit;
 
-	&:hover {
-		transition: all 0.25s;
-
-		color: g.$color-white;
-		background-color: g.$color-green-dark;
-
-		box-shadow: g.$shadow-2xl;
+		&::placeholder {
+			color: inherit;
+			opacity: 0.5;
+		}
 	}
 }

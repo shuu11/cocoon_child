@@ -6,7 +6,13 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../01-global/global" as g;
+@forward "./import/block-editor-block-list";
+@forward "./import/block-editor-default-block";
+@forward "./import/body";
+@forward "./import/editor-post-title";
+@forward "./import/hcb";
+@forward "./import/image";
+@forward "./import/spacer";
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -19,24 +25,4 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-/* widget/widget-entry-cards ------------------------------------------- */
-.widget-entry-cards {
-	.a-wrap {
-		border: none;
-		color: inherit;
-		border-radius: g.$rounded-lg;
-		margin-bottom: 1em;
-		transition: all 0.25s;
 
-		&:hover {
-			background-color: g.$color-hover;
-			box-shadow: g.$shadow-2xl;
-		}
-	}
-}
-
-.widget-entry-card-thumb img {
-	border-radius: g.$rounded-lg;
-	background-size: cover;
-	max-height: 170px;
-}

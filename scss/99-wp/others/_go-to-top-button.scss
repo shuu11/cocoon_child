@@ -19,52 +19,20 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-/* related-entries ----------------------------------------------------- */
-#related-entries {
-	&.recb-entry-border {
-		a {
-			border: none;
-			border-top: solid g.$color-gray-dark 1px;
-			border-radius: 0;
+.go-to-top-button {
+	width: 56px;
+	height: 56px;
+	background-color: g.$color-green-dark;
+	border-radius: 50%;
 
-			&:nth-last-child(1) {
-				border-bottom: solid g.$color-gray-dark 1px;
-			}
-		}
-	}
-
-	.related-entry-heading {
-		margin: 25px 0 25px 0;
-		padding: 1rem 1.5rem;
-
+	span {
 		color: g.$color-white;
-		background-color: g.$color-gray-dark;
-		border-radius: g.$rounded-2xl;
-
-		&:before {
-			font-family: "FontAwesome";
-			content: "\f064";
-			opacity: 0.8;
-		}
 	}
 
-	.related-entry-card-wrap {
-		margin: 0;
-
-		color: inherit;
-		background-color: transparent;
-		border-radius: g.$rounded-2xl;
-		transition: all 0.25s;
-
-		&:hover {
-			background-color: g.$color-hover;
-			box-shadow: g.$shadow-2xl;
-		}
-
-		.related-entry-card-thumb img {
-			border-radius: g.$rounded-lg;
-			max-height: 85px;
-			background-size: cover;
+	&:hover {
+		span {
+			transform: scale(1.1);
+			transition: all 0.25s;
 		}
 	}
 }

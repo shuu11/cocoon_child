@@ -8,7 +8,6 @@ Author URI:
 Template:   cocoon-master
 Version:    1.1.2
 */
-/* base ---------------------------------------------------------------- */
 html:focus-within {
   scroll-behavior: smooth;
 }
@@ -21,7 +20,6 @@ body {
   background-size: auto auto;
 }
 
-/* common/badge -------------------------------------------------------- */
 .badge,
 .badge-red,
 .badge-pink,
@@ -45,7 +43,6 @@ body {
   color: #565956;
 }
 
-/* common/content ------------------------------------------------------ */
 .entry-content h1,
 .block-editor-block-list__layout h1 {
   color: inherit;
@@ -129,7 +126,6 @@ body {
   padding-bottom: 1.5rem;
 }
 
-/* common/table -------------------------------------------------------- */
 .wp-block-table table {
   overflow-x: scroll;
   white-space: pre;
@@ -153,12 +149,10 @@ body {
   white-space: pre !important;
 }
 
-/* ad-area -------------------------------------------------------------- */
 .ad-area {
   margin-top: 80px;
 }
 
-/* appeal -------------------------------------------------------------- */
 .appeal {
   background-position: center center;
   background-size: cover;
@@ -172,7 +166,6 @@ body {
   }
 }
 
-/* blogcard ------------------------------------------------------------ */
 .blogcard-type {
   margin-bottom: 60px !important;
 }
@@ -198,7 +191,6 @@ body {
   border-radius: 0.5rem;
 }
 
-/* breadcrumb ---------------------------------------------------------- */
 #breadcrumb {
   color: inherit;
 }
@@ -206,7 +198,6 @@ body {
   color: inherit;
 }
 
-/* calendar ------------------------------------------------------------ */
 #wp-calendar caption,
 #slide-in-wp-calendar caption {
   color: #f5f3f2;
@@ -239,7 +230,6 @@ body {
   display: none;
 }
 
-/* cat-label ----------------------------------------------------------- */
 .cat-label {
   top: 0;
   left: 0;
@@ -249,16 +239,17 @@ body {
   border-radius: 1rem;
 }
 
-/* eye-catch ----------------------------------------------------------- */
-.eye-catch img {
+.cat-link {
+  background-color: #565956;
   border-radius: 1rem;
-  -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  max-height: 430px;
-  background-size: cover;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.cat-link:hover {
+  color: #f5f3f2;
+  opacity: 0.7;
 }
 
-/* comment ------------------------------------------------------------- */
 #comment,
 #author,
 #email,
@@ -283,7 +274,6 @@ body {
   outline: none;
 }
 
-/* container ------------------------------------------------------------ */
 #container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,12 +285,10 @@ body {
   min-height: 100vh;
 }
 
-/* content ------------------------------------------------------------- */
 #content {
   margin-bottom: 20px;
 }
 
-/* easyLink-box -------------------------------------------------------- */
 div.easyLink-box {
   background-color: inherit !important;
   border-radius: 1rem;
@@ -327,7 +315,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   color: #f5f3f2 !important;
 }
 
-/* entry-header -------------------------------------------------------- */
 .entry-header h1 {
   position: relative;
   padding: 1em 1.5em;
@@ -354,19 +341,14 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   right: 0;
 }
 
-/* cat-link ------------------------------------------------------------ */
-.cat-link {
-  background-color: #565956;
+.eye-catch img {
   border-radius: 1rem;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-}
-.cat-link:hover {
-  color: #f5f3f2;
-  opacity: 0.7;
+  -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  max-height: 430px;
+  background-size: cover;
 }
 
-/* footer -------------------------------------------------------------- */
 #footer {
   margin-top: auto;
   color: #f5f3f2;
@@ -376,7 +358,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   color: #f5f3f2;
 }
 
-/* go-to-top-button ---------------------------------------------------- */
 .go-to-top-button {
   width: 56px;
   height: 56px;
@@ -393,7 +374,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   transition: all 0.25s;
 }
 
-/* header-container ---------------------------------------------------- */
 #header-container {
   background-color: #222928;
   -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
@@ -410,12 +390,10 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   background-color: #222928;
 }
 
-/* header -------------------------------------------------------------- */
 #header {
   background-color: #222928;
 }
 
-/* list-more-button ---------------------------------------------------- */
 .list-more-button {
   color: #f5f3f2;
   background-color: #222928;
@@ -431,12 +409,10 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
           box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
-/* list-title-in ------------------------------------------------------- */
 .list-title-in {
   font-size: 1.3rem;
 }
 
-/* list ---------------------------------------------------------------- */
 #list.ecb-entry-border,
 #list-wrap.ecb-entry-border {
   margin-bottom: 1em;
@@ -473,7 +449,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   max-height: 170px;
 }
 
-/* main ---------------------------------------------------------------- */
 #main {
   background-color: #f5f3f2;
   border-radius: 1rem;
@@ -482,7 +457,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   opacity: 0.9;
 }
 
-/* mobile-menu-buttons ------------------------------------------------- */
 .mobile-menu-buttons {
   background-color: #222928;
 }
@@ -516,7 +490,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   color: #222928;
 }
 
-/* navi-footer --------------------------------------------------------- */
 #navi-footer a {
   color: #f5f3f2;
   background-color: #222928;
@@ -526,7 +499,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   color: #222928;
 }
 
-/* navi ---------------------------------------------------------------- */
 #navi,
 #navi-footer {
   background-color: #222928;
@@ -592,7 +564,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   color: #f5f3f2;
 }
 
-/* pager-post-navi ----------------------------------------------------- */
 #pager-post-navi.post-navi-border a {
   border-top: solid #222928 1px;
   border-bottom: solid #222928 1px;
@@ -633,7 +604,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   background-size: cover;
 }
 
-/* pagination ---------------------------------------------------------- */
 .pagination-previous-link,
 .pagination-next-link {
   color: #f5f3f2;
@@ -674,7 +644,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   transition: all 0.25s;
 }
 
-/* post-password-form -------------------------------------------------- */
 .post-password-form input[type=password] {
   border-radius: 0;
   border: none;
@@ -698,7 +667,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   color: #f5f3f2;
 }
 
-/* related-entries ----------------------------------------------------- */
 #related-entries.recb-entry-border a {
   border: none;
   border-top: solid #222928 1px;
@@ -738,7 +706,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   background-size: cover;
 }
 
-/* search-menu-content ------------------------------------------------- */
 #search-menu-content .search-edit {
   background-color: transparent;
   border-width: 0 0 2px 0;
@@ -764,7 +731,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   color: #222928;
 }
 
-/* sidebar ------------------------------------------------------------- */
 #sidebar,
 #sidebar-menu-content {
   color: inherit;
@@ -930,7 +896,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   opacity: 0.9;
 }
 
-/* submit -------------------------------------------------------------- */
 #submit,
 #comment-reply-btn {
   color: #f5f3f2;
@@ -947,13 +912,11 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   outline: none;
 }
 
-/* .tab-caption-box ---------------------------------------------------- */
 .tab-caption-box {
   margin-top: 50px;
   margin-bottom: 80px !important;
 }
 
-/* tag-link ------------------------------------------------------------ */
 .tag-link {
   color: inherit;
   background-color: #f5f3f2;
@@ -966,7 +929,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   background-color: rgba(180, 200, 180, 0.5);
 }
 
-/* toc ----------------------------------------------------------------- */
 .toc {
   margin: 0;
   width: 100%;
@@ -1011,7 +973,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   outline: none;
 }
 
-/* widget/widget_author_box -------------------------------------------- */
 .widget_author_box .author-box {
   border: none;
 }
@@ -1212,7 +1173,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   background-color: #f26522;
 }
 
-/* widget/widget_cta_box ----------------------------------------------- */
 .widget_cta_box .cta-box {
   border: solid #222928 1px;
   background-color: #f5f3f2;
@@ -1224,45 +1184,20 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   color: #565956;
 }
 
-/* widget/widget-entry-cards ------------------------------------------- */
-.widget-entry-cards .a-wrap {
-  border: none;
-  color: inherit;
-  border-radius: 0.5rem;
-  margin-bottom: 1em;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-}
-.widget-entry-cards .a-wrap:hover {
-  background-color: rgba(180, 200, 180, 0.5);
-  -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-}
-
-.widget-entry-card-thumb img {
-  border-radius: 0.5rem;
-  background-size: cover;
-  max-height: 170px;
-}
-
-/* widget/widget_item_ranking ------------------------------------------ */
 .widget_item_ranking .border-element {
   border-radius: 4px;
   border: solid #222928 1px;
 }
 
-/* widget/widget_media_gallery ----------------------------------------- */
 .widget_media_gallery img {
   border: none;
 }
 
-/* widget/widget_media_image ------------------------------------------- */
 .widget_media_image .wp-caption {
   border: none;
   background-color: transparent;
 }
 
-/* widget/widget_navi_entries ------------------------------------------ */
 .widget_navi_entries .navi-entry-card-link::after {
   border-top: solid #222928 2px;
   border-right: solid #222928 2px;
@@ -1282,7 +1217,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   background-color: transparent;
 }
 
-/* widget/widget_new_entries ------------------------------------------- */
 .widget_new_entries .new-entry-card-link::after {
   border-top: solid #222928 2px;
   border-right: solid #222928 2px;
@@ -1302,7 +1236,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   background-color: transparent;
 }
 
-/* widget/widget_popular_entries --------------------------------------- */
 .widget_popular_entries .popular-entry-card-link::after {
   border-top: solid #222928 2px;
   border-right: solid #222928 2px;
@@ -1322,7 +1255,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   background-color: transparent;
 }
 
-/* widget/widget_recent_comments --------------------------------------- */
 .widget_recent_comments .recent-comments .recent-comment-content {
   border: solid #222928 1px;
 }
@@ -1333,7 +1265,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   background-color: #f5f3f2;
 }
 
-/* widget/widget_related_entries --------------------------------------- */
 .widget_related_entries .widget-related-entry-card-link::after {
   border-top: solid #222928 2px;
   border-right: solid #222928 2px;
@@ -1353,7 +1284,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   background-color: transparent;
 }
 
-/* widget/widget_search ------------------------------------------------ */
 .widget_search .search-edit {
   background-color: transparent;
   border-width: 0 0 2px 0;
@@ -1379,7 +1309,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   color: #222928;
 }
 
-/* widget/widget_sns_follow_buttons ------------------------------------ */
 .widget_sns_follow_buttons .sns-follow .feedly-button:hover {
   background-color: #2bb24c;
   opacity: 0.7;
@@ -1389,12 +1318,10 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   opacity: 0.7;
 }
 
-/* widget/widget_tag_cloud --------------------------------------------- */
 .widget_tag_cloud .fa-tag {
   color: #222928;
 }
 
-/* widget/widget_toc --------------------------------------------------- */
 .widget_toc .toc-content li a:hover {
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
@@ -1402,7 +1329,26 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   text-decoration: none;
 }
 
-/* widget/widget-title ------------------------------------------------- */
+.widget-entry-cards .a-wrap {
+  border: none;
+  color: inherit;
+  border-radius: 0.5rem;
+  margin-bottom: 1em;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.widget-entry-cards .a-wrap:hover {
+  background-color: rgba(180, 200, 180, 0.5);
+  -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.widget-entry-card-thumb img {
+  border-radius: 0.5rem;
+  background-size: cover;
+  max-height: 170px;
+}
+
 .widget-title .rss-widget-icon {
   display: none;
 }
@@ -1414,13 +1360,11 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   background-color: #222928;
 }
 
-/* wp-block/wp-block-archives ------------------------------------------ */
 .wp-block-archives select {
   border: solid #222928 1px;
   background-color: #2b3231;
 }
 
-/* wp-block/wp-block-buttons ------------------------------------------- */
 .wp-block-buttons .wp-block-button__link {
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
@@ -1429,13 +1373,11 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   opacity: 0.5;
 }
 
-/* wp-block/wp-block-categories ---------------------------------------- */
 .wp-block-categories select {
   border: solid #222928 1px;
   background-color: #2b3231;
 }
 
-/* wp-block/wp-block-quote --------------------------------------------- */
 .wp-block-quote {
   border: solid #222928 1px;
   background-color: #2b3231;
@@ -1450,7 +1392,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   background-color: #222928;
 }
 
-/* wp-block/wp-block-search -------------------------------------------- */
 .wp-block-search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1482,7 +1423,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   border-top-left-radius: 4px;
 }
 
-/* wp-block/wp-block-tag-cloud ----------------------------------------- */
 .wp-block-tag-cloud a {
   text-decoration: none;
   border-radius: 4px;

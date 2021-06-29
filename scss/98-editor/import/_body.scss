@@ -19,20 +19,8 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-#header-container {
-	background-color: g.$color-gray-dark;
-	box-shadow: g.$shadow-2xl;
-
-	.tagline {
-		color: g.$color-white;
-	}
-
-	.site-name-text {
-		color: g.$color-white;
-	}
-
-	.hlt-top-menu,
-	.hlt-center-logo {
-		background-color: g.$color-gray-dark;
-	}
+.body.article {
+	padding-bottom: 100px;
+	color: g.$color-black;
+	background-color: g.$color-white;
 }

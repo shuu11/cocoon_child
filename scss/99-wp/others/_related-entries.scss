@@ -19,50 +19,51 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-/* mobile-menu-buttons ------------------------------------------------- */
-.mobile-menu-buttons {
-	background-color: g.$color-gray-dark;
+#related-entries {
+	&.recb-entry-border {
+		a {
+			border: none;
+			border-top: solid g.$color-gray-dark 1px;
+			border-radius: 0;
 
-	.menu-button {
-		&:hover {
-			background-color: g.$color-gray-dark;
-		}
-
-		.menu-button-in {
-			color: g.$color-white;
-		}
-	}
-
-	.navi-menu-button {
-		.navi-menu-content {
-			background-color: g.$color-white;
-
-			a {
-				color: g.$color-gray-dark;
-				margin: 0.5em 0 0.5em 0;
+			&:nth-last-child(1) {
 				border-bottom: solid g.$color-gray-dark 1px;
-
-				&:hover {
-					background-color: g.$color-white;
-				}
-			}
-
-			.fa {
-				color: g.$color-gray-dark;
 			}
 		}
 	}
 
-	.search-menu-button {
-		.search-edit {
-			border-width: 0 0 2px 0;
-			border-radius: 4px;
-			border-bottom: 2px solid g.$color-gray-dark;
-			background-color: g.$color-body;
+	.related-entry-heading {
+		margin: 25px 0 25px 0;
+		padding: 1rem 1.5rem;
+
+		color: g.$color-white;
+		background-color: g.$color-gray-dark;
+		border-radius: g.$rounded-2xl;
+
+		&:before {
+			font-family: "FontAwesome";
+			content: "\f064";
+			opacity: 0.8;
+		}
+	}
+
+	.related-entry-card-wrap {
+		margin: 0;
+
+		color: inherit;
+		background-color: transparent;
+		border-radius: g.$rounded-2xl;
+		transition: all 0.25s;
+
+		&:hover {
+			background-color: g.$color-hover;
+			box-shadow: g.$shadow-2xl;
 		}
 
-		.search-submit {
-			color: g.$color-gray-dark;
+		.related-entry-card-thumb img {
+			border-radius: g.$rounded-lg;
+			max-height: 85px;
+			background-size: cover;
 		}
 	}
 }
