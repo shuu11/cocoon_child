@@ -8,6 +8,7 @@
 .badge-brown,
 .badge-grey {
   font-size: 16px;
+  opacity: 0.9;
 }
 
 .badge[data-rich-text-format-boundary=true],
@@ -107,6 +108,7 @@
   border-radius: 0.5rem;
   overflow-x: scroll;
   overflow-y: scroll;
+  padding-bottom: 1.5rem !important;
 }
 
 .entry-content pre code,

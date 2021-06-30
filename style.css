@@ -30,6 +30,7 @@ body {
 .badge-brown,
 .badge-grey {
   font-size: 16px;
+  opacity: 0.9;
 }
 .badge[data-rich-text-format-boundary=true],
 .badge-red[data-rich-text-format-boundary=true],
@@ -119,6 +120,7 @@ body {
   border-radius: 0.5rem;
   overflow-x: scroll;
   overflow-y: scroll;
+  padding-bottom: 1.5rem !important;
 }
 .entry-content pre code,
 .block-editor-block-list__layout pre code {
