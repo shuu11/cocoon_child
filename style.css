@@ -669,6 +669,47 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   color: #f5f3f2;
 }
 
+.hcb_wrap .hcb-clipboard {
+  display: none !important;
+}
+.hcb_wrap pre::before {
+  color: #f5f3f2;
+  font-weight: bold;
+}
+
+div.code-toolbar .toolbar {
+  position: absolute;
+  opacity: 1 !important;
+  top: -1.8em !important;
+  right: 0 !important;
+}
+
+div.code-toolbar > .toolbar a,
+div.code-toolbar > .toolbar button,
+div.code-toolbar > .toolbar span {
+  padding: 0 !important;
+  color: #f5f3f2 !important;
+  background-color: #222928 !important;
+  border-radius: 1rem !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+div.code-toolbar > .toolbar span {
+  display: block;
+  padding: 0.25rem 0.5rem !important;
+  border-radius: 1rem !important;
+  cursor: pointer;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+div.code-toolbar > .toolbar span:hover {
+  color: #f5f3f2 !important;
+  background-color: rgba(80, 111, 52, 0.7) !important;
+  -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+}
+
 #related-entries.recb-entry-border a {
   border: none;
   border-top: solid #222928 1px;

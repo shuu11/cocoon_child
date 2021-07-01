@@ -31,7 +31,7 @@ const buildPath = {
 //  browser-sync
 const bsPath = {
 	files: watchSrc,
-	proxy: "localhost:10020",
+	proxy: "shuu11.wp",
 };
 
 //----------------------------------------------------------------------

@@ -1,0 +1,69 @@
+//----------------------------------------------------------------------
+//  文字エンコーディング宣言
+//----------------------------------------------------------------------
+@charset "utf-8";
+
+//----------------------------------------------------------------------
+//  インポート宣言
+//----------------------------------------------------------------------
+@use "sass:color";
+@use "../../01-global/global" as g;
+
+//----------------------------------------------------------------------
+//  変数宣言
+//----------------------------------------------------------------------
+
+//----------------------------------------------------------------------
+//  mixin記述
+//----------------------------------------------------------------------
+
+//----------------------------------------------------------------------
+//  Sass記述
+//----------------------------------------------------------------------
+.hcb_wrap {
+	.hcb-clipboard {
+		display: none !important;
+	}
+
+	pre {
+		&::before {
+			color: g.$color-white;
+			font-weight: bold;
+		}
+	}
+}
+
+div.code-toolbar {
+	.toolbar {
+		position: absolute;
+		opacity: 1 !important;
+		top: -1.8em !important;
+		right: 0 !important;
+	}
+}
+
+div.code-toolbar>.toolbar a, 
+div.code-toolbar>.toolbar button, 
+div.code-toolbar>.toolbar span{
+	padding: 0 !important;
+	color: g.$color-white !important;
+	background-color: g.$color-gray-dark !important;
+	border-radius: g.$rounded-2xl !important;
+	box-shadow: none !important;
+}
+
+div.code-toolbar>.toolbar span{
+	display: block;
+	
+	padding: 0.25rem 0.5rem !important;	
+	border-radius: g.$rounded-2xl !important;
+	cursor: pointer;
+	transition: all 0.25s;
+
+	&:hover {
+		color: g.$color-white !important;
+		background-color: g.$color-green-dark !important;
+		box-shadow: g.$shadow-2xl !important;
+	}
+}
+
