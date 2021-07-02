@@ -20,50 +20,53 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-.hcb_wrap {
+div.hcb_wrap {
+	
 	.hcb-clipboard {
-		display: none !important;
+		display: none;
 	}
-
+	
 	pre {
-		&::before {
+		border-radius: 4px;
+
+		&:before {
 			color: g.$color-white;
 			font-weight: bold;
 		}
 	}
-}
 
-div.code-toolbar {
-	.toolbar {
-		position: absolute;
-		opacity: 1 !important;
-		top: -1.8em !important;
-		right: 0 !important;
-	}
-}
-
-div.code-toolbar>.toolbar a, 
-div.code-toolbar>.toolbar button, 
-div.code-toolbar>.toolbar span{
-	padding: 0 !important;
-	color: g.$color-white !important;
-	background-color: g.$color-gray-dark !important;
-	border-radius: g.$rounded-2xl !important;
-	box-shadow: none !important;
-}
-
-div.code-toolbar>.toolbar span{
-	display: block;
+	div.code-toolbar {
+		.toolbar a,
+		.toolbar button,
+		.toolbar span {
+			padding: 0 ;
+			color: g.$color-white ;
+			background-color: g.$color-gray-dark ;
+			border-radius: g.$rounded-2xl ;
+			box-shadow: none ;
+		}
 	
-	padding: 0.25rem 0.5rem !important;	
-	border-radius: g.$rounded-2xl !important;
-	cursor: pointer;
-	transition: all 0.25s;
-
-	&:hover {
-		color: g.$color-white !important;
-		background-color: g.$color-green-dark !important;
-		box-shadow: g.$shadow-2xl !important;
+		.toolbar {
+			position: absolute;
+			opacity: 1 ;
+			top: -1.9em ;
+			right: 0 ;
+	
+			span {
+				display: block;
+	
+				padding: 0.25rem 0.5rem ;
+				border-radius: g.$rounded-lg ;
+				cursor: pointer;
+				transition: all 0.25s;
+	
+				&:hover {
+					color: g.$color-white ;
+					background-color: g.$color-green-dark ;
+					box-shadow: g.$shadow-2xl ;
+				}
+			}
+		}
 	}
 }
 

@@ -38,7 +38,7 @@
 
 		color: g.$color-white;
 		background-color: g.$color-gray-dark;
-		border-radius: g.$rounded-2xl;
+		border-radius: g.$rounded-lg;
 
 		&:before {
 			font-family: "FontAwesome";
@@ -52,7 +52,7 @@
 
 		color: inherit;
 		background-color: transparent;
-		border-radius: g.$rounded-2xl;
+		border-radius: g.$rounded-lg;
 		transition: all 0.25s;
 
 		&:hover {

@@ -376,6 +376,47 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   transition: all 0.25s;
 }
 
+div.hcb_wrap .hcb-clipboard {
+  display: none;
+}
+div.hcb_wrap pre {
+  border-radius: 4px;
+}
+div.hcb_wrap pre:before {
+  color: #f5f3f2;
+  font-weight: bold;
+}
+div.hcb_wrap div.code-toolbar .toolbar a,
+div.hcb_wrap div.code-toolbar .toolbar button,
+div.hcb_wrap div.code-toolbar .toolbar span {
+  padding: 0;
+  color: #f5f3f2;
+  background-color: #222928;
+  border-radius: 1rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+div.hcb_wrap div.code-toolbar .toolbar {
+  position: absolute;
+  opacity: 1;
+  top: -1.9em;
+  right: 0;
+}
+div.hcb_wrap div.code-toolbar .toolbar span {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+div.hcb_wrap div.code-toolbar .toolbar span:hover {
+  color: #f5f3f2;
+  background-color: rgba(80, 111, 52, 0.7);
+  -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
 #header-container {
   background-color: #222928;
   -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
@@ -669,47 +710,6 @@ div.easyLink-box div.easyLink-info p.easyLink-info-btn a {
   color: #f5f3f2;
 }
 
-.hcb_wrap .hcb-clipboard {
-  display: none !important;
-}
-.hcb_wrap pre::before {
-  color: #f5f3f2;
-  font-weight: bold;
-}
-
-div.code-toolbar .toolbar {
-  position: absolute;
-  opacity: 1 !important;
-  top: -1.8em !important;
-  right: 0 !important;
-}
-
-div.code-toolbar > .toolbar a,
-div.code-toolbar > .toolbar button,
-div.code-toolbar > .toolbar span {
-  padding: 0 !important;
-  color: #f5f3f2 !important;
-  background-color: #222928 !important;
-  border-radius: 1rem !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-}
-
-div.code-toolbar > .toolbar span {
-  display: block;
-  padding: 0.25rem 0.5rem !important;
-  border-radius: 1rem !important;
-  cursor: pointer;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-}
-div.code-toolbar > .toolbar span:hover {
-  color: #f5f3f2 !important;
-  background-color: rgba(80, 111, 52, 0.7) !important;
-  -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
-          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
-}
-
 #related-entries.recb-entry-border a {
   border: none;
   border-top: solid #222928 1px;
@@ -723,7 +723,7 @@ div.code-toolbar > .toolbar span:hover {
   padding: 1rem 1.5rem;
   color: #f5f3f2;
   background-color: #222928;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 #related-entries .related-entry-heading:before {
   font-family: "FontAwesome";
@@ -734,7 +734,7 @@ div.code-toolbar > .toolbar span:hover {
   margin: 0;
   color: inherit;
   background-color: transparent;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
