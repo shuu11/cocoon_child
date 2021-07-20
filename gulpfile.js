@@ -17,10 +17,8 @@ const $ = require("gulp-load-plugins")({
 	],
 });
 
-//  watch
 const watchSrc = ["./**", "!./*.css"];
 
-//  build
 const buildPath = {
 	sass: {
 		src: "./scss/**/*.scss",
@@ -28,7 +26,6 @@ const buildPath = {
 	},
 };
 
-//  browser-sync
 const bsPath = {
 	files: watchSrc,
 	proxy: "shuu11.wp",
@@ -62,7 +59,6 @@ function bs(done) {
 //----------------------------------------------------------------------
 //  watch処理
 //----------------------------------------------------------------------
-//  watch
 function watchTask(done) {
 	watch(watchSrc, series(build));
 }

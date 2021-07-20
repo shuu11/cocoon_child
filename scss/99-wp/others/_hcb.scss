@@ -21,11 +21,10 @@
 //  Sass記述
 //----------------------------------------------------------------------
 div.hcb_wrap {
-	
 	.hcb-clipboard {
 		display: none;
 	}
-	
+
 	pre {
 		border-radius: 4px;
 
@@ -39,34 +38,33 @@ div.hcb_wrap {
 		.toolbar a,
 		.toolbar button,
 		.toolbar span {
-			padding: 0 ;
-			color: g.$color-white ;
-			background-color: g.$color-gray-dark ;
-			border-radius: g.$rounded-2xl ;
-			box-shadow: none ;
+			padding: 0;
+			color: g.$color-white;
+			border-radius: g.$rounded-2xl;
+			box-shadow: none;
 		}
-	
+
 		.toolbar {
 			position: absolute;
-			opacity: 1 ;
-			top: -1.9em ;
-			right: 0 ;
-	
+			opacity: 1;
+			top: -1.9em;
+			right: 0;
+
 			span {
 				display: block;
-	
-				padding: 0.25rem 0.5rem ;
-				border-radius: g.$rounded-lg ;
+
+				padding: 0.25rem 0.5rem;
+				background-color: g.$color-gray-dark;
+				border-radius: g.$rounded-lg;
 				cursor: pointer;
 				transition: all 0.25s;
-	
+
 				&:hover {
-					color: g.$color-white ;
-					background-color: g.$color-green-dark ;
-					box-shadow: g.$shadow-2xl ;
+					color: g.$color-white;
+					background-color: g.$color-green-dark;
+					box-shadow: g.$shadow-2xl;
 				}
 			}
 		}
 	}
 }
-
