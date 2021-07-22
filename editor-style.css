@@ -39,6 +39,13 @@
   border-radius: 0.5rem;
 }
 
+@media screen and (max-width: 480px) {
+  .entry-content h2,
+.block-editor-block-list__layout h2 {
+    padding: 0.6em 0.8em;
+    font-size: 20px;
+  }
+}
 .entry-content h3,
 .block-editor-block-list__layout h3 {
   margin-top: 80px;
@@ -51,6 +58,13 @@
   border-bottom: 1px solid rgba(80, 111, 52, 0.7);
 }
 
+@media screen and (max-width: 480px) {
+  .entry-content h3,
+.block-editor-block-list__layout h3 {
+    padding: 0.6em;
+    font-size: 18px;
+  }
+}
 .entry-content h4,
 .block-editor-block-list__layout h4 {
   margin-top: 50px;
@@ -67,6 +81,13 @@
   background-position: bottom;
 }
 
+@media screen and (max-width: 480px) {
+  .entry-content h4,
+.block-editor-block-list__layout h4 {
+    padding: 0.6em 4px 0.6em 2em;
+    font-size: 16px;
+  }
+}
 .entry-content h4:before,
 .block-editor-block-list__layout h4:before {
   position: absolute;
@@ -92,6 +113,15 @@
   border-bottom: 2px dotted rgba(80, 111, 52, 0.5);
 }
 
+@media screen and (max-width: 480px) {
+  .entry-content h5,
+.entry-content h6,
+.block-editor-block-list__layout h5,
+.block-editor-block-list__layout h6 {
+    padding: 0.6em;
+    font-size: 16px;
+  }
+}
 .entry-content blockquote,
 .block-editor-block-list__layout blockquote {
   color: inherit;
