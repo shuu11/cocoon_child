@@ -19,8 +19,13 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-.body.article {
-	padding-bottom: 100px;
+.block-editor-block-list__layout.is-root-container{
+	margin-top: 2rem;
+	padding-top: 2rem;
+	padding-bottom: 5rem;
 	color: g.$color-black;
 	background-color: g.$color-white;
+
+	border-radius: g.$rounded-2xl;
+	box-shadow: g.$shadow-2xl;
 }

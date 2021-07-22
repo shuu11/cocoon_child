@@ -32,7 +32,9 @@
 .entry-content h2,
 .block-editor-block-list__layout h2 {
   margin-top: 100px;
+  padding: 25px;
   color: #f5f3f2;
+  font-size: 24px;
   background-color: rgba(80, 111, 52, 0.7);
   border-radius: 0.5rem;
 }
@@ -40,8 +42,13 @@
 .entry-content h3,
 .block-editor-block-list__layout h3 {
   margin-top: 80px;
+  padding: 12px 20px;
   color: inherit;
-  border-color: rgba(80, 111, 52, 0.7);
+  font-size: 22px;
+  border-left: 7px solid rgba(80, 111, 52, 0.7);
+  border-right: 1px solid rgba(80, 111, 52, 0.7);
+  border-top: 1px solid rgba(80, 111, 52, 0.7);
+  border-bottom: 1px solid rgba(80, 111, 52, 0.7);
 }
 
 .entry-content h4,
@@ -49,9 +56,9 @@
   margin-top: 50px;
   position: relative;
   background-color: transparent;
-  padding-right: 4px;
-  padding-left: 2em;
+  padding: 9px 4px 9px 2em;
   border: none;
+  font-size: 20px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(80, 111, 52, 0.5)), color-stop(70%, transparent));
   background-image: -webkit-linear-gradient(left, rgba(80, 111, 52, 0.5) 0%, transparent 70%);
   background-image: linear-gradient(to right, rgba(80, 111, 52, 0.5) 0%, transparent 70%);
@@ -80,6 +87,8 @@
 .block-editor-block-list__layout h5,
 .block-editor-block-list__layout h6 {
   margin-top: 50px;
+  font-size: 20px;
+  padding: 9px 10px;
   border-bottom: 2px dotted rgba(80, 111, 52, 0.5);
 }
 
@@ -150,18 +159,32 @@
   background-color: rgba(43, 50, 49, 0.1);
 }
 
+.block-editor-block-list__layout.is-root-container {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  color: #565956;
+  background-color: #f5f3f2;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
 .block-editor-default-block-appender__content {
   color: inherit !important;
   opacity: 0.5;
 }
 
-.body.article {
-  padding-bottom: 100px;
+.edit-post-visual-editor__post-title-wrapper {
   color: #565956;
   background-color: #f5f3f2;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 .editor-post-title__block .editor-post-title__input {
+  min-height: 200px;
   color: inherit;
 }
 
@@ -188,6 +211,10 @@
 .editor-post-title__block .editor-post-title__input::placeholder {
   color: inherit;
   opacity: 0.5;
+}
+
+.editor-post-title__block .editor-post-title__input:focus {
+  background-color: rgba(43, 50, 49, 0.1);
 }
 
 .hcb_textarea {

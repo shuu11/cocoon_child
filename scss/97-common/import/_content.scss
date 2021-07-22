@@ -29,24 +29,38 @@
 
 	h2 {
 		margin-top: 100px;
+		padding: 25px;
+
 		color: g.$color-white;
+
+		font-size: 24px;
+
 		background-color: g.$color-green-dark;
 		border-radius: g.$rounded-lg;
 	}
 
 	h3 {
 		margin-top: 80px;
+		padding: 12px 20px;
+
 		color: inherit;
-		border-color: g.$color-green-dark;
+
+		font-size: 22px;
+
+		border-left: 7px solid g.$color-green-dark;
+		border-right: 1px solid g.$color-green-dark;
+		border-top: 1px solid g.$color-green-dark;
+		border-bottom: 1px solid g.$color-green-dark;
 	}
 
 	h4 {
 		margin-top: 50px;
 		position: relative;
 		background-color: transparent;
-		padding-right: 4px;
-		padding-left: 2em;
+		padding: 9px 4px 9px 2em;
 		border: none;
+
+		font-size: 20px;
 
 		background-image: linear-gradient(to right, g.$color-green-midium 0%, transparent 70%);
 		background-repeat: no-repeat;
@@ -70,6 +84,10 @@
 	h5,
 	h6 {
 		margin-top: 50px;
+
+		font-size: 20px;
+		padding: 9px 10px;
+
 		border-bottom: 2px dotted g.$color-green-midium;
 	}
 
