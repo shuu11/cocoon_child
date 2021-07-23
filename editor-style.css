@@ -208,42 +208,39 @@
 .edit-post-visual-editor__post-title-wrapper {
   color: inherit;
   background-color: #f5f3f2;
-  border-radius: 1rem;
-  -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
-.editor-post-title__block .editor-post-title__input {
+.edit-post-visual-editor__post-title-wrapper .editor-post-title__block .editor-post-title__input {
   min-height: 200px;
   color: inherit;
 }
 
-.editor-post-title__block .editor-post-title__input::-webkit-input-placeholder {
+.edit-post-visual-editor__post-title-wrapper .editor-post-title__block .editor-post-title__input::-webkit-input-placeholder {
   color: inherit;
   opacity: 0.5;
 }
 
-.editor-post-title__block .editor-post-title__input::-moz-placeholder {
+.edit-post-visual-editor__post-title-wrapper .editor-post-title__block .editor-post-title__input::-moz-placeholder {
   color: inherit;
   opacity: 0.5;
 }
 
-.editor-post-title__block .editor-post-title__input:-ms-input-placeholder {
+.edit-post-visual-editor__post-title-wrapper .editor-post-title__block .editor-post-title__input:-ms-input-placeholder {
   color: inherit;
   opacity: 0.5;
 }
 
-.editor-post-title__block .editor-post-title__input::-ms-input-placeholder {
+.edit-post-visual-editor__post-title-wrapper .editor-post-title__block .editor-post-title__input::-ms-input-placeholder {
   color: inherit;
   opacity: 0.5;
 }
 
-.editor-post-title__block .editor-post-title__input::placeholder {
+.edit-post-visual-editor__post-title-wrapper .editor-post-title__block .editor-post-title__input::placeholder {
   color: inherit;
   opacity: 0.5;
 }
 
-.editor-post-title__block .editor-post-title__input:focus {
+.edit-post-visual-editor__post-title-wrapper .editor-post-title__block .editor-post-title__input:focus {
   background-color: rgba(43, 50, 49, 0.1);
 }
 

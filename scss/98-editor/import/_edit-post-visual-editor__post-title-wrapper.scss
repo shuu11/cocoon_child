@@ -20,10 +20,27 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-.edit-post-visual-editor__post-title-wrapper{
+.edit-post-visual-editor__post-title-wrapper {
 	color: inherit;
 	background-color: g.$color-white;
 
-	border-radius: g.$rounded-2xl;
-	box-shadow: g.$shadow-2xl;
+	// border-radius: g.$rounded-2xl;
+	// box-shadow: g.$shadow-2xl;
+
+	.editor-post-title__block {
+		.editor-post-title__input {
+			min-height: 200px;
+
+			color: inherit;
+
+			&::placeholder {
+				color: inherit;
+				opacity: 0.5;
+			}
+
+			&:focus {
+				background-color: color.scale(rgba(g.$color-body, 0), $alpha: 10%);
+			}
+		}
+	}
 }
