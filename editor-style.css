@@ -208,6 +208,9 @@
 .edit-post-visual-editor__post-title-wrapper {
   color: inherit;
   background-color: #f5f3f2;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 .edit-post-visual-editor__post-title-wrapper .editor-post-title__block .editor-post-title__input {
