@@ -23,13 +23,13 @@
   color: #565956;
 }
 
-.entry-content h1,
+.article h1,
 .block-editor-block-list__layout h1 {
   color: inherit;
   background-color: transparent;
 }
 
-.entry-content h2,
+.article h2,
 .block-editor-block-list__layout h2 {
   margin-top: 100px;
   padding: 25px;
@@ -40,13 +40,13 @@
 }
 
 @media screen and (max-width: 480px) {
-  .entry-content h2,
+  .article h2,
 .block-editor-block-list__layout h2 {
     padding: 0.6em 0.8em;
     font-size: 20px;
   }
 }
-.entry-content h3,
+.article h3,
 .block-editor-block-list__layout h3 {
   margin-top: 80px;
   padding: 12px 20px;
@@ -59,13 +59,13 @@
 }
 
 @media screen and (max-width: 480px) {
-  .entry-content h3,
+  .article h3,
 .block-editor-block-list__layout h3 {
     padding: 0.6em;
     font-size: 18px;
   }
 }
-.entry-content h4,
+.article h4,
 .block-editor-block-list__layout h4 {
   margin-top: 50px;
   position: relative;
@@ -82,13 +82,13 @@
 }
 
 @media screen and (max-width: 480px) {
-  .entry-content h4,
+  .article h4,
 .block-editor-block-list__layout h4 {
     padding: 0.6em 4px 0.6em 2em;
     font-size: 16px;
   }
 }
-.entry-content h4:before,
+.article h4:before,
 .block-editor-block-list__layout h4:before {
   position: absolute;
   content: "";
@@ -103,8 +103,8 @@
   border-radius: 50%;
 }
 
-.entry-content h5,
-.entry-content h6,
+.article h5,
+.article h6,
 .block-editor-block-list__layout h5,
 .block-editor-block-list__layout h6 {
   margin-top: 50px;
@@ -114,15 +114,15 @@
 }
 
 @media screen and (max-width: 480px) {
-  .entry-content h5,
-.entry-content h6,
+  .article h5,
+.article h6,
 .block-editor-block-list__layout h5,
 .block-editor-block-list__layout h6 {
     padding: 0.6em;
     font-size: 16px;
   }
 }
-.entry-content blockquote,
+.article blockquote,
 .block-editor-block-list__layout blockquote {
   color: inherit;
   background-color: rgba(86, 89, 86, 0.2);
@@ -130,18 +130,18 @@
   border-radius: 0.5rem;
 }
 
-.entry-content blockquote:before, .entry-content blockquote:after,
+.article blockquote:before, .article blockquote:after,
 .block-editor-block-list__layout blockquote:before,
 .block-editor-block-list__layout blockquote:after {
   color: inherit;
 }
 
-.entry-content blockquote cite,
+.article blockquote cite,
 .block-editor-block-list__layout blockquote cite {
   color: inherit;
 }
 
-.entry-content pre,
+.article pre,
 .block-editor-block-list__layout pre {
   max-height: 800px;
   border-radius: 0.5rem;
@@ -150,7 +150,7 @@
   padding-bottom: 1.5rem !important;
 }
 
-.entry-content pre code,
+.article pre code,
 .block-editor-block-list__layout pre code {
   white-space: pre;
   padding-bottom: 1.5rem;
