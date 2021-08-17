@@ -423,6 +423,7 @@ div.hcb_wrap .hcb-clipboard {
 }
 div.hcb_wrap pre {
   border-radius: 4px;
+  padding-top: 25px;
 }
 div.hcb_wrap pre:before {
   color: #f5f3f2;
