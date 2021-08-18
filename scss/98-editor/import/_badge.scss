@@ -6,7 +6,6 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "sass:color";
 @use "../../01-global/global" as g;
 
 //----------------------------------------------------------------------
@@ -20,56 +19,18 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-div.hcb_wrap {
-	.hcb-clipboard {
-		display: none;
-	}
-
-	pre {
-		border-radius: 4px;
-		padding-top: 25px;
-
-		&[class*=language-].line-numbers{
-			position: static;
-		}
-
-		&:before {
-			color: g.$color-white;
-			font-weight: bold;
-		}
-	}
-
-	div.code-toolbar {
-		.toolbar a,
-		.toolbar button,
-		.toolbar span {
-			padding: 0;
-			color: g.$color-white;
-			border-radius: g.$rounded-2xl;
-			box-shadow: none;
-		}
-
-		.toolbar {
-			position: absolute;
-			opacity: 1;
-			top: -1.9em;
-			right: 0;
-
-			span {
-				display: block;
-
-				padding: 0.25rem 0.5rem;
-				background-color: g.$color-gray-dark;
-				border-radius: g.$rounded-lg;
-				cursor: pointer;
-				transition: all 0.25s;
-
-				&:hover {
-					color: g.$color-white;
-					background-color: g.$color-green-dark;
-					box-shadow: g.$shadow-2xl;
-				}
-			}
+.rich-text:focus.is-selected {
+	.badge,
+	.badge-red,
+	.badge-pink,
+	.badge-purple,
+	.badge-blue,
+	.badge-green,
+	.badge-yellow,
+	.badge-brown,
+	.badge-grey {
+		&[data-rich-text-format-boundary] {
+			color: g.$color-black;
 		}
 	}
 }

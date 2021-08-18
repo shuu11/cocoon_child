@@ -32,17 +32,6 @@ body {
   font-size: 16px;
   opacity: 0.9;
 }
-.badge[data-rich-text-format-boundary=true],
-.badge-red[data-rich-text-format-boundary=true],
-.badge-pink[data-rich-text-format-boundary=true],
-.badge-purple[data-rich-text-format-boundary=true],
-.badge-blue[data-rich-text-format-boundary=true],
-.badge-green[data-rich-text-format-boundary=true],
-.badge-yellow[data-rich-text-format-boundary=true],
-.badge-brown[data-rich-text-format-boundary=true],
-.badge-grey[data-rich-text-format-boundary=true] {
-  color: #565956;
-}
 
 .article h1,
 .block-editor-block-list__layout h1 {
@@ -424,6 +413,9 @@ div.hcb_wrap .hcb-clipboard {
 div.hcb_wrap pre {
   border-radius: 4px;
   padding-top: 25px;
+}
+div.hcb_wrap pre[class*=language-].line-numbers {
+  position: static;
 }
 div.hcb_wrap pre:before {
   color: #f5f3f2;

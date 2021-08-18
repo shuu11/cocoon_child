@@ -30,8 +30,4 @@
 .badge-grey {
 	font-size: 16px;
 	opacity: 0.9;
-
-	&[data-rich-text-format-boundary="true"] {
-		color: g.$color-black;
-	}
 }
