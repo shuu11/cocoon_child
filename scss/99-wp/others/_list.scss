@@ -6,7 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../01-global/global" as g;
+@use "../../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -25,12 +25,12 @@
 		margin-bottom: 1em;
 
 		a {
-			border-top: solid 1px g.$color-gray-dark;
+			border-top: solid 1px $color-gray-dark;
 			margin-bottom: 0;
 			border-radius: 0;
 
 			&:nth-last-child(1) {
-				border-bottom: solid 1px g.$color-gray-dark;
+				border-bottom: solid 1px $color-gray-dark;
 			}
 		}
 	}
@@ -38,18 +38,18 @@
 	.entry-card-wrap {
 		border: none;
 		color: inherit;
-		border-radius: g.$rounded-lg;
+		border-radius: $rounded-lg;
 		margin-bottom: 1em;
 		transition: all 0.25s;
 
 		&:hover {
-			background-color: g.$color-hover;
-			box-shadow: g.$shadow-2xl;
+			background-color: $color-hover;
+			box-shadow: $shadow-2xl;
 		}
 	}
 
 	.entry-card-thumb img {
-		border-radius: g.$rounded-lg;
+		border-radius: $rounded-lg;
 		background-size: cover;
 		max-height: 170px;
 	}

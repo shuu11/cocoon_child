@@ -6,7 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../01-global/global" as g;
+@use "../../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -22,17 +22,17 @@
 #wp-calendar,
 #slide-in-wp-calendar {
 	caption {
-		color: g.$color-white;
-		border-color: g.$color-green-dark;
-		background-color: g.$color-gray-dark;
+		color: $color-white;
+		border-color: $color-green-dark;
+		background-color: $color-gray-dark;
 	}
 
 	thead {
 		tr {
 			th {
-				color: g.$color-white;
-				border-color: g.$color-green-dark;
-				background-color: g.$color-gray-dark;
+				color: $color-white;
+				border-color: $color-green-dark;
+				background-color: $color-gray-dark;
 			}
 		}
 	}
@@ -40,17 +40,17 @@
 	tbody {
 		tr {
 			td {
-				color: g.$color-black;
-				border-color: g.$color-green-dark;
+				color: $color-black;
+				border-color: $color-green-dark;
 
 				a {
 					border-radius: 0;
-					color: g.$color-black;
+					color: $color-black;
 				}
 
 				&#today,
 				&#today a {
-					color: g.$color-black;
+					color: $color-black;
 				}
 			}
 		}

@@ -7,7 +7,7 @@
 //  インポート宣言
 //----------------------------------------------------------------------
 @use "sass:color";
-@use "../../01-global/global" as g;
+@use "../../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -23,9 +23,9 @@
 #sidebar,
 #sidebar-menu-content {
 	color: inherit;
-	background-color: g.$color-main;
-	border-radius: g.$rounded-2xl;
-	box-shadow: g.$shadow-2xl;
+	background-color: $color-main;
+	border-radius: $rounded-2xl;
+	box-shadow: $shadow-2xl;
 	opacity: 0.9;
 
 	h3 {
@@ -36,7 +36,7 @@
 
 		color: inherit;
 		background-color: transparent;
-		background-image: linear-gradient(to right, g.$color-green-midium 0%, transparent 70%);
+		background-image: linear-gradient(to right, $color-green-midium 0%, transparent 70%);
 		background-repeat: no-repeat;
 		background-size: 100% 5%;
 		background-position: bottom;
@@ -50,7 +50,7 @@
 			left: 0.3em;
 			width: 21px;
 			height: 21px;
-			background-color: g.$color-green-midium;
+			background-color: $color-green-midium;
 			border-radius: 50%;
 		}
 	}
@@ -68,14 +68,14 @@
 	.widget_related_entries {
 		ul {
 			li {
-				border-bottom: 2px dotted g.$color-green-midium;
+				border-bottom: 2px dotted $color-green-midium;
 
 				a {
 					color: inherit;
 					position: relative;
 					padding-left: 1.3em;
 
-					border-radius: g.$rounded-2xl;
+					border-radius: $rounded-2xl;
 
 					&:before {
 						font-family: "FontAwesome";
@@ -84,12 +84,12 @@
 						font-size: 1em;
 						left: 0;
 						top: 10px;
-						color: g.$color-green-midium;
+						color: $color-green-midium;
 					}
 
 					&:hover {
-						background-color: g.$color-hover;
-						box-shadow: g.$shadow-2xl;
+						background-color: $color-hover;
+						box-shadow: $shadow-2xl;
 						transition: all 0.25s;
 					}
 				}
@@ -102,11 +102,11 @@
 			a {
 				color: inherit;
 				position: relative;
-				border: 1px solid color.scale(rgba(g.$color-black, 0), $alpha: 50%);
-				border-radius: g.$rounded-2xl;
+				border: 1px solid color.scale(rgba($color-black, 0), $alpha: 50%);
+				border-radius: $rounded-2xl;
 
 				&:hover {
-					background-color: g.$color-hover;
+					background-color: $color-hover;
 					transition: all 0.25s;
 				}
 			}

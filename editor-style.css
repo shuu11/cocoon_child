@@ -157,18 +157,6 @@
   white-space: pre !important;
 }
 
-.rich-text:focus.is-selected .badge[data-rich-text-format-boundary],
-.rich-text:focus.is-selected .badge-red[data-rich-text-format-boundary],
-.rich-text:focus.is-selected .badge-pink[data-rich-text-format-boundary],
-.rich-text:focus.is-selected .badge-purple[data-rich-text-format-boundary],
-.rich-text:focus.is-selected .badge-blue[data-rich-text-format-boundary],
-.rich-text:focus.is-selected .badge-green[data-rich-text-format-boundary],
-.rich-text:focus.is-selected .badge-yellow[data-rich-text-format-boundary],
-.rich-text:focus.is-selected .badge-brown[data-rich-text-format-boundary],
-.rich-text:focus.is-selected .badge-grey[data-rich-text-format-boundary] {
-  color: #565956;
-}
-
 .block-editor-block-list__block.is-selected {
   color: inherit;
   background-color: rgba(43, 50, 49, 0.1);
@@ -223,6 +211,18 @@
 }
 .edit-post-visual-editor__post-title-wrapper .editor-post-title__block .editor-post-title__input:focus {
   background-color: rgba(43, 50, 49, 0.1);
+}
+
+.rich-text:focus.is-selected .badge[data-rich-text-format-boundary],
+.rich-text:focus.is-selected .badge-red[data-rich-text-format-boundary],
+.rich-text:focus.is-selected .badge-pink[data-rich-text-format-boundary],
+.rich-text:focus.is-selected .badge-purple[data-rich-text-format-boundary],
+.rich-text:focus.is-selected .badge-blue[data-rich-text-format-boundary],
+.rich-text:focus.is-selected .badge-green[data-rich-text-format-boundary],
+.rich-text:focus.is-selected .badge-yellow[data-rich-text-format-boundary],
+.rich-text:focus.is-selected .badge-brown[data-rich-text-format-boundary],
+.rich-text:focus.is-selected .badge-grey[data-rich-text-format-boundary] {
+  color: #565956;
 }
 
 .hcb_textarea {

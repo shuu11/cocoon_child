@@ -6,7 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../01-global/global" as g;
+@use "../../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -21,24 +21,24 @@
 //----------------------------------------------------------------------
 .pagination-previous-link,
 .pagination-next-link {
-	color: g.$color-white;
-	background-color: g.$color-gray-dark;
+	color: $color-white;
+	background-color: $color-gray-dark;
 	border: none;
-	border-radius: g.$rounded-2xl;
+	border-radius: $rounded-2xl;
 
 	&:hover {
-		color: g.$color-white;
-		background-color: g.$color-green-dark;
+		color: $color-white;
+		background-color: $color-green-dark;
 		transition: all 0.25s;
 	}
 }
 
 .pagination {
 	.page-numbers {
-		color: g.$color-white;
+		color: $color-white;
 		border: none;
 		border-radius: 4px;
-		background-color: g.$color-gray-dark;
+		background-color: $color-gray-dark;
 		transition: all 0.25s;
 	}
 
@@ -48,14 +48,14 @@
 	}
 
 	a {
-		color: g.$color-white;
+		color: $color-white;
 		border: none;
 		border-radius: 4px;
-		background-color: g.$color-gray-dark;
+		background-color: $color-gray-dark;
 
 		&:hover {
-			color: g.$color-white;
-			background-color: g.$color-green-dark;
+			color: $color-white;
+			background-color: $color-green-dark;
 			transition: all 0.25s;
 		}
 	}

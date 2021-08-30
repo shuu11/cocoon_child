@@ -6,7 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../01-global/global" as g;
+@use "../../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -23,24 +23,24 @@
 	margin: 0;
 	width: 100%;
 	padding: 0;
-	border-color: g.$color-gray-dark;
-	border-radius: g.$rounded-2xl;
+	border-color: $color-gray-dark;
+	border-radius: $rounded-2xl;
 
 	.toc-title {
 		padding: 0;
-		color: g.$color-white;
-		background-color: g.$color-gray-dark;
-		border-top-left-radius: g.$rounded-2xl;
-		border-top-right-radius: g.$rounded-2xl;
+		color: $color-white;
+		background-color: $color-gray-dark;
+		border-top-left-radius: $rounded-2xl;
+		border-top-right-radius: $rounded-2xl;
 		transition: all 0.25s;
 
 		&::after {
-			color: g.$color-white;
+			color: $color-white;
 			text-decoration: none;
 		}
 
 		&:hover {
-			background-color: g.$color-green-dark;
+			background-color: $color-green-dark;
 		}
 	}
 

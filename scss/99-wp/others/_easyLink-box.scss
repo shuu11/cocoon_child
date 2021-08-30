@@ -7,7 +7,7 @@
 //  インポート宣言
 //----------------------------------------------------------------------
 @use "sass:color";
-@use "../../01-global/global" as g;
+@use "../../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -22,18 +22,18 @@
 //----------------------------------------------------------------------
 div.easyLink-box {
 	background-color: inherit !important;
-	border-radius: g.$rounded-2xl;
+	border-radius: $rounded-2xl;
 
 	div.easyLink-info {
 		p.easyLink-info-name {
 			a {
 				color: inherit !important;
 				text-decoration: underline !important;
-				text-decoration-color: g.$color-black;
+				text-decoration-color: $color-black;
 				transition: all 0.25s;
 
 				&:hover {
-					color: color.scale(rgba(g.$color-black, 0), $alpha: 80%) !important;
+					color: color.scale(rgba($color-black, 0), $alpha: 80%) !important;
 				}
 			}
 		}
@@ -41,7 +41,7 @@ div.easyLink-box {
 
 	div.easyLink-img {
 		p.easyLink-img-box {
-			img.easyLink-img-pht {
+			imeasyLink-img-pht {
 				@media screen and (max-width: 703px) {
 					max-height: 180px !important;
 					object-fit: contain;
@@ -50,7 +50,7 @@ div.easyLink-box {
 		}
 	}
 
-	div.easyLink-info p.easyLink-info-btn a{
-		color: g.$color-white !important;
+	div.easyLink-info p.easyLink-info-btn a {
+		color: $color-white !important;
 	}
 }

@@ -6,7 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../01-global/global" as g;
+@use "../../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -21,12 +21,12 @@
 //----------------------------------------------------------------------
 #navi-footer {
 	a {
-		color: g.$color-white;
-		background-color: g.$color-gray-dark;
+		color: $color-white;
+		background-color: $color-gray-dark;
 
 		&:hover {
-			background-color: g.$color-white;
-			color: g.$color-gray-dark;
+			background-color: $color-white;
+			color: $color-gray-dark;
 		}
 	}
 }

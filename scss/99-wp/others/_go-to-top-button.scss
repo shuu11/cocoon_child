@@ -6,7 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../01-global/global" as g;
+@use "../../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -22,11 +22,11 @@
 .go-to-top-button {
 	width: 56px;
 	height: 56px;
-	background-color: g.$color-green-dark;
+	background-color: $color-green-dark;
 	border-radius: 50%;
 
 	span {
-		color: g.$color-white;
+		color: $color-white;
 	}
 
 	&:hover {

@@ -7,7 +7,7 @@
 //  インポート宣言
 //----------------------------------------------------------------------
 @use "sass:color";
-@use "../../01-global/global" as g;
+@use "../../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -22,12 +22,12 @@
 //----------------------------------------------------------------------
 .tag-link {
 	color: inherit;
-	background-color: g.$color-white;
-	border: 1px solid color.scale(rgba(g.$color-black, 0), $alpha: 50%);
-	border-radius: g.$rounded-2xl;
+	background-color: $color-white;
+	border: 1px solid color.scale(rgba($color-black, 0), $alpha: 50%);
+	border-radius: $rounded-2xl;
 	transition: all 0.25s;
 
 	&:hover {
-		background-color: g.$color-hover;
+		background-color: $color-hover;
 	}
 }

@@ -6,7 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../01-global/global" as g;
+@use "../../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -23,11 +23,11 @@
 	&.recb-entry-border {
 		a {
 			border: none;
-			border-top: solid g.$color-gray-dark 1px;
+			border-top: solid $color-gray-dark 1px;
 			border-radius: 0;
 
 			&:nth-last-child(1) {
-				border-bottom: solid g.$color-gray-dark 1px;
+				border-bottom: solid $color-gray-dark 1px;
 			}
 		}
 	}
@@ -36,9 +36,9 @@
 		margin: 25px 0 25px 0;
 		padding: 1rem 1.5rem;
 
-		color: g.$color-white;
-		background-color: g.$color-gray-dark;
-		border-radius: g.$rounded-lg;
+		color: $color-white;
+		background-color: $color-gray-dark;
+		border-radius: $rounded-lg;
 
 		&:before {
 			font-family: "FontAwesome";
@@ -52,16 +52,16 @@
 
 		color: inherit;
 		background-color: transparent;
-		border-radius: g.$rounded-lg;
+		border-radius: $rounded-lg;
 		transition: all 0.25s;
 
 		&:hover {
-			background-color: g.$color-hover;
-			box-shadow: g.$shadow-2xl;
+			background-color: $color-hover;
+			box-shadow: $shadow-2xl;
 		}
 
 		.related-entry-card-thumb img {
-			border-radius: g.$rounded-lg;
+			border-radius: $rounded-lg;
 			max-height: 85px;
 			background-size: cover;
 		}

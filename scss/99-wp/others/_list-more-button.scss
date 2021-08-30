@@ -6,7 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../01-global/global" as g;
+@use "../../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -20,17 +20,17 @@
 //  Sass記述
 //----------------------------------------------------------------------
 .list-more-button {
-	color: g.$color-white;
-	background-color: g.$color-gray-dark;
-	border-radius: g.$rounded-2xl;
+	color: $color-white;
+	background-color: $color-gray-dark;
+	border-radius: $rounded-2xl;
 	border: none;
 
 	&:hover {
 		transition: all 0.25s;
 
-		color: g.$color-white;
-		background-color: g.$color-green-dark;
+		color: $color-white;
+		background-color: $color-green-dark;
 
-		box-shadow: g.$shadow-2xl;
+		box-shadow: $shadow-2xl;
 	}
 }

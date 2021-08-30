@@ -6,7 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../01-global/global" as g;
+@use "../../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -20,12 +20,12 @@
 //  Sass記述
 //----------------------------------------------------------------------
 .cat-link {
-	background-color: g.$color-black;
-	border-radius: g.$rounded-2xl;
+	background-color: $color-black;
+	border-radius: $rounded-2xl;
 	transition: all 0.25s;
 
 	&:hover {
-		color: g.$color-white;
+		color: $color-white;
 		opacity: 0.7;
 	}
 }

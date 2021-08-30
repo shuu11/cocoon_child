@@ -6,7 +6,8 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../01-global/global" as g;
+@use "sass:color";
+@use "../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -19,15 +20,34 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-.badge,
-.badge-red,
-.badge-pink,
-.badge-purple,
-.badge-blue,
-.badge-green,
-.badge-yellow,
-.badge-brown,
-.badge-grey {
-	font-size: 16px;
-	opacity: 0.9;
+.wp-block-table {
+	table {
+		overflow-x: scroll;
+		white-space: pre;
+
+		tbody {
+			border: 1px solid $color-black;
+
+			tr {
+				&:nth-child(odd) {
+					color: $color-black;
+					background-color: color.scale(rgba($color-black, 0), $alpha: 20%);
+				}
+
+				&:nth-child(even) {
+					background-color: $color-white;
+				}
+			}
+
+			th,
+			td {
+				border: solid 1px color.scale(rgba($color-black, 0), $alpha: 50%);
+			}
+
+			td {
+				padding: 0.5em 2em 0.5rem 1rem;
+				white-space: pre !important;
+			}
+		}
+	}
 }

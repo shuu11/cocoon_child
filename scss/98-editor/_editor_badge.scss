@@ -6,9 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@forward "./import/badge";
-@forward "./import/content";
-@forward "./import/table";
+@use "../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -21,4 +19,18 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-
+.rich-text:focus.is-selected {
+	.badge,
+	.badge-red,
+	.badge-pink,
+	.badge-purple,
+	.badge-blue,
+	.badge-green,
+	.badge-yellow,
+	.badge-brown,
+	.badge-grey {
+		&[data-rich-text-format-boundary] {
+			color: $color-black;
+		}
+	}
+}

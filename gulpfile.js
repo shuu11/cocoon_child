@@ -11,7 +11,7 @@ const { src, dest, watch, series, parallel } = require("gulp");
 
 const $ = require("gulp-load-plugins")({
 	pattern: [
-		"gulp{-,.}*", //  autoprefixer,plumber,dartSass
+		"gulp{-,.}*", //  autoprefixer,plumber,dartSass,sassGlobUseForward
 
 		"browser-sync",
 	],
@@ -35,6 +35,7 @@ const bsPath = {
 //----------------------------------------------------------------------
 function build(done) {
 	src(buildPath.sass.src)
+		.pipe($.sassGlobUseForward())
 		.pipe($.plumber())
 		.pipe($.dartSass())
 		.pipe($.autoprefixer())

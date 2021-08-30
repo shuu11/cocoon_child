@@ -6,7 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../01-global/global" as g;
+@use "../../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -23,25 +23,25 @@
 	margin-bottom: 60px !important;
 
 	.blogcard-wrap {
-		border-radius: g.$rounded-2xl;
+		border-radius: $rounded-2xl;
 
 		.blogcard {
-			color: g.$color-white;
-			background-color: g.$color-gray-dark;
-			border-radius: g.$rounded-2xl;
+			color: $color-white;
+			background-color: $color-gray-dark;
+			border-radius: $rounded-2xl;
 			border: none;
 			transition: all 0.25s;
-			box-shadow: g.$shadow-2xl;
+			box-shadow: $shadow-2xl;
 
 			&:hover {
-				color: g.$color-white;
-				background-color: g.$color-green-dark;
+				color: $color-white;
+				background-color: $color-green-dark;
 
 				outline: none;
 			}
 
 			.blogcard-thumb-image {
-				border-radius: g.$rounded-lg;
+				border-radius: $rounded-lg;
 			}
 		}
 	}

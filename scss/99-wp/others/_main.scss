@@ -6,7 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../01-global/global" as g;
+@use "../../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -20,8 +20,8 @@
 //  Sass記述
 //----------------------------------------------------------------------
 #main {
-	background-color: g.$color-main;
-	border-radius: g.$rounded-2xl;
-	box-shadow: g.$shadow-2xl;
+	background-color: $color-main;
+	border-radius: $rounded-2xl;
+	box-shadow: $shadow-2xl;
 	opacity: 0.9;
 }

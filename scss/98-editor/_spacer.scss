@@ -7,7 +7,7 @@
 //  インポート宣言
 //----------------------------------------------------------------------
 @use "sass:color";
-@use "../../01-global/global" as g;
+@use "../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -20,34 +20,6 @@
 //----------------------------------------------------------------------
 //  Sass記述
 //----------------------------------------------------------------------
-.wp-block-table {
-	table {
-		overflow-x: scroll;
-		white-space: pre;
-
-		tbody {
-			border: 1px solid g.$color-black;
-
-			tr {
-				&:nth-child(odd) {
-					color: g.$color-black;
-					background-color: color.scale(rgba(g.$color-black, 0), $alpha: 20%);
-				}
-
-				&:nth-child(even) {
-					background-color: g.$color-white;
-				}
-			}
-
-			th,
-			td {
-				border: solid 1px color.scale(rgba(g.$color-black, 0), $alpha: 50%);
-			}
-
-			td {
-				padding: 0.5em 2em 0.5rem 1rem;
-				white-space: pre !important;
-			}
-		}
-	}
+.wp-block-spacer {
+	background-color: color.scale(rgba($color-black, 0), $alpha: 20%);
 }

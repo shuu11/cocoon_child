@@ -6,7 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../01-global/global" as g;
+@use "../../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -23,19 +23,19 @@
 	.a-wrap {
 		border: none;
 		color: inherit;
-		border-radius: g.$rounded-lg;
+		border-radius: $rounded-lg;
 		margin-bottom: 1em;
 		transition: all 0.25s;
 
 		&:hover {
-			background-color: g.$color-hover;
-			box-shadow: g.$shadow-2xl;
+			background-color: $color-hover;
+			box-shadow: $shadow-2xl;
 		}
 	}
 }
 
 .widget-entry-card-thumb img {
-	border-radius: g.$rounded-lg;
+	border-radius: $rounded-lg;
 	background-size: cover;
 	max-height: 170px;
 }

@@ -6,7 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../01-global/global" as g;
+@use "../../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -21,13 +21,13 @@
 //----------------------------------------------------------------------
 #navi,
 #navi-footer {
-	background-color: g.$color-gray-dark;
+	background-color: $color-gray-dark;
 
 	.navi-in,
 	.navi-footer-in {
 		a {
 			position: relative;
-			color: g.$color-white;
+			color: $color-white;
 			transition: all 0.25s;
 
 			&::after {
@@ -39,14 +39,14 @@
 				left: 0;
 
 				opacity: 0;
-				background-color: g.$color-green-dark;
+				background-color: $color-green-dark;
 
 				transform: scale(0, 1);
 				transition: all 0.25s;
 			}
 
 			&:hover {
-				color: g.$color-white;
+				color: $color-white;
 				background-color: inherit;
 
 				&::after {
@@ -57,15 +57,15 @@
 		}
 
 		.sub-menu {
-			background-color: g.$color-gray-dark;
-			color: g.$color-white;
+			background-color: $color-gray-dark;
+			color: $color-white;
 		}
 
 		.fa-angle-down {
-			color: g.$color-white;
+			color: $color-white;
 
 			&:hover {
-				color: g.$color-white;
+				color: $color-white;
 			}
 		}
 	}

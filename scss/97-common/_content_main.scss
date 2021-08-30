@@ -6,7 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../01-global/global" as g;
+@use "../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -31,12 +31,12 @@
 		margin-top: 100px;
 		padding: 25px;
 
-		color: g.$color-white;
+		color: $color-white;
 
 		font-size: 24px;
 
-		background-color: g.$color-green-dark;
-		border-radius: g.$rounded-lg;
+		background-color: $color-green-dark;
+		border-radius: $rounded-lg;
 
 		@media screen and (max-width: 480px) {
 			padding: 0.6em 0.8em;
@@ -52,10 +52,10 @@
 
 		font-size: 22px;
 
-		border-left: 7px solid g.$color-green-dark;
-		border-right: 1px solid g.$color-green-dark;
-		border-top: 1px solid g.$color-green-dark;
-		border-bottom: 1px solid g.$color-green-dark;
+		border-left: 7px solid $color-green-dark;
+		border-right: 1px solid $color-green-dark;
+		border-top: 1px solid $color-green-dark;
+		border-bottom: 1px solid $color-green-dark;
 
 		@media screen and (max-width: 480px) {
 			padding: 0.6em;
@@ -72,7 +72,7 @@
 
 		font-size: 20px;
 
-		background-image: linear-gradient(to right, g.$color-green-midium 0%, transparent 70%);
+		background-image: linear-gradient(to right, $color-green-midium 0%, transparent 70%);
 		background-repeat: no-repeat;
 		background-size: 100% 5%;
 		background-position: bottom;
@@ -91,7 +91,7 @@
 			left: 0.3em;
 			width: 21px;
 			height: 21px;
-			background-color: g.$color-green-midium;
+			background-color: $color-green-midium;
 			border-radius: 50%;
 		}
 	}
@@ -103,7 +103,7 @@
 		font-size: 20px;
 		padding: 9px 10px;
 
-		border-bottom: 2px dotted g.$color-green-midium;
+		border-bottom: 2px dotted $color-green-midium;
 
 		@media screen and (max-width: 480px) {
 			padding: 0.6em;
@@ -113,9 +113,9 @@
 
 	blockquote {
 		color: inherit;
-		background-color: rgba(g.$color-black, 0.2);
+		background-color: rgba($color-black, 0.2);
 		border: none;
-		border-radius: g.$rounded-lg;
+		border-radius: $rounded-lg;
 
 		&:before,
 		&:after {
@@ -129,7 +129,7 @@
 
 	pre {
 		max-height: 800px;
-		border-radius: g.$rounded-lg;
+		border-radius: $rounded-lg;
 		overflow-x: scroll;
 		overflow-y: scroll;
 

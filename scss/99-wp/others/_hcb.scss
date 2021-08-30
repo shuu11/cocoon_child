@@ -7,7 +7,7 @@
 //  インポート宣言
 //----------------------------------------------------------------------
 @use "sass:color";
-@use "../../01-global/global" as g;
+@use "../../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -29,12 +29,12 @@ div.hcb_wrap {
 		border-radius: 4px;
 		padding-top: 25px;
 
-		&[class*=language-].line-numbers{
+		&[class*="language-"].line-numbers {
 			position: static;
 		}
 
 		&:before {
-			color: g.$color-white;
+			color: $color-white;
 			font-weight: bold;
 		}
 	}
@@ -44,8 +44,8 @@ div.hcb_wrap {
 		.toolbar button,
 		.toolbar span {
 			padding: 0;
-			color: g.$color-white;
-			border-radius: g.$rounded-2xl;
+			color: $color-white;
+			border-radius: $rounded-2xl;
 			box-shadow: none;
 		}
 
@@ -59,15 +59,15 @@ div.hcb_wrap {
 				display: block;
 
 				padding: 0.25rem 0.5rem;
-				background-color: g.$color-gray-dark;
-				border-radius: g.$rounded-lg;
+				background-color: $color-gray-dark;
+				border-radius: $rounded-lg;
 				cursor: pointer;
 				transition: all 0.25s;
 
 				&:hover {
-					color: g.$color-white;
-					background-color: g.$color-green-dark;
-					box-shadow: g.$shadow-2xl;
+					color: $color-white;
+					background-color: $color-green-dark;
+					box-shadow: $shadow-2xl;
 				}
 			}
 		}

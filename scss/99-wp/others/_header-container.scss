@@ -6,7 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../01-global/global" as g;
+@use "../../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -20,19 +20,19 @@
 //  Sass記述
 //----------------------------------------------------------------------
 #header-container {
-	background-color: g.$color-gray-dark;
-	box-shadow: g.$shadow-2xl;
+	background-color: $color-gray-dark;
+	box-shadow: $shadow-2xl;
 
 	.tagline {
-		color: g.$color-white;
+		color: $color-white;
 	}
 
 	.site-name-text {
-		color: g.$color-white;
+		color: $color-white;
 	}
 
 	.hlt-top-menu,
 	.hlt-center-logo {
-		background-color: g.$color-gray-dark;
+		background-color: $color-gray-dark;
 	}
 }

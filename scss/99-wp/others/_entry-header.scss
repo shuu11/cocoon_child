@@ -6,7 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../01-global/global" as g;
+@use "../../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -37,15 +37,15 @@
 		}
 
 		&:before {
-			border-left: 2px solid g.$color-black;
-			border-top: 2px solid g.$color-black;
+			border-left: 2px solid $color-black;
+			border-top: 2px solid $color-black;
 			top: 0;
 			left: 0;
 		}
 
 		&:after {
-			border-right: 2px solid g.$color-black;
-			border-bottom: 2px solid g.$color-black;
+			border-right: 2px solid $color-black;
+			border-bottom: 2px solid $color-black;
 			bottom: 0;
 			right: 0;
 		}

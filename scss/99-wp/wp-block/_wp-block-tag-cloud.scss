@@ -6,7 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../01-global/global" as g;
+@use "../../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -23,15 +23,15 @@
 	a {
 		text-decoration: none;
 		border-radius: 4px;
-		color: g.$color-black;
+		color: $color-black;
 
 		&:hover {
-			background-color: g.$color-hover;
+			background-color: $color-hover;
 			transition: all 0.25s;
 		}
 
 		.fa-tag {
-			color: g.$color-gray-dark;
+			color: $color-gray-dark;
 		}
 	}
 }

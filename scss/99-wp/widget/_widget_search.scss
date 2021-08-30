@@ -6,7 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../01-global/global" as g;
+@use "../../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -26,17 +26,17 @@
 		border-radius: 0;
 		border-top-left-radius: 4px;
 		border-top-right-radius: 4px;
-		border-bottom: 2px solid g.$color-gray-dark;
+		border-bottom: 2px solid $color-gray-dark;
 		transition: all 0.25s;
 
 		&:focus,
 		&:hover {
-			background-color: g.$color-hover;
+			background-color: $color-hover;
 			outline: none;
 		}
 
 		&:focus ~ .search-submit {
-			color: g.$color-gray-dark;
+			color: $color-gray-dark;
 		}
 	}
 
@@ -44,7 +44,7 @@
 		transition: all 0.25s;
 
 		&:hover {
-			color: g.$color-gray-dark;
+			color: $color-gray-dark;
 		}
 	}
 }

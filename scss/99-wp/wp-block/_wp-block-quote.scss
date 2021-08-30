@@ -6,7 +6,7 @@
 //----------------------------------------------------------------------
 //  インポート宣言
 //----------------------------------------------------------------------
-@use "../../01-global/global" as g;
+@use "../../01-variable/variable" as *;
 
 //----------------------------------------------------------------------
 //  変数宣言
@@ -20,19 +20,19 @@
 //  Sass記述
 //----------------------------------------------------------------------
 .wp-block-quote {
-	border: solid g.$color-gray-dark 1px;
-	background-color: g.$color-body;
+	border: solid $color-gray-dark 1px;
+	background-color: $color-body;
 
 	&::before,
 	&::after {
-		color: g.$color-gray-dark;
+		color: $color-gray-dark;
 	}
 
 	cite {
-		color: g.$color-gray-dark;
+		color: $color-gray-dark;
 	}
 
 	button {
-		background-color: g.$color-gray-dark;
+		background-color: $color-gray-dark;
 	}
 }
