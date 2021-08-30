@@ -27,7 +27,6 @@ const buildPath = {
 };
 
 const bsPath = {
-	files: watchSrc,
 	proxy: "shuu11.wp",
 };
 
@@ -45,13 +44,18 @@ function build(done) {
 }
 
 function bs(done) {
-	$.browserSync({
-		files: bsPath.files,
-		port: 80,
-		proxy: bsPath.proxy,
+	$.browserSync.init({
+		proxy: {
+			target: bsPath.proxy,
+		},
 		notify: false,
-		open: "external",
 	});
+
+	done();
+}
+
+function bsReload(done) {
+	$.browserSync.reload();
 
 	done();
 }
@@ -60,14 +64,13 @@ function bs(done) {
 //  watch処理
 //----------------------------------------------------------------------
 function watchTask(done) {
-	watch(watchSrc, series(build));
+	watch(watchSrc, series(build, bsReload));
 }
 
 //----------------------------------------------------------------------
 //  default処理
 //----------------------------------------------------------------------
-exports.default = series(build, bs, watchTask);
-
+exports.default = series(build, bs, bsReload, watchTask);
 
 /************************************************************************/
 /*  END OF FILE                                                         */
