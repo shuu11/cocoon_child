@@ -338,7 +338,7 @@ div.easyLink-box div.easyLink-info p.easyLink-info-name a:hover {
   color: rgba(86, 89, 86, 0.8) !important;
 }
 @media screen and (max-width: 703px) {
-  div.easyLink-box div.easyLink-img p.easyLink-img-box imeasyLink-img-pht {
+  div.easyLink-box div.easyLink-img p.easyLink-img-box img.easyLink-img-pht {
     max-height: 180px !important;
     -o-object-fit: contain;
        object-fit: contain;
