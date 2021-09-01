@@ -418,6 +418,9 @@ div.hcb_wrap pre[class*=language-].line-numbers {
   position: static;
 }
 div.hcb_wrap pre:before {
+  position: absolute;
+  top: 0;
+  right: 40px;
   color: #f5f3f2;
   font-weight: bold;
 }

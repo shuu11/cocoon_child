@@ -46,10 +46,11 @@ function build(done) {
 
 function bs(done) {
 	$.browserSync.init({
-		proxy: {
-			target: bsPath.proxy,
-		},
+		// files: watchSrc,
+		proxy: bsPath.proxy,
+		port: 80,
 		notify: false,
+		open: "external",
 	});
 
 	done();
