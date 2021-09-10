@@ -107,7 +107,7 @@ if ( !defined( 'ABSPATH' ) ) exit; ?>
 <?php //barba.js処理
   get_template_part('tmp/footer-barba-js');?>
 
-<script>
+<!-- <script>
 (function(window, document) {
   function adsenseLoad() {
     // GoogleAdSense読込み
@@ -145,7 +145,7 @@ if ( !defined( 'ABSPATH' ) ) exit; ?>
     }
   });
 })(window, document);
-</script>
+</script> -->
 
 </body>
 
