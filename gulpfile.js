@@ -48,7 +48,7 @@ function bs(done) {
 	$.browserSync.init({
 		// files: watchSrc,
 		proxy: bsPath.proxy,
-		port: 80,
+		// port: 80,
 		notify: false,
 		open: "external",
 	});
