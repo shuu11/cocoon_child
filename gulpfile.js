@@ -39,7 +39,8 @@ function build(done) {
 		.pipe($.plumber())
 		.pipe($.dartSass())
 		.pipe($.autoprefixer())
-		.pipe(dest(buildPath.sass.dest));
+		.pipe(dest(buildPath.sass.dest))
+		.pipe( $.browserSync.stream());
 
 	done();
 }

@@ -1018,8 +1018,8 @@ div.hcb_wrap div.code-toolbar .toolbar span:hover {
 }
 
 .toc {
+  display: block;
   margin: 0;
-  width: 100%;
   padding: 0;
   border-color: #222928;
   border-radius: 1rem;
