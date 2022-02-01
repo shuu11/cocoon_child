@@ -179,6 +179,8 @@
 }
 
 .edit-post-visual-editor__post-title-wrapper {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   color: inherit;
   background-color: #f5f3f2;
   border-radius: 1rem;
